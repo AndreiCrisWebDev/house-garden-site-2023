@@ -1,0 +1,9 @@
+@mixin background{
+    background-color: black;
+}
+/// mixin pt header footer si toate barile de titlu
+@mixin backgroundImg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

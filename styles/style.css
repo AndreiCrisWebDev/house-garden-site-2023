@@ -1,0 +1,45 @@
+@media screen and (min-width: 0px) {
+  body {
+    background-color: black;
+  }
+  body header {
+    width: 100%;
+    background-image: url("/img/backgroundImg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
+    max-height: 255px;
+  }
+  body header #hd_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  body header #hd_container figure {
+    position: absolute;
+  }
+  body header #hd_container figure img {
+    width: 100%;
+    height: auto;
+  }
+  body header #listLinkLogo {
+    margin: 15px 0 0 0px;
+  }
+  body header #listLinkLogo a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  body header #listLinkLogo img {
+    width: 43px;
+    height: 43px;
+  }
+}
+@media screen and (min-width: 390px) {
+  body {
+    background-color: green;
+  }
+}/*# sourceMappingURL=style.css.map */
