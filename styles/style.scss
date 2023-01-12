@@ -4,6 +4,7 @@
 @media screen and (min-width: 0px){
     body {
         background-color: black;
+        // css hedear section
             header{
                 width: 100%;
                 background-image: url("/img/backgroundImg.png");
@@ -17,8 +18,8 @@
                     align-items: center;
                     flex-wrap: nowrap;
                     justify-content: space-around;
-                    figure{ 
-                        position: absolute;
+                    figure { 
+                        
                         img{
                             width: 100%;
                             height: auto;
@@ -26,18 +27,65 @@
                     }
                 }
                 #listLinkLogo {
-                    margin: 15px 0 0 0px;
+                    position: absolute;
+                    padding: 15px 0 0 280px;
                     a {
                     display:flex;
                     flex-direction: column;
                     margin-bottom:25px;
                     }
-                    img{
-                    width: 43px;
-                    height: 43px;  
+                    img {
+                    max-width: 43px;
+                    height: auto;
                     }
                 }
             }
+            #prezentareGenerala_1 {
+                width: 100%;
+                height: 1063.78px;
+                background-image: url("/img/backgroundImg.png");
+                @include backgroundImg;
+                margin: 0;
+                box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                h2 {
+                    @include h2TS;
+                    margin: 0;
+                    padding-top: 100px;
+                }
+                h1 {
+                    @include h1T;
+                    width: 300px;
+                    margin:0;
+                    padding-top: 25px;
+                }
+                >img {
+                    margin: 24px 0 24px 0;
+                }
+                p {
+                    @include p;
+                    width: 300px;
+                    margin: 0;
+                    padding-bottom: 25px;
+                }
+
+                #prezGenBtn {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 15px;
+                    
+                    button {
+                        @include buttonStd;
+                        
+                    }
+                    #locationButton {
+                            width: 125px;
+                        }
+                }
+            }
+        // css section prezentareGenerala_1
         }
 }
 

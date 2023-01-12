@@ -18,15 +18,13 @@
     flex-wrap: nowrap;
     justify-content: space-around;
   }
-  body header #hd_container figure {
-    position: absolute;
-  }
   body header #hd_container figure img {
     width: 100%;
     height: auto;
   }
   body header #listLinkLogo {
-    margin: 15px 0 0 0px;
+    position: absolute;
+    padding: 15px 0 0 280px;
   }
   body header #listLinkLogo a {
     display: flex;
@@ -34,8 +32,74 @@
     margin-bottom: 25px;
   }
   body header #listLinkLogo img {
-    width: 43px;
-    height: 43px;
+    max-width: 43px;
+    height: auto;
+  }
+  body #prezentareGenerala_1 {
+    width: 100%;
+    height: 1063.78px;
+    background-image: url("/img/backgroundImg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  body #prezentareGenerala_1 h2 {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 100px;
+  }
+  body #prezentareGenerala_1 h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 300px;
+    margin: 0;
+    padding-top: 25px;
+  }
+  body #prezentareGenerala_1 > img {
+    margin: 24px 0 24px 0;
+  }
+  body #prezentareGenerala_1 p {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 300px;
+    margin: 0;
+    padding-bottom: 25px;
+  }
+  body #prezentareGenerala_1 #prezGenBtn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  body #prezentareGenerala_1 #prezGenBtn button {
+    background-color: #05668D;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  body #prezentareGenerala_1 #prezGenBtn #locationButton {
+    width: 125px;
   }
 }
 @media screen and (min-width: 390px) {
