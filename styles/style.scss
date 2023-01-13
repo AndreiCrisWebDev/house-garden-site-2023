@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 0px){
     body {
-        background-color: black;
+        //background-color: black;
         // css hedear section
             header{
                 width: 100%;
@@ -116,7 +116,39 @@
                     }
                 }
             }
+            //  section RelaxeazăTe 
+            #RelaxeazăTe {
+                @include flexCenterRowCenter(column);
+                height: 837px;
+                color: rgba(5, 102, 141, 1);
+                h2 {
+                    @include h2TS;
+                    color: rgba(5, 102, 141, 1);
+                    @include paddingT20Margin0;
+                 }
+                h1 {
+                    @include h1T; 
+                    color: rgba(5, 102, 141, 1);
+                    @include paddingT20Margin0;
+                }
+                p {
+                    @include pRelax;
+                    width: 350px;
+                    @include paddingT20Margin0;
+                }
+                button {
+                    @include buttonStd;
+                    width: 155px;
+                    margin-top: 20px;
+                }
+                iframe {
+                    height: 225px;
+                    width: 100%;
+                    margin-top: 55px;
+
+                }
         
+            }
         }
 }
 
@@ -126,3 +158,4 @@
     }
     
 }
+ 
