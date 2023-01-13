@@ -90,6 +90,7 @@
   body #prezentareGenerala_1 #prezGenBtn {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 15px;
   }
   body #prezentareGenerala_1 #prezGenBtn button {
@@ -97,9 +98,64 @@
     border-radius: 5px;
     height: 40px;
     margin-bottom: 20px;
+    border: none;
+    color: #F0F3BD;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  body #prezentareGenerala_1 #prezGenBtn button img {
+    padding-right: 10px;
   }
   body #prezentareGenerala_1 #prezGenBtn #locationButton {
     width: 125px;
+  }
+  body #beneficiiX3 .beneficii {
+    height: 350px;
+    background: rgb(2, 128, 144);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  body #beneficiiX3 .beneficii img {
+    max-width: 66px;
+    max-height: 66px;
+    padding: 30px 0 0 0;
+    margin: 0;
+  }
+  body #beneficiiX3 .beneficii h1 {
+    width: 300px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #F0F3BD;
+    padding: 30px 0 0 0;
+    margin: 0;
+  }
+  body #beneficiiX3 .beneficii p {
+    padding: 30px 0 0 0;
+    width: 300px;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0 0 0;
+    margin: 0;
   }
 }
 @media screen and (min-width: 390px) {

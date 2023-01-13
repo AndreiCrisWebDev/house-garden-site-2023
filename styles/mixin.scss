@@ -44,4 +44,44 @@
     border-radius: 5px;
     height: 40px;
     margin-bottom: 20px;
+    border:none;
+    color: #F0F3BD;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/// mixin pentru sectia benefici 
+@mixin textCategori {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #F0F3BD;
+}
+
+@mixin textNormal {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+@mixin padding30margin0 {
+    padding: 0;
+    margin: 0;
+}
+/// mixin reutilizabile universabile si editabile
+@mixin flexCenterRowCenter($flexDirection) {
+    display: flex;
+    flex-direction: $flexDirection;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }

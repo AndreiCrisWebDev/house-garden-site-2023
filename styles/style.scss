@@ -40,6 +40,7 @@
                     }
                 }
             }
+            // css section prezentareGenerala_1
             #prezentareGenerala_1 {
                 width: 100%;
                 height: 1063.78px;
@@ -61,6 +62,7 @@
                     margin:0;
                     padding-top: 25px;
                 }
+                //// aici a selectat prima imagine di
                 >img {
                     margin: 24px 0 24px 0;
                 }
@@ -70,22 +72,51 @@
                     margin: 0;
                     padding-bottom: 25px;
                 }
-
+ 
                 #prezGenBtn {
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     margin-top: 15px;
-                    
+
                     button {
                         @include buttonStd;
-                        
+                        @include flexCenterRowCenter(row);
+                        img {
+                            padding-right: 10px;
+                        }
                     }
                     #locationButton {
                             width: 125px;
                         }
                 }
             }
-        // css section prezentareGenerala_1
+            //css section beneficiiX3
+            #beneficiiX3 {
+                .beneficii {
+                    height: 350px;
+                    background: rgba(2, 128, 144, 1);
+                    margin-top: 30px;
+                    @include flexCenterRowCenter(column);
+                    img {
+                        max-width:66px;
+                        max-height: 66px;
+                        @include padding30margin0;
+                    }
+                    h1 {
+                        width: 300px;
+                        @include textCategori;
+                        @include padding30margin0;
+                    }
+                    p {
+                        padding: 30px 0 0 0;
+                        width: 300px;
+                        @include textNormal;
+                        @include padding30margin0;
+                    }
+                }
+            }
+        
         }
 }
 
