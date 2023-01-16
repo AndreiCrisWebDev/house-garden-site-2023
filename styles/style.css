@@ -220,6 +220,50 @@
     width: 100%;
     margin-top: 55px;
   }
+  body #alegeCam {
+    height: 2188px;
+    width: 100%;
+    background: rgb(2, 128, 144);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #alegeCam h2 {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.3em;
+    color: #F0F3BD;
+    padding: 30px 0 0 0;
+    margin: 0;
+  }
+  body #alegeCam > img {
+    margin-top: 20px;
+  }
+  body #alegeCam .camGallery h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #F0F3BD;
+    padding: 30px 0 0 0;
+    margin: 0;
+  }
+  body #alegeCam .camGallery p {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    padding: 30px 0 0 0;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 390px) {
   body {
