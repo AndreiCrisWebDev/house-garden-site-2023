@@ -145,9 +145,46 @@
                     height: 225px;
                     width: 100%;
                     margin-top: 55px;
-
                 }
-        
+            }
+            // section alege camera 
+            #alegeCam {
+                height: 2188px;
+                width: 100%;
+                background: rgba(2, 128, 144, 1);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-family: 'Lora';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    letter-spacing: 0.3em;
+                    color: #F0F3BD;
+                    @include padding30margin0;
+                }
+
+                >img {
+                    margin-top: 20px;
+                }
+
+                .camGallery {
+                    h1{
+                        @include textCategori;
+                        @include padding30margin0;
+                    }
+                    p{
+                        @include h2TS;
+                        @include padding30margin0;
+                    }
+                }
+
+
+
+
+
             }
         }
 }
