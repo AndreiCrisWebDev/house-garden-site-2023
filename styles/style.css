@@ -264,6 +264,51 @@
     padding: 30px 0 0 0;
     margin: 0;
   }
+  body #alegeCam .camGallery .camParGall {
+    background: no-repeat center/cover url("/img/camPar1-4.png");
+    height: 510px;
+    margin: 30px 10px 0 10px;
+  }
+  body #alegeCam .camGallery .camParGall figure {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 250px;
+    margin: 0px 10px;
+  }
+  body #alegeCam .camGallery .gall3img {
+    display: flex;
+    justify-content: space-between;
+  }
+  body #alegeCam .camGallery .gall3img figure {
+    background: no-repeat center/cover url("/img/camPar2-4.png");
+    height: 50px;
+    width: 100%;
+    margin: 10px 5px 10px 5px;
+  }
+  body #alegeCam .camGallery .gall3img figure:nth-child(2) {
+    background: url("/img/camPar3-4.png");
+  }
+  body #alegeCam .camGallery .gall3img figure:nth-child(3) {
+    background: url("/img/camPar4-4.png");
+  }
+  body #alegeCam .camGallery1 {
+    margin-top: 50px;
+  }
+  body #alegeCam .camGallery1 .camParGall {
+    background: no-repeat center/cover url("/img/camAp1-5.png");
+  }
+  body #alegeCam .camGallery1 .gall3img figure {
+    background: no-repeat center/cover url("/img/camAp2-5.png");
+  }
+  body #alegeCam .camGallery1 .gall3img figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/camAp3-5.png");
+  }
+  body #alegeCam .camGallery1 .gall3img figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/camAp4-5.png");
+  }
+  body #alegeCam .camGallery1 .gall3img figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/camAp5-5.png");
+  }
 }
 @media screen and (min-width: 390px) {
   body {
