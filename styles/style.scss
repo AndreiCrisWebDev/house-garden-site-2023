@@ -149,7 +149,7 @@
             }
             // section alege camera 
             #alegeCam {
-                height: 2188px;
+                height: 2500px;
                 width: 100%;
                 background: rgba(2, 128, 144, 1);
                 display: flex;
@@ -208,7 +208,6 @@
                         }
                     }
                 } 
-
                 .camGallery1 {
                     margin-top: 50px;
                     .camParGall {
@@ -217,6 +216,7 @@
                     .gall3img {
                         figure {
                             background:no-repeat center/cover url('/img/camAp2-5.png');
+                            height: 38px;
                         }
                         figure:nth-child(2) {
                             background:no-repeat center/cover url('/img/camAp3-5.png');
@@ -226,12 +226,93 @@
                         }
                         figure:nth-child(4) {
                             background:no-repeat center/cover url('/img/camAp5-5.png');
+                        }  
+                    }
+                }
+                .camGallery2 {
+                    margin-top: 50px;
+                    .camParGall {
+                        background:no-repeat center/cover url('/img/Ext1-5.jpg') ;
+                    }
+                    .gall3img {
+                        figure {
+                            background:no-repeat center/cover url('/img/Ext2-5.png');
+                            height: 38px;
                         }
-                        
+                        figure:nth-child(2) {
+                            background:no-repeat center/cover url('/img/Ext3-5.png');
+                        }
+                        figure:nth-child(3) {
+                            background:no-repeat center/cover url('/img/Ex4-5.png');
+                        }
+                        figure:nth-child(4) {
+                            background:no-repeat center/cover url('/img/Ex5-5.png');
+                        }  
+                        figure:nth-child(5) {
+                            background:no-repeat center/cover url('/img/Ex6-5.png');
+                        } 
                     }
                 }
             }
-        }
+            // section servicii
+            #servicii {
+                background: rgba(238, 238, 238, 1);
+                .header-title {
+                    height: 300px;
+                    background: no-repeat center/cover url('/img/backgServicii.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        @include h1T;
+                        color: #F0F3BD;
+                    }
+                }
+                #servicii-hd {
+                    width: 350px;
+                    margin: auto;
+                    
+                    h5 {
+                      @include h2TS;
+                      color:rgba(5, 102, 141, 1);
+                      margin: 50px 0 15px 0;
+                    }
+                    >img {
+                        margin:0px;
+                    }
+                    h1 {
+                        @include textCategori;
+                        color:rgba(5, 102, 141, 1);
+                        margin: 15px 10px 30px 10px;
+                    }
+                    p {
+                       @include textNormal;
+                       color:rgba(5, 102, 141, 1);
+                       margin: 0 10px 50px 10px;
+                    }
+                }
+                .servicii-container {
+                    width: 330px;
+                    height: 250px;
+                    margin: 0 auto 50px auto;
+                    
+                    img {
+                        display: block;
+                        margin:auto;
+                    }
+
+                    h1 {
+                        @include textCategori;
+                        margin: 25px auto;
+                        color:rgba(5, 102, 141, 1);
+                    }
+                    p {
+                        @include textNormal;
+                        color:rgba(5, 102, 141, 1);
+                    }
+                }
+            }
+    }        
 }
         
 
