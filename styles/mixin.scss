@@ -85,6 +85,17 @@
     color: #fff;
 }
 
+@mixin grup_text {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+
+
+text-align: center;
+}
+
 @mixin padding30margin0 {
     padding: 30px 0 0 0;
     margin: 0;

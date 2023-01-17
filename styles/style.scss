@@ -3,6 +3,17 @@
 
 @media screen and (min-width: 0px){
     body {
+        .header-title {
+                    height: 300px;
+                    background: no-repeat center/cover url('/img/backgServicii.png');
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        @include h1T;
+                        color: #F0F3BD;
+                    }
+                }
         //background-color: black;
         // css hedear section
             header{
@@ -148,6 +159,7 @@
                 }
             }
             // section alege camera 
+                      // section alege camera 
             #alegeCam {
                 height: 2500px;
                 width: 100%;
@@ -191,6 +203,7 @@
                         }
                     }
                     .gall3img {
+                             margin: 0 10px;
                             display: flex;
                             justify-content: space-between;
                         figure {
@@ -257,17 +270,17 @@
             // section servicii
             #servicii {
                 background: rgba(238, 238, 238, 1);
-                .header-title {
-                    height: 300px;
-                    background: no-repeat center/cover url('/img/backgServicii.png');
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    h1 {
-                        @include h1T;
-                        color: #F0F3BD;
-                    }
-                }
+                // .header-title {
+                //     height: 300px;
+                //     background: no-repeat center/cover url('/img/backgServicii.png');
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     h1 {
+                //         @include h1T;
+                //         color: #F0F3BD;
+                //     }
+                // }
                 #servicii-hd {
                     width: 350px;
                     margin: auto;
@@ -311,7 +324,138 @@
                         color:rgba(5, 102, 141, 1);
                     }
                 }
+                .servicii-container:last-child {
+                    height: 300px;
+                    padding-bottom: 50px;
+                    margin-bottom: 0px;
+                }
             }
+            // section atracti
+            #atracti {
+                .container_atractii {
+                    margin: 0 auto 50px auto;
+
+                    .img_atracti_container {
+                        background: no-repeat center/cover url('/img/atracti_acasa.png');
+                        height: 500px;
+                        max-width: 390px;
+                    }
+                    .prieteni {
+                        background: no-repeat center/cover url('/img/atracti_prieteni.png');
+                    }
+                    .salina {
+                        background: no-repeat center/cover url('/img/atracti_salina.png');
+                    } 
+                    div {
+                        height: 513px;
+                        background: #EEEEEE;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        h1 {
+                            padding-top: 40px;
+                            margin: 0 auto;
+                            @include textCategori;
+                            color: rgba(5, 102, 141, 1);
+                        }
+                        img {
+                            margin: 20px 0;
+                        }
+                        p {
+                            width: 310px;
+                            @include grup_text;
+                            color: rgba(5, 102, 141, 1);
+                        }
+                        button { 
+                            @include buttonStd;
+                            width: 173px;
+                            height: 43px;
+                            color: rgba(5, 102, 141, 1);
+                            border: 2px solid #05668D;
+                            background: #EEEEEE;
+                        }
+                        button:hover {
+                            background: rgba(5, 102, 141, 1);
+                            color: #EEEEEE;
+                        }
+                    }
+                   
+                }
+                 .container_atractii:last-child {
+                        margin: 0;
+                     }
+            } 
+            // section review
+            #reviewCount {
+                height: 500px;
+                background: rgba(238, 238, 238, 1);
+                margin: 0;
+                padding-top: 50px;
+                .reviewCount_container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                h1 { 
+                    font-family: 'Monotype Corsiva';
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 96px;
+                    line-height: 108px;
+                    color: #05668D;
+                    margin: 20px 0 0 0;
+                }
+                p {
+                    @include grup_text;
+                    color: #05668D;
+                    margin: 0;
+                }
+
+                .camGallery {
+                    margin: 100px 0 ;
+                    h1{
+                        @include h1T;
+                        color: rgba(5, 102, 141, 1);
+                    }
+                   
+                    .camParGall {
+                        background: no-repeat center/cover url('/img/gall_1_5.png'); 
+                        height: 510px;
+                        margin: 30px 10px 0 10px;
+                        figure {
+                            display: flex;
+                            justify-content: space-between;
+                            padding-top: 250px;
+                            margin: 0px 10px;
+                        }
+                    }
+                    .gall3img {
+                            margin: 0 10px;
+                            display: flex;
+                            justify-content: space-between;
+                        figure {
+                              background: no-repeat center/cover url('/img/gall_2_5.png');                          
+                              height: 35px;
+                              width: 100%;
+                              margin: 10px 5px 10px 5px;
+                        }
+                        figure:nth-child(2) {
+                            background: no-repeat center/cover url('/img/gall_3_5.png')
+                        }
+                        figure:nth-child(3) {
+                            background: no-repeat center/cover url('/img/gall_4_5.png')
+                        }
+                        figure:nth-child(4) {
+                            background: no-repeat center/cover url('/img/gall_5_5.png')
+                        }figure:nth-child(5) {
+                            background: no-repeat center/cover url('/img/gall_6_5.png')
+                        }
+                    }
+                } 
+
+
+            }
+        
     }        
 }
         

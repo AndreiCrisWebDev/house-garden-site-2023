@@ -1,5 +1,22 @@
 @charset "UTF-8";
 @media screen and (min-width: 0px) {
+  body .header-title {
+    height: 300px;
+    background: no-repeat center/cover url("/img/backgServicii.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .header-title h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    color: #FFFFFF;
+    color: #F0F3BD;
+  }
   body header {
     width: 100%;
     background-image: url("/img/backgroundImg.png");
@@ -276,6 +293,7 @@
     margin: 0px 10px;
   }
   body #alegeCam .camGallery .gall3img {
+    margin: 0 10px;
     display: flex;
     justify-content: space-between;
   }
@@ -334,23 +352,6 @@
   }
   body #servicii {
     background: rgb(238, 238, 238);
-  }
-  body #servicii .header-title {
-    height: 300px;
-    background: no-repeat center/cover url("/img/backgServicii.png");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  body #servicii .header-title h1 {
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 42px;
-    line-height: 51px;
-    text-align: center;
-    color: #FFFFFF;
-    color: #F0F3BD;
   }
   body #servicii #servicii-hd {
     width: 350px;
@@ -422,6 +423,158 @@
     text-align: center;
     color: #fff;
     color: rgb(5, 102, 141);
+  }
+  body #servicii .servicii-container:last-child {
+    height: 300px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+  }
+  body #atracti .container_atractii {
+    margin: 0 auto 50px auto;
+  }
+  body #atracti .container_atractii .img_atracti_container {
+    background: no-repeat center/cover url("/img/atracti_acasa.png");
+    height: 500px;
+    max-width: 390px;
+  }
+  body #atracti .container_atractii .prieteni {
+    background: no-repeat center/cover url("/img/atracti_prieteni.png");
+  }
+  body #atracti .container_atractii .salina {
+    background: no-repeat center/cover url("/img/atracti_salina.png");
+  }
+  body #atracti .container_atractii div {
+    height: 513px;
+    background: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #atracti .container_atractii div h1 {
+    padding-top: 40px;
+    margin: 0 auto;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #F0F3BD;
+    color: rgb(5, 102, 141);
+  }
+  body #atracti .container_atractii div img {
+    margin: 20px 0;
+  }
+  body #atracti .container_atractii div p {
+    width: 310px;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: rgb(5, 102, 141);
+  }
+  body #atracti .container_atractii div button {
+    background-color: #05668D;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    color: #F0F3BD;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    width: 173px;
+    height: 43px;
+    color: rgb(5, 102, 141);
+    border: 2px solid #05668D;
+    background: #EEEEEE;
+  }
+  body #atracti .container_atractii div button:hover {
+    background: rgb(5, 102, 141);
+    color: #EEEEEE;
+  }
+  body #atracti .container_atractii:last-child {
+    margin: 0;
+  }
+  body #reviewCount {
+    height: 500px;
+    background: rgb(238, 238, 238);
+    margin: 0;
+    padding-top: 50px;
+  }
+  body #reviewCount .reviewCount_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #reviewCount h1 {
+    font-family: "Monotype Corsiva";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 108px;
+    color: #05668D;
+    margin: 20px 0 0 0;
+  }
+  body #reviewCount p {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #05668D;
+    margin: 0;
+  }
+  body #reviewCount .camGallery {
+    margin: 100px 0;
+  }
+  body #reviewCount .camGallery h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    color: #FFFFFF;
+    color: rgb(5, 102, 141);
+  }
+  body #reviewCount .camGallery .camParGall {
+    background: no-repeat center/cover url("/img/gall_1_5.png");
+    height: 510px;
+    margin: 30px 10px 0 10px;
+  }
+  body #reviewCount .camGallery .camParGall figure {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 250px;
+    margin: 0px 10px;
+  }
+  body #reviewCount .camGallery .gall3img {
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  body #reviewCount .camGallery .gall3img figure {
+    background: no-repeat center/cover url("/img/gall_2_5.png");
+    height: 35px;
+    width: 100%;
+    margin: 10px 5px 10px 5px;
+  }
+  body #reviewCount .camGallery .gall3img figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/gall_3_5.png");
+  }
+  body #reviewCount .camGallery .gall3img figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/gall_4_5.png");
+  }
+  body #reviewCount .camGallery .gall3img figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/gall_5_5.png");
+  }
+  body #reviewCount .camGallery .gall3img figure:nth-child(5) {
+    background: no-repeat center/cover url("/img/gall_6_5.png");
   }
 }
 @media screen and (min-width: 390px) {
