@@ -500,7 +500,7 @@
     margin: 0;
   }
   body #reviewCount {
-    height: 500px;
+    height: 1250px;
     background: rgb(238, 238, 238);
     margin: 0;
     padding-top: 50px;
@@ -575,6 +575,13 @@
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(5) {
     background: no-repeat center/cover url("/img/gall_6_5.png");
+  }
+  body #ceSpunClienti .booking_review {
+    width: 360px;
+    height: 200px;
+    margin: 70px auto;
+    background: rgb(2, 128, 144);
+    border-radius: 4px;
   }
 }
 @media screen and (min-width: 390px) {

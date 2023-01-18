@@ -387,7 +387,7 @@
             } 
             // section review
             #reviewCount {
-                height: 500px;
+                height: 1250px;
                 background: rgba(238, 238, 238, 1);
                 margin: 0;
                 padding-top: 50px;
@@ -454,6 +454,15 @@
                 } 
 
 
+            }
+            #ceSpunClienti {
+                .booking_review {
+                    width: 360px;
+                    height: 200px;
+                    margin: 70px auto;
+                    background: rgba(2, 128, 144, 1);
+                    border-radius: 4px;
+                }
             }
         
     }        
