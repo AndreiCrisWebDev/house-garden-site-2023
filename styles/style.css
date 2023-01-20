@@ -579,7 +579,7 @@
   body #ceSpunClienti .booking_review {
     max-width: 350px;
     height: 200px;
-    margin: 70px auto;
+    margin: 70px auto 0 auto;
     background: rgb(2, 128, 144);
     border-radius: 4px;
   }
@@ -608,7 +608,7 @@
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     color: #fff;
     text-align: left;
@@ -634,7 +634,7 @@
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     color: #fff;
   }
@@ -643,6 +643,92 @@
     grid-gap: 5px;
     padding: 10px;
     grid-template-areas: "logoInitial cliName cliName cliName logoBooking" "logoInitial date date date logoBooking" "nota verifide verifide verifide verifide" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments";
+  }
+  body #ceSpunClienti .bulina_review_selected {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  body #ceSpunClienti .bulina_review_selected .bulina {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 5px;
+    background-color: rgb(5, 102, 141);
+  }
+  body #ceSpunClienti .bulina_review_selected .bulina:hover {
+    width: 15px;
+    height: 15px;
+  }
+  body #contactează-ne {
+    margin-top: 100px;
+  }
+  body #contactează-ne .header-title {
+    background: no-repeat center/cover url("/img/background_ce_spun_clienti.png");
+  }
+  body #contactează-ne .contact_container {
+    height: 900px;
+    background: #028090;
+    display: flex;
+    flex-direction: column;
+  }
+  body #contactează-ne .contact_container div {
+    padding-top: 40px;
+    margin: auto;
+    max-height: 280px;
+  }
+  body #contactează-ne .contact_container div img {
+    margin: auto;
+    display: block;
+  }
+  body #contactează-ne .contact_container div h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #F0F3BD;
+  }
+  body #contactează-ne .contact_container div p {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    color: #F0F3BD;
+  }
+  body #map_question {
+    margin-top: 50px;
+  }
+  body #map_question h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    color: #FFFFFF;
+    color: rgb(5, 102, 141);
+  }
+  body #map_question h2 {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: #FFFFFF;
+    color: rgb(5, 102, 141);
+  }
+  body #map_question iframe {
+    width: 370px;
+    height: 522px;
   }
 }
 @media screen and (min-width: 390px) {

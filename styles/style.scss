@@ -459,7 +459,7 @@
                 .booking_review {
                     max-width: 350px;
                     height: 200px;
-                    margin: 70px auto;
+                    margin: 70px auto 0 auto;
                     background: rgba(2, 128, 144, 1);
                     border-radius: 4px;
                 }
@@ -520,8 +520,72 @@
                     'coments coments coments coments coments'
                     'coments coments coments coments coments';
                 }
+                .bulina_review_selected {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .bulina {
+                        width: 10px;
+                        height: 10px;
+                        border-radius:100%;
+                        margin: 5px;
+                        background-color: rgba(5, 102, 141, 1);
+                    }
+                    .bulina:hover {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
             }
-        
+            // sectiunea Contacteazane
+            #contactează-ne {
+                margin-top: 100px;
+                .header-title {
+                background: no-repeat center/cover url('/img/background_ce_spun_clienti.png');
+                }
+                .contact_container {
+                    height: 900px;
+                    background: #028090;
+                    display: flex;
+                    flex-direction: column;
+                    div {
+                        padding-top: 40px;
+                        margin: auto;
+                        max-height: 280px;
+                        img {
+                            margin: auto;
+                            display: block;
+                        }
+
+                        h2 {
+                            @include textCategori;
+                        }
+
+                        p {
+                            @include h2TS;
+                            color: #F0F3BD;
+                        }
+                    }
+                }
+
+            }
+            #map_question {
+                margin-top: 50px;
+                h1 {
+                    @include h1T;
+                    color: rgba(5, 102, 141, 1);
+                }
+                h2 {
+                    @include h2TS;
+                    color: rgba(5, 102, 141, 1);
+                }
+
+                iframe {
+                    width: 370px; 
+                    height: 522px;
+                }
+            }
     }         
 }
         
