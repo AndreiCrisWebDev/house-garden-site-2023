@@ -14,17 +14,8 @@
                         color: #F0F3BD;
                     }
                 }
-        //background-color: black;
-        // css hedear section
-            header{
-                width: 100%;
-                background-image: url("/img/backgroundImg.png");
-                @include backgroundImg;
-                margin: 0;
-                box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
-                max-height: 255px;
 
-                #hd_container {
+         .hd_container {
                     display:flex;
                     align-items: center;
                     flex-wrap: nowrap;
@@ -37,7 +28,7 @@
                         }
                     }
                 }
-                #listLinkLogo {
+                .listLinkLogo {
                     position: absolute;
                     padding: 15px 0 0 280px;
                     a {
@@ -49,7 +40,16 @@
                     max-width: 43px;
                     height: auto;
                     }
-                }
+                }       
+        //background-color: black;
+        // css hedear section
+            header, footer{
+                width: 100%;
+                background-image: url("/img/backgroundImg.png");
+                @include backgroundImg;
+                margin: 0;
+                box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
+                max-height: 255px;
             }
             // css section prezentareGenerala_1
             #prezentareGenerala_1 {
@@ -580,14 +580,72 @@
                     @include h2TS;
                     color: rgba(5, 102, 141, 1);
                 }
+                #map_question_details {
+                    margin-top: 50px;
+                    details {
+                        width: 350px;
+                        margin: auto;
+                        height: 42px; 
+                        border-bottom:3px solid #05668D;
+                        
+                        summary {
+                            @include textNormal;
+                            color: #05668D;
+                            text-align: left;
+                            line-height: 42px;
+                        }                       
+                        p {
+                            // height: 100px;
+                            width: 300px;
+                            margin: auto;
+                            @include textNormal;
+                            text-align: left;
+                            color: #05668D;
+                         }
+                     } 
+                     details[open] {
+                        margin-top: 15px;
+                        height: 110px;
+                        p {
+                            line-height: normal;
+                        }
+                     }
+                }
+                 iframe {
 
-                iframe {
                     width: 370px; 
                     height: 522px;
                 }
+            } 
+            footer {
+                height: 255px;
+                .listLinkLogofooter {
+                    margin: 25px auto auto 15px;
+                    padding: 0;
+                    a {
+                        width: 43px;
+                        height: 43px;
+                        img  {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+                img {
+                    display: block;
+                    width: 247px;
+                    margin: auto 40px auto auto;
+                    padding-top: 25px;
+                }
+                h4 {
+                    @include grup_text;
+                    margin: 0;
+                    color: #fff;
+                }
+
             }
-    }         
-}
+        }        
+
         
 
 
@@ -596,5 +654,5 @@
         background-color:green;
     }
     
+    }
 }
- 

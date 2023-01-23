@@ -17,7 +17,30 @@
     color: #FFFFFF;
     color: #F0F3BD;
   }
-  body header {
+  body .hd_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  body .hd_container figure img {
+    width: 100%;
+    height: auto;
+  }
+  body .listLinkLogo {
+    position: absolute;
+    padding: 15px 0 0 280px;
+  }
+  body .listLinkLogo a {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  body .listLinkLogo img {
+    max-width: 43px;
+    height: auto;
+  }
+  body header, body footer {
     width: 100%;
     background-image: url("/img/backgroundImg.png");
     background-repeat: no-repeat;
@@ -26,29 +49,6 @@
     margin: 0;
     box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
     max-height: 255px;
-  }
-  body header #hd_container {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
-  body header #hd_container figure img {
-    width: 100%;
-    height: auto;
-  }
-  body header #listLinkLogo {
-    position: absolute;
-    padding: 15px 0 0 280px;
-  }
-  body header #listLinkLogo a {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-  }
-  body header #listLinkLogo img {
-    max-width: 43px;
-    height: auto;
   }
   body #prezentareGenerala_1 {
     width: 100%;
@@ -726,12 +726,84 @@
     color: #FFFFFF;
     color: rgb(5, 102, 141);
   }
+  body #map_question #map_question_details {
+    margin-top: 50px;
+  }
+  body #map_question #map_question_details details {
+    width: 350px;
+    margin: auto;
+    height: 42px;
+    border-bottom: 3px solid #05668D;
+  }
+  body #map_question #map_question_details details summary {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    color: #05668D;
+    text-align: left;
+    line-height: 42px;
+  }
+  body #map_question #map_question_details details p {
+    width: 300px;
+    margin: auto;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    text-align: left;
+    color: #05668D;
+  }
+  body #map_question #map_question_details details[open] {
+    margin-top: 15px;
+    height: 110px;
+  }
+  body #map_question #map_question_details details[open] p {
+    line-height: normal;
+  }
   body #map_question iframe {
     width: 370px;
     height: 522px;
   }
+  body footer {
+    height: 255px;
+  }
+  body footer .listLinkLogofooter {
+    margin: 25px auto auto 15px;
+    padding: 0;
+  }
+  body footer .listLinkLogofooter a {
+    width: 43px;
+    height: 43px;
+  }
+  body footer .listLinkLogofooter a img {
+    margin: 0;
+    padding: 0;
+  }
+  body footer img {
+    display: block;
+    width: 247px;
+    margin: auto 40px auto auto;
+    padding-top: 25px;
+  }
+  body footer h4 {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+  }
 }
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 0px) and (min-width: 390px) {
   body {
     background-color: green;
   }
