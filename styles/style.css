@@ -23,6 +23,9 @@
     flex-wrap: nowrap;
     justify-content: space-around;
   }
+  body .hd_container h2, body .hd_container h3 {
+    display: none;
+  }
   body .hd_container figure img {
     width: 100%;
     height: auto;
@@ -128,7 +131,12 @@
   body #prezentareGenerala_1 #prezGenBtn button img {
     padding-right: 10px;
   }
-  body #prezentareGenerala_1 #prezGenBtn #locationButton {
+  body #prezentareGenerala_1 #prezGenBtn button:hover {
+    background: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border: 2px solid #05668D;
+  }
+  body #prezentareGenerala_1 #prezGenBtn iframe #locationButton {
     width: 125px;
   }
   body #beneficiiX3 .beneficii {
@@ -231,6 +239,11 @@
     font-size: 16px;
     width: 155px;
     margin-top: 20px;
+  }
+  body #RelaxeazăTe button:hover {
+    background-color: #fff;
+    color: #05668D;
+    border: 2px solid #05668D;
   }
   body #RelaxeazăTe iframe {
     height: 225px;
@@ -576,6 +589,9 @@
   body #reviewCount .camGallery .gall3img figure:nth-child(5) {
     background: no-repeat center/cover url("/img/gall_6_5.png");
   }
+  body #ceSpunClienti .header-title {
+    margin-top: 50px;
+  }
   body #ceSpunClienti .booking_review {
     max-width: 350px;
     height: 200px;
@@ -772,6 +788,7 @@
     height: 522px;
   }
   body footer {
+    margin-top: 50px;
     height: 255px;
   }
   body footer .listLinkLogofooter {
@@ -803,8 +820,41 @@
     color: #fff;
   }
 }
-@media screen and (min-width: 0px) and (min-width: 390px) {
-  body {
-    background-color: green;
+@media screen and (min-width: 390px) {
+  body header {
+    height: 177px;
+  }
+  body header .hd_container h2, body header .hd_container h3 {
+    display: block;
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8vw;
+    line-height: 82px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  body header .hd_container h2 {
+    white-space: nowrap;
+    margin: 25px 35px auto auto;
+  }
+  body header .hd_container h3 {
+    position: absolute;
+  }
+  body header .hd_container figure {
+    margin: 0;
+  }
+  body header .hd_container figure img {
+    height: 150px;
+    margin: 10px;
+  }
+  body header .hd_container .listLinkLogo {
+    margin: auto 50px 15px auto;
+    position: 0;
+    padding: 0;
+  }
+  body header .hd_container .listLinkLogo a {
+    display: inline;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -122,3 +122,15 @@ text-align: center;
     justify-content: center;
 }
 
+/// mixin 768 px
+/// 
+@mixin h2Title {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size:  8vw;
+    line-height: 82px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
