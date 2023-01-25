@@ -1,7 +1,7 @@
 @import "./mixin.scss";
 
 
-@media screen and (min-width: 0px){
+@media screen and (min-width: 0px) {
     body {
         .header-title {
                     height: 300px;
@@ -14,12 +14,15 @@
                         color: #F0F3BD;
                     }
                 }
-
+        
          .hd_container {
                     display:flex;
                     align-items: center;
                     flex-wrap: nowrap;
                     justify-content: space-around;
+                    h2,h3 {
+                        display: none;
+                    }
                     figure { 
                         
                         img{
@@ -97,6 +100,12 @@
                             padding-right: 10px;
                         }
                     }
+                    button:hover {
+                    background: rgba(0,0,0,0.1);
+                    color: #fff;
+                    border: 2px solid #05668D;
+                    }
+                    iframe
                     #locationButton {
                             width: 125px;
                         }
@@ -151,6 +160,11 @@
                     @include buttonStd;
                     width: 155px;
                     margin-top: 20px;
+                }
+                button:hover {
+                    background-color: #fff;
+                    color: #05668D;
+                    border: 2px solid #05668D;
                 }
                 iframe {
                     height: 225px;
@@ -456,6 +470,9 @@
 
             }
             #ceSpunClienti {
+                .header-title {
+                    margin-top: 50px;
+                }
                 .booking_review {
                     max-width: 350px;
                     height: 200px;
@@ -618,6 +635,7 @@
                 }
             } 
             footer {
+                margin-top: 50px;
                 height: 255px;
                 .listLinkLogofooter {
                     margin: 25px auto auto 15px;
@@ -648,11 +666,42 @@
 
         
 
-
-@media screen and (min-width: 390px){
-    body{
-        background-color:green;
+}
+@media screen and (min-width: 390px) {
+    body {
+        header {
+            height: 177px;
+            .hd_container { 
+                h2,h3 {
+                    display: block;
+                    @include h2Title;
+                    margin: 0;
+                }
+                h2 {
+                    white-space: nowrap;
+                    margin: 25px 35px auto auto;
+                }
+                h3 {
+                    position: absolute;
+                }
+                figure {
+                    margin: 0;
+                    img {
+                        height: 150px;
+                        margin: 10px;
+                    }
+                }    
+                .listLinkLogo {
+                     margin: auto 50px 15px auto;
+                     position: ;
+                     padding: 0;
+                    a {
+                        display: inline;
+                       
+                    }
+                }    
+            }
+        }
     }
     
-    }
 }
