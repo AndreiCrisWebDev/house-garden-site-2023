@@ -824,23 +824,30 @@
   body header {
     height: 177px;
   }
+  body header .hd_container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
   body header .hd_container h2, body header .hd_container h3 {
     display: block;
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 8vw;
+    font-size: 7vw;
     line-height: 82px;
     text-align: center;
     color: #FFFFFF;
     margin: 0;
+    height: 50px;
+    line-height: 50px;
   }
   body header .hd_container h2 {
     white-space: nowrap;
     margin: 25px 35px auto auto;
   }
   body header .hd_container h3 {
-    position: absolute;
+    float: left;
+    margin-top: 15px;
   }
   body header .hd_container figure {
     margin: 0;
@@ -850,11 +857,20 @@
     margin: 10px;
   }
   body header .hd_container .listLinkLogo {
-    margin: auto 50px 15px auto;
-    position: 0;
+    margin: 20px 10px 15px auto;
+    position: relative;
     padding: 0;
+    float: right;
   }
   body header .hd_container .listLinkLogo a {
     display: inline;
+    margin-right: 20px;
+  }
+  body #prezentareGenerala_1 h2 {
+    width: 600px;
+    padding-top: 65px;
+  }
+  body #prezentareGenerala_1 br {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

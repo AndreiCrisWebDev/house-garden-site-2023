@@ -35,13 +35,13 @@
                     position: absolute;
                     padding: 15px 0 0 280px;
                     a {
-                    display:flex;
-                    flex-direction: column;
-                    margin-bottom:25px;
+                        display:flex;
+                        flex-direction: column;
+                        margin-bottom:25px;
                     }
                     img {
-                    max-width: 43px;
-                    height: auto;
+                        max-width: 43px;
+                        height: auto;
                     }
                 }       
         //background-color: black;
@@ -672,18 +672,23 @@
         header {
             height: 177px;
             .hd_container { 
+                flex-wrap: nowrap;
+                justify-content: space-between;
                 h2,h3 {
                     display: block;
                     @include h2Title;
                     margin: 0;
+                    height: 50px;
+                    line-height: 50px;
                 }
                 h2 {
                     white-space: nowrap;
                     margin: 25px 35px auto auto;
                 }
                 h3 {
-                    position: absolute;
-                }
+                    float: left;
+                    margin-top: 15px;
+               }
                 figure {
                     margin: 0;
                     img {
@@ -692,14 +697,26 @@
                     }
                 }    
                 .listLinkLogo {
-                     margin: auto 50px 15px auto;
-                     position:0 ;
+                     margin: 20px 10px 15px auto;
+                     position: relative;
                      padding: 0;
+                     float: right;
+
                     a {
                         display: inline;
+                        margin-right: 20px;
                        
                     }
                 }    
+            }
+        }
+        #prezentareGenerala_1 {
+            h2 {
+                width: 600px;
+                padding-top: 65px;
+            }
+            br {
+                display: none;
             }
         }
     }
