@@ -136,7 +136,7 @@
     color: #fff;
     border: 2px solid #05668D;
   }
-  body #prezentareGenerala_1 #prezGenBtn iframe #locationButton {
+  body #prezentareGenerala_1 #prezGenBtn #locationButton {
     width: 125px;
   }
   body #beneficiiX3 .beneficii {
@@ -824,11 +824,7 @@
   body header {
     height: 177px;
   }
-  body header .hd_container {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-  body header .hd_container h2, body header .hd_container h3 {
+  body header .hd_container #head_right_container h2, body header .hd_container #head_right_container h3 {
     display: block;
     font-family: "Lora";
     font-style: normal;
@@ -840,37 +836,24 @@
     margin: 0;
     height: 50px;
     line-height: 50px;
-  }
-  body header .hd_container h2 {
     white-space: nowrap;
-    margin: 25px 35px auto auto;
   }
-  body header .hd_container h3 {
+  body header .hd_container #head_right_container h3 {
     float: left;
-    margin-top: 15px;
-  }
-  body header .hd_container figure {
-    margin: 0;
-  }
-  body header .hd_container figure img {
-    height: 150px;
-    margin: 10px;
   }
   body header .hd_container .listLinkLogo {
-    margin: 20px 10px 15px auto;
-    position: relative;
+    margin: auto 20px 25px auto;
     padding: 0;
-    float: right;
   }
   body header .hd_container .listLinkLogo a {
     display: inline;
     margin-right: 20px;
   }
-  body #prezentareGenerala_1 h2 {
+  #prezentareGenerala_1 h2 {
     width: 600px;
     padding-top: 65px;
   }
-  body #prezentareGenerala_1 br {
+  #prezentareGenerala_1 br {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

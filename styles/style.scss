@@ -86,7 +86,7 @@
                     margin: 0;
                     padding-bottom: 25px;
                 }
- 
+                
                 #prezGenBtn {
                     display: flex;
                     flex-direction: column;
@@ -96,6 +96,7 @@
                     button {
                         @include buttonStd;
                         @include flexCenterRowCenter(row);
+                        
                         img {
                             padding-right: 10px;
                         }
@@ -105,7 +106,6 @@
                     color: #fff;
                     border: 2px solid #05668D;
                     }
-                    iframe
                     #locationButton {
                             width: 125px;
                         }
@@ -671,44 +671,33 @@
     body {
         header {
             height: 177px;
-            .hd_container { 
-                flex-wrap: nowrap;
-                justify-content: space-between;
-                h2,h3 {
-                    display: block;
-                    @include h2Title;
-                    margin: 0;
-                    height: 50px;
-                    line-height: 50px;
-                }
-                h2 {
-                    white-space: nowrap;
-                    margin: 25px 35px auto auto;
-                }
-                h3 {
-                    float: left;
-                    margin-top: 15px;
-               }
-                figure {
-                    margin: 0;
-                    img {
-                        height: 150px;
-                        margin: 10px;
+            .hd_container {
+                #head_right_container { 
+                    h2,h3 {
+                        display: block;
+                        @include h2Title;
+                        margin: 0;
+                        height: 50px;
+                        line-height: 50px;
+                        white-space: nowrap;
                     }
-                }    
+                    h3 {
+                        float: left;
+                    }
+                }
                 .listLinkLogo {
-                     margin: 20px 10px 15px auto;
-                     position: relative;
+                     margin: auto 20px 25px auto; 
                      padding: 0;
-                     float: right;
-
+                     
                     a {
                         display: inline;
                         margin-right: 20px;
                        
                     }
                 }    
+            
             }
+        }
         }
         #prezentareGenerala_1 {
             h2 {
@@ -721,4 +710,4 @@
         }
     }
     
-}
+
