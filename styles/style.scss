@@ -3,6 +3,7 @@
 
 @media screen and (min-width: 0px) {
     body {
+        //cod reutilizabil de clase nu apartine de headear
         .header-title {
                     height: 300px;
                     background: no-repeat center/cover url('/img/backgServicii.png');
@@ -14,17 +15,16 @@
                         color: #F0F3BD;
                     }
                 }
-        
+        ///hedear  
          .hd_container {
                     display:flex;
+                    justify-content: space-evenly;
                     align-items: center;
-                    flex-wrap: nowrap;
-                    justify-content: space-around;
                     h2,h3 {
                         display: none;
                     }
                     figure { 
-                        
+                        margin: 0;
                         img{
                             width: 100%;
                             height: auto;
@@ -32,11 +32,9 @@
                     }
                 }
                 .listLinkLogo {
-                    position: absolute;
-                    padding: 15px 0 0 280px;
-                    a {
-                        display:flex;
-                        flex-direction: column;
+                    display:flex;
+                    flex-direction: column;
+                    a { 
                         margin-bottom:25px;
                     }
                     img {
@@ -672,29 +670,45 @@
         header {
             height: 177px;
             .hd_container {
-                #head_right_container { 
-                    h2,h3 {
-                        display: block;
-                        @include h2Title;
-                        margin: 0;
-                        height: 50px;
-                        line-height: 50px;
-                        white-space: nowrap;
-                    }
-                    h3 {
-                        float: left;
-                    }
+                height: 177px;
+                display: grid;
+                grid-gap: 5px;
+                grid-template-areas: 
+                'logoImg  HouseGarden HouseGarden'
+                'logoImg  Turda linkLogo ';
+
+
+                figure {
+                    grid-area: logoImg;
+                    max-height: 150px;
+                    margin: 0;
+                }   
+                h2 {
+                    white-space: nowrap;
+                    grid-area: HouseGarden; 
+                }
+                h3 {
+                    grid-area: Turda;
                 }
                 .listLinkLogo {
-                     margin: auto 20px 25px auto; 
-                     padding: 0;
-                     
+                    position: relative;
+                    grid-area: linkLogo;
+                    padding: 0;
+                    display: flex;
+                    margin: auto;
                     a {
-                        display: inline;
-                        margin-right: 20px;
-                       
+                        margin: 0 20px 0 0; 
                     }
-                }    
+                }
+
+                // multiple selection
+                h2, h3 {
+                    display: grid;
+                    @include h2Title;
+                    margin: 0;
+                    line-height: normal;
+                }
+                
             
             }
         }

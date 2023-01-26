@@ -19,24 +19,24 @@
   }
   body .hd_container {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-around;
   }
   body .hd_container h2, body .hd_container h3 {
     display: none;
+  }
+  body .hd_container figure {
+    margin: 0;
   }
   body .hd_container figure img {
     width: 100%;
     height: auto;
   }
   body .listLinkLogo {
-    position: absolute;
-    padding: 15px 0 0 280px;
-  }
-  body .listLinkLogo a {
     display: flex;
     flex-direction: column;
+  }
+  body .listLinkLogo a {
     margin-bottom: 25px;
   }
   body .listLinkLogo img {
@@ -824,8 +824,36 @@
   body header {
     height: 177px;
   }
-  body header .hd_container #head_right_container h2, body header .hd_container #head_right_container h3 {
-    display: block;
+  body header .hd_container {
+    height: 177px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: "logoImg  HouseGarden HouseGarden" "logoImg  Turda linkLogo ";
+  }
+  body header .hd_container figure {
+    grid-area: logoImg;
+    max-height: 150px;
+    margin: 0;
+  }
+  body header .hd_container h2 {
+    white-space: nowrap;
+    grid-area: HouseGarden;
+  }
+  body header .hd_container h3 {
+    grid-area: Turda;
+  }
+  body header .hd_container .listLinkLogo {
+    position: relative;
+    grid-area: linkLogo;
+    padding: 0;
+    display: flex;
+    margin: auto;
+  }
+  body header .hd_container .listLinkLogo a {
+    margin: 0 20px 0 0;
+  }
+  body header .hd_container h2, body header .hd_container h3 {
+    display: grid;
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -834,20 +862,7 @@
     text-align: center;
     color: #FFFFFF;
     margin: 0;
-    height: 50px;
-    line-height: 50px;
-    white-space: nowrap;
-  }
-  body header .hd_container #head_right_container h3 {
-    float: left;
-  }
-  body header .hd_container .listLinkLogo {
-    margin: auto 20px 25px auto;
-    padding: 0;
-  }
-  body header .hd_container .listLinkLogo a {
-    display: inline;
-    margin-right: 20px;
+    line-height: normal;
   }
   #prezentareGenerala_1 h2 {
     width: 600px;
