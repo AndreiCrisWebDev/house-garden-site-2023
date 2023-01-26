@@ -17,33 +17,7 @@
     color: #FFFFFF;
     color: #F0F3BD;
   }
-  body .hd_container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  body .hd_container h2, body .hd_container h3 {
-    display: none;
-  }
-  body .hd_container figure {
-    margin: 0;
-  }
-  body .hd_container figure img {
-    width: 100%;
-    height: auto;
-  }
-  body .listLinkLogo {
-    display: flex;
-    flex-direction: column;
-  }
-  body .listLinkLogo a {
-    margin-bottom: 25px;
-  }
-  body .listLinkLogo img {
-    max-width: 43px;
-    height: auto;
-  }
-  body header, body footer {
+  body footer {
     width: 100%;
     background-image: url("/img/backgroundImg.png");
     background-repeat: no-repeat;
@@ -51,7 +25,44 @@
     background-size: cover;
     margin: 0;
     box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
-    max-height: 255px;
+    height: 255px;
+  }
+  body header {
+    background-image: url("/img/backgroundImg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
+  }
+  body header .hd_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .hd_container h2, body header .hd_container h3 {
+    display: none;
+  }
+  body header .hd_container figure {
+    margin: 0;
+    width: 221px;
+    padding: 15px;
+  }
+  body header .hd_container figure img {
+    width: 100%;
+    height: auto;
+  }
+  body header .listLinkLogo {
+    display: flex;
+    flex-direction: column;
+  }
+  body header .listLinkLogo a {
+    margin: 10px;
+  }
+  body header .listLinkLogo img {
+    min-width: 30px;
+    max-width: 43px;
+    height: auto;
+    width: 100%;
   }
   body #prezentareGenerala_1 {
     width: 100%;
@@ -820,7 +831,7 @@
     color: #fff;
   }
 }
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 767px) {
   body header {
     height: 177px;
   }
@@ -828,12 +839,15 @@
     height: 177px;
     display: grid;
     grid-gap: 5px;
-    grid-template-areas: "logoImg  HouseGarden HouseGarden" "logoImg  Turda linkLogo ";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "logoImg  HouseGarden HouseGarden " "logoImg  Turda linkLogo  ";
   }
   body header .hd_container figure {
     grid-area: logoImg;
-    max-height: 150px;
     margin: 0;
+  }
+  body header .hd_container figure img {
+    max-height: 150px;
   }
   body header .hd_container h2 {
     white-space: nowrap;
@@ -847,6 +861,7 @@
     grid-area: linkLogo;
     padding: 0;
     display: flex;
+    flex-direction: row;
     margin: auto;
   }
   body header .hd_container .listLinkLogo a {
