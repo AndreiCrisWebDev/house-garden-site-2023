@@ -66,7 +66,7 @@
   }
   body #prezentareGenerala_1 {
     width: 100%;
-    height: 1063.78px;
+    height: auto;
     background-image: url("/img/backgroundImg.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -97,12 +97,11 @@
     line-height: 51px;
     text-align: center;
     color: #FFFFFF;
-    width: 300px;
-    margin: 0;
-    padding-top: 25px;
+    max-width: 700px;
+    margin: 24px 30px 0 30px;
   }
   body #prezentareGenerala_1 > img {
-    margin: 24px 0 24px 0;
+    margin: 24px 0;
   }
   body #prezentareGenerala_1 p {
     font-family: "Hind Madurai";
@@ -112,15 +111,15 @@
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
-    width: 300px;
-    margin: 0;
+    max-width: 700px;
+    margin: 0 30px;
     padding-bottom: 25px;
   }
   body #prezentareGenerala_1 #prezGenBtn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
+    margin: 15px 0 50px 0;
   }
   body #prezentareGenerala_1 #prezGenBtn button {
     background-color: #05668D;
@@ -197,8 +196,9 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    height: 837px;
+    height: auto;
     color: rgb(5, 102, 141);
+    margin-bottom: 50px;
   }
   body #RelaxeazăTe h2 {
     font-family: "Lora";
@@ -222,8 +222,7 @@
     text-align: center;
     color: #FFFFFF;
     color: rgb(5, 102, 141);
-    margin: 0;
-    padding-top: 20px;
+    padding: 20px 30px 0 30px;
   }
   body #RelaxeazăTe p {
     font-family: "Hind Madurai";
@@ -233,9 +232,8 @@
     line-height: 28px;
     text-align: center;
     color: rgb(5, 102, 141);
-    width: 350px;
-    margin: 0;
-    padding-top: 20px;
+    max-width: 700px;
+    padding: 20px 30px 0 30px;
   }
   body #RelaxeazăTe button {
     background-color: #05668D;
@@ -257,12 +255,12 @@
     border: 2px solid #05668D;
   }
   body #RelaxeazăTe iframe {
-    height: 225px;
     width: 100%;
     margin-top: 55px;
+    aspect-ratio: 16/9;
   }
   body #alegeCam {
-    height: 2500px;
+    height: auto;
     width: 100%;
     background: rgb(2, 128, 144);
     display: flex;
