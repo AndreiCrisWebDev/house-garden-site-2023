@@ -141,7 +141,8 @@
                 }
             }
         }
-        //  section RelaxeazăTe 
+///////////////////////////////////////////////////////
+///////////  SECTION RelaxeazăTe /////////////
         #RelaxeazăTe {
             @include flexCenterRowCenter(column);
             height: auto;
@@ -179,8 +180,8 @@
 
             }
         }
-        // section alege camera 
-                    // section alege camera 
+///////////////////////////////////////////
+///////////  SECTION alegeCam /////////////
         #alegeCam {
             height: auto;
             width: 100%;
@@ -188,6 +189,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding-bottom: 100px;
 
             h2 {
                 font-family: 'Lora';
@@ -204,6 +206,7 @@
             }
 
             .camGallery {
+                width: 100%;
                 h1{
                     @include textCategori;
                     @include padding30margin0;
@@ -215,7 +218,7 @@
                 .camParGall {
                     background: no-repeat center/cover url('/img/camPar1-4.png'); 
                     height: 510px;
-                    margin: 30px 10px 0 10px;
+                    margin: 30px 20px 0 20px;
                     figure {
                         display: flex;
                         justify-content: space-between;
@@ -224,22 +227,29 @@
                     }
                 }
                 .gall3img {
-                            margin: 0 10px;
+                        margin: 0 20px;
                         display: flex;
                         justify-content: space-between;
                     figure {
-                            background: no-repeat center/cover url('/img/camPar2-4.png');
-                            
-                            height: 50px;
-                            width: 100%;
-                            margin: 10px 5px 10px 5px;
+                        background: no-repeat center/cover url('/img/camPar2-4.png');    
+                        height: auto;
+                        aspect-ratio: 16/9;
+                        width: 100%;
+                        margin: 10px 5px 10px 5px;
                     }
                     figure:nth-child(2) {
-                        background: url('/img/camPar3-4.png');
+                        background: no-repeat center/cover url('/img/camPar3-4.png');
                     }
                     figure:nth-child(3) {
-                        background: url('/img/camPar4-4.png');
+                        background: no-repeat center/cover url('/img/camPar4-4.png');
                     }
+                    figure:first-child {
+                        margin-left: 0px;
+                    }
+                    figure:last-child {
+                        margin-right: 0px;
+                    }
+
                 }
             } 
             .camGallery1 {
@@ -250,7 +260,6 @@
                 .gall3img {
                     figure {
                         background:no-repeat center/cover url('/img/camAp2-5.png');
-                        height: 38px;
                     }
                     figure:nth-child(2) {
                         background:no-repeat center/cover url('/img/camAp3-5.png');
@@ -271,7 +280,6 @@
                 .gall3img {
                     figure {
                         background:no-repeat center/cover url('/img/Ext2-5.png');
-                        height: 38px;
                     }
                     figure:nth-child(2) {
                         background:no-repeat center/cover url('/img/Ext3-5.png');
@@ -288,194 +296,187 @@
                     }
                 }
             }
-            // section servicii
-            #servicii {
-                background: rgba(238, 238, 238, 1);
-                // .header-title {
-                //     height: 300px;
-                //     background: no-repeat center/cover url('/img/backgServicii.png');
-                //     display: flex;
-                //     justify-content: center;
-                //     align-items: center;
-                //     h1 {
-                //         @include h1T;
-                //         color: #F0F3BD;
-                //     }
-                // }
-                #servicii-hd {
-                    width: 350px;
+ ///////////////////////////////////////////
+///////////  SECTION servicii /////////////
+        #servicii {
+            background: rgba(238, 238, 238, 1);
+            margin-bottom: 50px;
+            #servicii-hd {
+                width: 100%;
+                margin: auto;
+                h5 {
+                    @include h2TS;
+                    color:rgba(5, 102, 141, 1);
+                    margin: 50px 0 15px 0;
+                }
+                >img {
+                    display: block;
                     margin: auto;
-                    
-                    h5 {
-                      @include h2TS;
-                      color:rgba(5, 102, 141, 1);
-                      margin: 50px 0 15px 0;
-                    }
-                    >img {
-                        margin:0px;
-                    }
-                    h1 {
-                        @include textCategori;
-                        color:rgba(5, 102, 141, 1);
-                        margin: 15px 10px 30px 10px;
-                    }
-                    p {
-                       @include textNormal;
-                       color:rgba(5, 102, 141, 1);
-                       margin: 0 10px 50px 10px;
-                    }
                 }
-                .servicii-container {
-                    width: 330px;
-                    height: 250px;
-                    margin: 0 auto 50px auto;
-                    
-                    img {
-                        display: block;
-                        margin:auto;
-                    }
-
-                    h1 {
-                        @include textCategori;
-                        margin: 25px auto;
-                        color:rgba(5, 102, 141, 1);
-                    }
-                    p {
-                        @include textNormal;
-                        color:rgba(5, 102, 141, 1);
-                    }
+                h1 {
+                    @include textCategori;
+                    color:rgba(5, 102, 141, 1);
+                    margin: 30px 30px;
                 }
-                .servicii-container:last-child {
-                    height: 300px;
-                    padding-bottom: 50px;
-                    margin-bottom: 0px;
+                p {
+                    @include textNormal;
+                    color:rgba(5, 102, 141, 1);
+                    margin: 0 30px 50px 30px;
                 }
             }
-            // section atracti
-            #atracti {
-                .container_atractii {
-                    margin: 0 auto 50px auto;
-
-                    .img_atracti_container {
-                        background: no-repeat center/cover url('/img/atracti_acasa.png');
-                        height: 500px;
-                        max-width: 390px;
-                    }
-                    .prieteni {
-                        background: no-repeat center/cover url('/img/atracti_prieteni.png');
-                    }
-                    .salina {
-                        background: no-repeat center/cover url('/img/atracti_salina.png');
-                    } 
-                    div {
-                        height: 513px;
-                        background: #EEEEEE;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        h1 {
-                            padding-top: 40px;
-                            margin: 0 auto;
-                            @include textCategori;
-                            color: rgba(5, 102, 141, 1);
-                        }
-                        img {
-                            margin: 20px 0;
-                        }
-                        p {
-                            width: 310px;
-                            @include grup_text;
-                            color: rgba(5, 102, 141, 1);
-                        }
-                        button { 
-                            @include buttonStd;
-                            width: 173px;
-                            height: 43px;
-                            color: rgba(5, 102, 141, 1);
-                            border: 2px solid #05668D;
-                            background: #EEEEEE;
-                        }
-                        button:hover {
-                            background: rgba(5, 102, 141, 1);
-                            color: #EEEEEE;
-                        }
-                    }
-                   
+            .servicii-container {
+            
+                height: auto;
+                margin: 0 30px 50px 30px;
+                
+                img {
+                    display: block;
+                    margin:auto;
                 }
-                 .container_atractii:last-child {
-                        margin: 0;
-                     }
-            } 
-            // section review
-            #reviewCount {
-                height: 1250px;
-                background: rgba(238, 238, 238, 1);
-                margin: 0;
-                padding-top: 50px;
-                .reviewCount_container {
+
+                h1 {
+                    @include textCategori;
+                    margin: 25px auto;
+                    color:rgba(5, 102, 141, 1);
+                }
+                p {
+                    @include textNormal;
+                    color:rgba(5, 102, 141, 1);
+                }
+            }
+            .servicii-container:last-child {
+                height: 300px;
+                padding-bottom: 50px;
+                margin-bottom: 0px;
+            }
+        }
+///////////////////////////////////////////
+///////////  SECTION atracti /////////////
+        #atracti {
+            .container_atractii {
+                margin: 0 auto 50px auto;
+                .img_atracti_container {
+                    background: no-repeat center/cover url('/img/atracti_acasa.png');
+                    height: 500px;
+                    max-width: 1024px;
+                }
+                .prieteni {
+                    background: no-repeat center/cover url('/img/atracti_prieteni.png');
+                }
+                .salina {
+                    background: no-repeat center/cover url('/img/atracti_salina.png');
+                } 
+                div {
+                    height: auto;
+                    background: #EEEEEE;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                }
-                h1 { 
-                    font-family: 'Monotype Corsiva';
-                    font-style: italic;
-                    font-weight: 400;
-                    font-size: 96px;
-                    line-height: 108px;
-                    color: #05668D;
-                    margin: 20px 0 0 0;
-                }
-                p {
-                    @include grup_text;
-                    color: #05668D;
-                    margin: 0;
-                }
-
-                .camGallery {
-                    margin: 100px 0 ;
-                    h1{
-                        @include h1T;
+                    padding-bottom: 50px;
+                    h1 {
+                        padding-top: 40px;
+                        margin: 0 auto;
+                        @include textCategori;
                         color: rgba(5, 102, 141, 1);
                     }
-                   
-                    .camParGall {
-                        background: no-repeat center/cover url('/img/gall_1_5.png'); 
-                        height: 510px;
-                        margin: 30px 10px 0 10px;
-                        figure {
-                            display: flex;
-                            justify-content: space-between;
-                            padding-top: 250px;
-                            margin: 0px 10px;
-                        }
+                    img {
+                        margin: 20px 0;
                     }
-                    .gall3img {
-                            margin: 0 10px;
-                            display: flex;
-                            justify-content: space-between;
-                        figure {
-                              background: no-repeat center/cover url('/img/gall_2_5.png');                          
-                              height: 35px;
-                              width: 100%;
-                              margin: 10px 5px 10px 5px;
-                        }
-                        figure:nth-child(2) {
-                            background: no-repeat center/cover url('/img/gall_3_5.png')
-                        }
-                        figure:nth-child(3) {
-                            background: no-repeat center/cover url('/img/gall_4_5.png')
-                        }
-                        figure:nth-child(4) {
-                            background: no-repeat center/cover url('/img/gall_5_5.png')
-                        }figure:nth-child(5) {
-                            background: no-repeat center/cover url('/img/gall_6_5.png')
-                        }
+                    p {
+                        margin: 0 30px;
+                        @include grup_text;
+                        color: rgba(5, 102, 141, 1);
                     }
-                } 
-
-
+                    button { 
+                        @include buttonStd;
+                        width: 173px;
+                        height: 43px;
+                        color: rgba(5, 102, 141, 1);
+                        border: 2px solid #05668D;
+                        background: #EEEEEE;
+                        margin: 50px;
+                    }
+                    button:hover {
+                        background: rgba(5, 102, 141, 1);
+                        color: #EEEEEE;
+                    }
+                }
+                
             }
+            .container_atractii:last-child {
+                margin: 0;
+                }
+        } 
+///////////////////////////////////////////
+///////////  SECTION reviewCount /////////////
+        #reviewCount {
+            height: 100%;
+            background: rgba(238, 238, 238, 1);
+            margin: 0;
+            padding-top: 50px;
+            margin-bottom: 50px;
+            .reviewCount_container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            h1 { 
+                font-family: 'Monotype Corsiva';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 96px;
+                line-height: 108px;
+                color: #05668D;
+                margin: 20px 0 0 0;
+            }
+            p {
+                @include grup_text;
+                color: #05668D;
+                margin: 0;
+            }
+            .camGallery {
+                margin: 100px 0 ;
+                h1{
+                    @include h1T;
+                    color: rgba(5, 102, 141, 1);
+                }
+                .camParGall {
+                    background: no-repeat center/cover url('/img/gall_1_5.png'); 
+                    height: 510px;
+                    margin: 30px 10px 0 10px;
+                    figure {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 250px;
+                        margin: 0px 10px;
+                    }
+                }
+                .gall3img {
+                        margin: 0 5px;
+                        display: flex;
+                        justify-content: space-between;
+                    figure {
+                            background: no-repeat center/cover url('/img/gall_2_5.png');                          
+                            height: auto;
+                            aspect-ratio: 16/9;
+                            width: 100%;
+                            margin: 10px 5px 10px 5px;
+                    }
+                    figure:nth-child(2) {
+                        background: no-repeat center/cover url('/img/gall_3_5.png')
+                    }
+                    figure:nth-child(3) {
+                        background: no-repeat center/cover url('/img/gall_4_5.png')
+                    }
+                    figure:nth-child(4) {
+                        background: no-repeat center/cover url('/img/gall_5_5.png')
+                    }
+                    figure:nth-child(5) {
+                        background: no-repeat center/cover url('/img/gall_6_5.png')
+                    }
+                }
+            } 
+        }
             #ceSpunClienti {
                 .header-title {
                     margin-top: 50px;

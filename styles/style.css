@@ -266,6 +266,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
   }
   body #alegeCam h2 {
     font-family: "Lora";
@@ -279,6 +280,9 @@
   }
   body #alegeCam > img {
     margin-top: 20px;
+  }
+  body #alegeCam .camGallery {
+    width: 100%;
   }
   body #alegeCam .camGallery h1 {
     font-family: "Montserrat";
@@ -306,7 +310,7 @@
   body #alegeCam .camGallery .camParGall {
     background: no-repeat center/cover url("/img/camPar1-4.png");
     height: 510px;
-    margin: 30px 10px 0 10px;
+    margin: 30px 20px 0 20px;
   }
   body #alegeCam .camGallery .camParGall figure {
     display: flex;
@@ -315,21 +319,28 @@
     margin: 0px 10px;
   }
   body #alegeCam .camGallery .gall3img {
-    margin: 0 10px;
+    margin: 0 20px;
     display: flex;
     justify-content: space-between;
   }
   body #alegeCam .camGallery .gall3img figure {
     background: no-repeat center/cover url("/img/camPar2-4.png");
-    height: 50px;
+    height: auto;
+    aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
   body #alegeCam .camGallery .gall3img figure:nth-child(2) {
-    background: url("/img/camPar3-4.png");
+    background: no-repeat center/cover url("/img/camPar3-4.png");
   }
   body #alegeCam .camGallery .gall3img figure:nth-child(3) {
-    background: url("/img/camPar4-4.png");
+    background: no-repeat center/cover url("/img/camPar4-4.png");
+  }
+  body #alegeCam .camGallery .gall3img figure:first-child {
+    margin-left: 0px;
+  }
+  body #alegeCam .camGallery .gall3img figure:last-child {
+    margin-right: 0px;
   }
   body #alegeCam .camGallery1 {
     margin-top: 50px;
@@ -339,7 +350,6 @@
   }
   body #alegeCam .camGallery1 .gall3img figure {
     background: no-repeat center/cover url("/img/camAp2-5.png");
-    height: 38px;
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(2) {
     background: no-repeat center/cover url("/img/camAp3-5.png");
@@ -358,7 +368,6 @@
   }
   body #alegeCam .camGallery2 .gall3img figure {
     background: no-repeat center/cover url("/img/Ext2-5.png");
-    height: 38px;
   }
   body #alegeCam .camGallery2 .gall3img figure:nth-child(2) {
     background: no-repeat center/cover url("/img/Ext3-5.png");
@@ -374,9 +383,10 @@
   }
   body #servicii {
     background: rgb(238, 238, 238);
+    margin-bottom: 50px;
   }
   body #servicii #servicii-hd {
-    width: 350px;
+    width: 100%;
     margin: auto;
   }
   body #servicii #servicii-hd h5 {
@@ -392,7 +402,8 @@
     margin: 50px 0 15px 0;
   }
   body #servicii #servicii-hd > img {
-    margin: 0px;
+    display: block;
+    margin: auto;
   }
   body #servicii #servicii-hd h1 {
     font-family: "Montserrat";
@@ -403,7 +414,7 @@
     text-align: center;
     color: #F0F3BD;
     color: rgb(5, 102, 141);
-    margin: 15px 10px 30px 10px;
+    margin: 30px 30px;
   }
   body #servicii #servicii-hd p {
     font-family: "Hind Madurai";
@@ -414,12 +425,11 @@
     text-align: center;
     color: #fff;
     color: rgb(5, 102, 141);
-    margin: 0 10px 50px 10px;
+    margin: 0 30px 50px 30px;
   }
   body #servicii .servicii-container {
-    width: 330px;
-    height: 250px;
-    margin: 0 auto 50px auto;
+    height: auto;
+    margin: 0 30px 50px 30px;
   }
   body #servicii .servicii-container img {
     display: block;
@@ -457,7 +467,7 @@
   body #atracti .container_atractii .img_atracti_container {
     background: no-repeat center/cover url("/img/atracti_acasa.png");
     height: 500px;
-    max-width: 390px;
+    max-width: 1024px;
   }
   body #atracti .container_atractii .prieteni {
     background: no-repeat center/cover url("/img/atracti_prieteni.png");
@@ -466,11 +476,12 @@
     background: no-repeat center/cover url("/img/atracti_salina.png");
   }
   body #atracti .container_atractii div {
-    height: 513px;
+    height: auto;
     background: #EEEEEE;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
   }
   body #atracti .container_atractii div h1 {
     padding-top: 40px;
@@ -488,7 +499,7 @@
     margin: 20px 0;
   }
   body #atracti .container_atractii div p {
-    width: 310px;
+    margin: 0 30px;
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -513,6 +524,7 @@
     color: rgb(5, 102, 141);
     border: 2px solid #05668D;
     background: #EEEEEE;
+    margin: 50px;
   }
   body #atracti .container_atractii div button:hover {
     background: rgb(5, 102, 141);
@@ -522,10 +534,11 @@
     margin: 0;
   }
   body #reviewCount {
-    height: 1250px;
+    height: 100%;
     background: rgb(238, 238, 238);
     margin: 0;
     padding-top: 50px;
+    margin-bottom: 50px;
   }
   body #reviewCount .reviewCount_container {
     display: flex;
@@ -576,13 +589,14 @@
     margin: 0px 10px;
   }
   body #reviewCount .camGallery .gall3img {
-    margin: 0 10px;
+    margin: 0 5px;
     display: flex;
     justify-content: space-between;
   }
   body #reviewCount .camGallery .gall3img figure {
     background: no-repeat center/cover url("/img/gall_2_5.png");
-    height: 35px;
+    height: auto;
+    aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
