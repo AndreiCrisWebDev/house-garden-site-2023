@@ -24,7 +24,7 @@
             box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
             height: 255px;
         }
-///////////////////////////////////////////////////////
+//////////////////////////////////////////
 ///////////   HEDEAR /////////////////////
         header { 
             background-image: url("/img/backgroundImg.png");
@@ -477,196 +477,201 @@
                 }
             } 
         }
-            #ceSpunClienti {
-                .header-title {
-                    margin-top: 50px;
-                }
-                .booking_review {
-                    max-width: 350px;
-                    height: 200px;
-                    margin: 70px auto 0 auto;
-                    background: rgba(2, 128, 144, 1);
-                    border-radius: 4px;
-                }
-                .test img:nth-child(1) {
-                    grid-area: logoInitial;
-                    width: auto;
-                    margin: auto;
-                }
-                .test h1 {
-                    grid-area: cliName;
-                    @include  h2TS;
-                    text-align: left;
-                    width: auto;
-                    margin: auto auto 0 0;
-
-                }
-                .test h2 {
-                    grid-area: date;
-                    margin: 0;
-                    @include  textNormalComent;
-                    text-align: left;
-                }
-                .test img:nth-child(4) {
-                    grid-area: logoBooking;
-                    width: auto;
-                    margin: 0 0 auto auto;
-                    
-                }
-                 .test img:nth-child(5) {
-                    grid-area: nota;
-                    width: auto;
-                    margin: auto 0 auto auto;
-                    
-                }
-                 .test img:nth-child(6) {
-                    grid-area: verifide;
-                    width: auto;
-                    margin: auto auto auto 0;
-                }
-                 .test p {
-                    grid-area: coments;
-                    margin: 0;
-                    @include textNormalComent;
-
-                }
-                .test {
-                    display: grid;
-                    grid-gap: 5px;
-                    padding: 10px;
-                    grid-template-areas:
-                    'logoInitial cliName cliName cliName logoBooking'
-                    'logoInitial date date date logoBooking'
-                    'nota verifide verifide verifide verifide'
-                    'coments coments coments coments coments'
-                    'coments coments coments coments coments'
-                    'coments coments coments coments coments'
-                    'coments coments coments coments coments'
-                    'coments coments coments coments coments'
-                    'coments coments coments coments coments';
-                }
-                .bulina_review_selected {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    .bulina {
-                        width: 10px;
-                        height: 10px;
-                        border-radius:100%;
-                        margin: 5px;
-                        background-color: rgba(5, 102, 141, 1);
-                    }
-                    .bulina:hover {
-                        width: 15px;
-                        height: 15px;
-                    }
-                }
-            }
-            // sectiunea Contacteazane
-            #contactează-ne {
-                margin-top: 100px;
-                .header-title {
-                background: no-repeat center/cover url('/img/background_ce_spun_clienti.png');
-                }
-                .contact_container {
-                    height: 900px;
-                    background: #028090;
-                    display: flex;
-                    flex-direction: column;
-                    div {
-                        padding-top: 40px;
-                        margin: auto;
-                        max-height: 280px;
-                        img {
-                            margin: auto;
-                            display: block;
-                        }
-
-                        h2 {
-                            @include textCategori;
-                        }
-
-                        p {
-                            @include h2TS;
-                            color: #F0F3BD;
-                        }
-                    }
-                }
-            }
-            #map_question {
+///////////////////////////////////////////
+///////////  SECTION ceSpunClienti ///////
+        #ceSpunClienti {
+            .header-title {
                 margin-top: 50px;
-                h1 {
-                    @include h1T;
-                    color: rgba(5, 102, 141, 1);
+            }
+            .booking_review {
+                max-width: 350px;
+                height: 200px;
+                margin: 70px auto 0 auto;
+                background: rgba(2, 128, 144, 1);
+                border-radius: 4px;
+            }
+            .test img:nth-child(1) {
+                grid-area: logoInitial;
+                width: auto;
+                margin: auto;
+            }
+            .test h1 {
+                grid-area: cliName;
+                @include  h2TS;
+                text-align: left;
+                width: auto;
+                margin: auto auto 0 0;
+
+            }
+            .test h2 {
+                grid-area: date;
+                margin: 0;
+                @include  textNormalComent;
+                text-align: left;
+            }
+            .test img:nth-child(4) {
+                grid-area: logoBooking;
+                width: auto;
+                margin: 0 0 auto auto;
+                
+            }
+                .test img:nth-child(5) {
+                grid-area: nota;
+                width: auto;
+                margin: auto 0 auto auto;
+                
+            }
+                .test img:nth-child(6) {
+                grid-area: verifide;
+                width: auto;
+                margin: auto auto auto 0;
+            }
+                .test p {
+                grid-area: coments;
+                margin: 0;
+                @include textNormalComent;
+
+            }
+            .test {
+                display: grid;
+                grid-gap: 5px;
+                padding: 10px;
+                grid-template-areas:
+                'logoInitial cliName cliName cliName logoBooking'
+                'logoInitial date date date logoBooking'
+                'nota verifide verifide verifide verifide'
+                'coments coments coments coments coments'
+                'coments coments coments coments coments'
+                'coments coments coments coments coments'
+                'coments coments coments coments coments'
+                'coments coments coments coments coments'
+                'coments coments coments coments coments';
+            }
+            .bulina_review_selected {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                .bulina {
+                    width: 10px;
+                    height: 10px;
+                    border-radius:100%;
+                    margin: 5px;
+                    background-color: rgba(5, 102, 141, 1);
                 }
-                h2 {
-                    @include h2TS;
-                    color: rgba(5, 102, 141, 1);
+                .bulina:hover {
+                    width: 15px;
+                    height: 15px;
                 }
-                #map_question_details {
-                    margin-top: 50px;
-                    details {
-                        width: 350px;
+            }
+        }
+///////////////////////////////////////////
+///////////  SECTION contactează-ne///////
+        #contactează-ne {
+            margin-top: 100px;
+            .header-title {
+            background: no-repeat center/cover url('/img/background_ce_spun_clienti.png');
+            }
+            .contact_container {
+                height: 900px;
+                background: #028090;
+                display: flex;
+                flex-direction: column;
+                div {
+                    padding-top: 40px;
+                    margin: auto;
+                    max-height: 280px;
+                    img {
                         margin: auto;
-                        height: 42px; 
-                        border-bottom:3px solid #05668D;
-                        summary {
-                            @include textNormal;
-                            color: #05668D;
-                            text-align: left;
-                            line-height: 42px;
-                        }                       
-                        p {
-                            // height: 100px;
-                            width: 300px;
-                            margin: auto;
-                            @include textNormal;
-                            text-align: left;
-                            color: #05668D;
-                         }
-                     } 
-                     details[open] {
-                        margin-top: 15px;
-                        height: 110px;
+                        display: block;
+                    }
+
+                    h2 {
+                        @include textCategori;
+                    }
+
+                    p {
+                        @include h2TS;
+                        color: #F0F3BD;
+                    }
+                }
+            }
+        }
+///////////////////////////////////////////
+///////////  SECTION map_question///////        
+        #map_question {
+            margin-top: 50px;
+            h1 {
+                @include h1T;
+                color: rgba(5, 102, 141, 1);
+            }
+            h2 {
+                @include h2TS;
+                color: rgba(5, 102, 141, 1);
+            }
+            #map_question_details {
+                margin-top: 50px;
+                details {
+                    margin: 0 30px;
+                    height: 42px; 
+                    border-bottom:3px solid #05668D;
+                    summary {
+                        @include textNormal;
+                        color: #05668D;
+                        text-align: left;
+                        line-height: 42px;
+                    }                       
+                    p {
+                        width: 300px;
+                        margin: auto;
+                        @include textNormal;
+                        text-align: left;
+                        color: #05668D;
+                    }
+                } 
+                    details[open] {
+                    margin-top: 15px;
+                    height: 110px;
                         p {
                             line-height: normal;
                         }
-                     }
-                }
-                 iframe {
-
-                    width: 370px; 
-                    height: 522px;
-                }
-            } 
-            footer {
-                margin-top: 50px;
-                height: 255px;
-                .listLinkLogofooter {
-                    margin: 25px auto auto 15px;
-                    padding: 0;
-                    a {
-                        width: 43px;
-                        height: 43px;
-                        img  {
-                            margin: 0;
-                            padding: 0;
-                        }
+                    }
+            }
+            iframe {
+                width: 100%;
+                margin: 0 30px; 
+                height: 522px;
+            }
+        } 
+///////////////////////////////////
+///////////  SECTION footer /////// 
+        footer {
+            margin-top: 50px;
+            height: 255px;
+            .listLinkLogofooter {
+                margin: 25px auto auto 15px;
+                padding: 0;
+                a {
+                    width: 43px;
+                    height: 43px;
+                    img  {
+                        margin: 0;
+                        padding: 0;
                     }
                 }
-                img {
-                    display: block;
-                    width: 247px;
-                    margin: auto 40px auto auto;
-                    padding-top: 25px;
-                }
-                h4 {
-                    @include grup_text;
-                    margin: 0;
-                    color: #fff;
-                }
             }
+            img {
+                display: block;
+                width: 247px;
+                margin: auto 40px auto auto;
+                padding-top: 25px;
+            }
+            h4 {
+                @include grup_text;
+                margin: 0;
+                color: #fff;
+            }
+        }
         }        
 }
 @media screen and (min-width: 767px) {

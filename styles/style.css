@@ -769,8 +769,7 @@
     margin-top: 50px;
   }
   body #map_question #map_question_details details {
-    width: 350px;
-    margin: auto;
+    margin: 0 30px;
     height: 42px;
     border-bottom: 3px solid #05668D;
   }
@@ -807,7 +806,8 @@
     line-height: normal;
   }
   body #map_question iframe {
-    width: 370px;
+    width: 100%;
+    margin: 0 30px;
     height: 522px;
   }
   body footer {
