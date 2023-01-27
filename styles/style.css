@@ -17,16 +17,6 @@
     color: #FFFFFF;
     color: #F0F3BD;
   }
-  body footer {
-    width: 100%;
-    background-image: url("/img/backgroundImg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0;
-    box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
-    height: 255px;
-  }
   body header {
     background-image: url("/img/backgroundImg.png");
     background-repeat: no-repeat;
@@ -770,7 +760,7 @@
   }
   body #map_question #map_question_details details {
     margin: 0 30px;
-    height: 42px;
+    height: auto;
     border-bottom: 3px solid #05668D;
   }
   body #map_question #map_question_details details summary {
@@ -783,10 +773,10 @@
     color: #fff;
     color: #05668D;
     text-align: left;
-    line-height: 42px;
+    padding: 5px 0;
   }
   body #map_question #map_question_details details p {
-    width: 300px;
+    width: auto;
     margin: auto;
     font-family: "Hind Madurai";
     font-style: normal;
@@ -800,37 +790,47 @@
   }
   body #map_question #map_question_details details[open] {
     margin-top: 15px;
-    height: 110px;
+    height: auto;
   }
   body #map_question #map_question_details details[open] p {
     line-height: normal;
+    padding-bottom: 5px;
   }
   body #map_question iframe {
-    width: 100%;
-    margin: 0 30px;
-    height: 522px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: block;
+    border: 0;
+    aspect-ratio: 1/1;
   }
   body footer {
     margin-top: 50px;
-    height: 255px;
+    height: auto;
+    width: 100%;
+    background-image: url("/img/backgroundImg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
   }
-  body footer .listLinkLogofooter {
-    margin: 25px auto auto 15px;
-    padding: 0;
+  body footer #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-  body footer .listLinkLogofooter a {
+  body footer #container .listLinkLogofooter {
+    display: flex;
+    flex-direction: column;
+  }
+  body footer #container .listLinkLogofooter a {
+    margin: 10px;
     width: 43px;
     height: 43px;
   }
-  body footer .listLinkLogofooter a img {
-    margin: 0;
-    padding: 0;
-  }
-  body footer img {
-    display: block;
-    width: 247px;
-    margin: auto 40px auto auto;
-    padding-top: 25px;
+  body footer #container .listLinkLogofooter img {
+    max-width: 43px;
+    height: auto;
   }
   body footer h4 {
     font-family: "Hind Madurai";
