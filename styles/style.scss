@@ -488,12 +488,14 @@
                     justify-content: space-around;
                     align-items: center;
                     >img {
+                        max-width: 40px;
                         margin: 15px 10px auto 10px;
                     }
                     .nume_client_data {
                         margin-right: 100px;
                         h1 {
                             @include  h2TS;
+                            white-space: nowrap;
                         }
                         h2 {
                             @include textNormalComent;
@@ -546,11 +548,9 @@
                         margin: auto;
                         display: block;
                     }
-
                     h2 {
                         @include textCategori;
                     }
-
                     p {
                         @include h2TS;
                         color: #F0F3BD;
@@ -596,7 +596,7 @@
                 height: auto;
                     p {
                         line-height: normal;
-                        padding-bottom: 5px;
+                        padding: 10px 0 10px 25px;
                     }
                 }
         }

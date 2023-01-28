@@ -620,6 +620,7 @@
     align-items: center;
   }
   body #ceSpunClienti .google_review .test_1_3 > img {
+    max-width: 40px;
     margin: 15px 10px auto 10px;
   }
   body #ceSpunClienti .google_review .test_1_3 .nume_client_data {
@@ -634,6 +635,7 @@
     text-align: center;
     letter-spacing: 0.3em;
     color: #FFFFFF;
+    white-space: nowrap;
   }
   body #ceSpunClienti .google_review .test_1_3 .nume_client_data h2 {
     font-family: "Hind Madurai";
@@ -776,7 +778,7 @@
   }
   body #map_question #map_question_details details[open] p {
     line-height: normal;
-    padding-bottom: 5px;
+    padding: 10px 0 10px 25px;
   }
   body #map_question iframe {
     width: 90%;
