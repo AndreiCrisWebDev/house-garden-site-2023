@@ -605,20 +605,27 @@
   body #ceSpunClienti .header-title {
     margin-top: 50px;
   }
-  body #ceSpunClienti .booking_review {
+  body #ceSpunClienti .google_review {
     max-width: 350px;
-    height: 200px;
+    height: auto;
     margin: 70px auto 0 auto;
     background: rgb(2, 128, 144);
     border-radius: 4px;
+    padding: 10px;
   }
-  body #ceSpunClienti .test img:nth-child(1) {
-    grid-area: logoInitial;
-    width: auto;
-    margin: auto;
+  body #ceSpunClienti .google_review .test_1_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
-  body #ceSpunClienti .test h1 {
-    grid-area: cliName;
+  body #ceSpunClienti .google_review .test_1_3 > img {
+    margin: 15px 10px auto 10px;
+  }
+  body #ceSpunClienti .google_review .test_1_3 .nume_client_data {
+    margin-right: 100px;
+  }
+  body #ceSpunClienti .google_review .test_1_3 .nume_client_data h1 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -627,51 +634,26 @@
     text-align: center;
     letter-spacing: 0.3em;
     color: #FFFFFF;
-    text-align: left;
-    width: auto;
-    margin: auto auto 0 0;
   }
-  body #ceSpunClienti .test h2 {
-    grid-area: date;
-    margin: 0;
+  body #ceSpunClienti .google_review .test_1_3 .nume_client_data h2 {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     text-align: left;
     color: #fff;
-    text-align: left;
+    margin-top: 0;
   }
-  body #ceSpunClienti .test img:nth-child(4) {
-    grid-area: logoBooking;
-    width: auto;
+  body #ceSpunClienti .google_review .google_review img:nth-child(3) {
     margin: 0 0 auto auto;
   }
-  body #ceSpunClienti .test img:nth-child(5) {
-    grid-area: nota;
-    width: auto;
-    margin: auto 0 auto auto;
-  }
-  body #ceSpunClienti .test img:nth-child(6) {
-    grid-area: verifide;
-    width: auto;
-    margin: auto auto auto 0;
-  }
-  body #ceSpunClienti .test p {
-    grid-area: coments;
-    margin: 0;
+  body #ceSpunClienti .google_review p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     text-align: left;
     color: #fff;
-  }
-  body #ceSpunClienti .test {
-    display: grid;
-    grid-gap: 5px;
-    padding: 10px;
-    grid-template-areas: "logoInitial cliName cliName cliName logoBooking" "logoInitial date date date logoBooking" "nota verifide verifide verifide verifide" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments";
   }
   body #ceSpunClienti .bulina_review_selected {
     width: 100%;
