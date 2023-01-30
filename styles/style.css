@@ -605,8 +605,14 @@
   body #ceSpunClienti .header-title {
     margin-top: 50px;
   }
+  body #ceSpunClienti #booking_group, body #ceSpunClienti #google_group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
   body #ceSpunClienti .google_review {
     max-width: 350px;
+    min-height: 210px;
     height: auto;
     margin: 70px auto 0 auto;
     background: rgb(2, 128, 144);
@@ -657,6 +663,9 @@
     text-align: left;
     color: #fff;
   }
+  body #ceSpunClienti .google_review:nth-child(n+2) {
+    display: none;
+  }
   body #ceSpunClienti .bulina_review_selected {
     width: 100%;
     height: 100%;
@@ -673,6 +682,9 @@
   body #ceSpunClienti .bulina_review_selected .bulina:hover {
     width: 15px;
     height: 15px;
+  }
+  body #ceSpunClienti #booking_group .google_review :nth-child(3) {
+    padding-bottom: 3px;
   }
   body #contactează-ne {
     margin-top: 100px;
@@ -875,11 +887,17 @@
     margin: 0;
     line-height: normal;
   }
-  #prezentareGenerala_1 h2 {
+  body #prezentareGenerala_1 h2 {
     width: 600px;
     padding-top: 65px;
   }
-  #prezentareGenerala_1 br {
+  body #prezentareGenerala_1 br {
+    display: none;
+  }
+  body #ceSpunClienti .google_review:nth-child(2) {
+    display: block;
+  }
+  body #ceSpunClienti .bulina_review_selected {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */

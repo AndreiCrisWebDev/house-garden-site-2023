@@ -475,8 +475,14 @@
             .header-title {
                 margin-top: 50px;
             }
+            #booking_group,#google_group {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
             .google_review {
                 max-width: 350px;
+                min-height: 210px;
                 height: auto;
                 margin: 70px auto 0 auto;
                 background: rgb(2, 128, 144);
@@ -510,6 +516,9 @@
                     @include textNormalComent;
                 }  
             }
+            .google_review:nth-child(n + 2) {
+                display: none;
+            }
             .bulina_review_selected {
                 width: 100%;
                 height: 100%;
@@ -527,6 +536,9 @@
                     height: 15px;
                 }
             }
+             #booking_group .google_review :nth-child(3) {
+                 padding-bottom: 3px;
+             }
         }
 ///////////////////////////////////////////
 ///////////  SECTION contactează-ne///////
@@ -696,7 +708,6 @@
             
             }
         }
-        }
         #prezentareGenerala_1 {
             h2 {
                 width: 600px;
@@ -706,6 +717,13 @@
                 display: none;
             }
         }
+        #ceSpunClienti { 
+            .google_review:nth-child(2) {
+                display: block;
+            }
+            .bulina_review_selected {
+                display: none;
+            }
+        }
     }
-    
-
+}
