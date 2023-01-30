@@ -110,10 +110,11 @@
 ///////////////////////////////////////////////////////
 ///////////  SECTION beneficiiX3 /////////////
         #beneficiiX3 {
+            margin-bottom: 50px;
             .beneficii {
                 height: 350px;
                 background: rgba(2, 128, 144, 1);
-                margin-top: 30px;
+                margin: 30px 0;
                 @include flexCenterRowCenter(column);
                 img {
                     max-width:66px;
@@ -136,10 +137,10 @@
 ///////////////////////////////////////////////////////
 ///////////  SECTION RelaxeazăTe /////////////
         #RelaxeazăTe {
-            @include flexCenterRowCenter(column);
             height: auto;
             color: rgba(5, 102, 141, 1);
             margin-bottom: 50px;
+            background: #EEEEEE;
             h2 {
                 @include h2TS;
                 color: rgba(5, 102, 141, 1);
@@ -158,7 +159,8 @@
             button {
                 @include buttonStd;
                 width: 155px;
-                margin-top: 20px;
+                display: block;
+                margin: 0 auto 20px auto;
             }
             button:hover {
                 background-color: #fff;
@@ -287,7 +289,7 @@
                     } 
                     }
                 }
-            }
+        }
  ///////////////////////////////////////////
 ///////////  SECTION servicii /////////////
         #servicii {
@@ -301,7 +303,7 @@
                     color:rgba(5, 102, 141, 1);
                     margin: 50px 0 15px 0;
                 }
-                >img {
+                img {
                     display: block;
                     margin: auto;
                 }
@@ -317,15 +319,12 @@
                 }
             }
             .servicii-container {
-            
                 height: auto;
                 margin: 0 30px 50px 30px;
-                
                 img {
                     display: block;
                     margin:auto;
                 }
-
                 h1 {
                     @include textCategori;
                     margin: 25px auto;
@@ -748,6 +747,64 @@
                 @include textnormal_768;
             }
         }
+        }
+        #RelaxeazăTe {
+           
+            /// flex container
+            >div {
+                display: flex;
+            }
+            ///img div
+            
+            div>div:first-child {
+                width: 100%;
+                background: no-repeat center/cover url('/img/backgroundImg.png'); 
+            }
+            div>div:last-child {
+                width: 100%;
+                
+            }
+        }
+        #servicii {
+            padding-bottom: 50px;
+            #big_servicii_containe {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .servicii-container {
+                    width: 350px;
+                    p {
+                        @include textnormal_768;
+                    }
+                }
+            }
+            #servicii-hd {
+                display: flex;
+                align-items: center;
+                >:first-child {
+                    width: 100%;
+                    margin: 100px 50px 100px 100px;
+                    h5 {
+                        margin-top: 0;
+                    }
+                    h1 {
+                        margin: 0;
+                    }
+                    img {
+                        display: none;
+                    }
+                }
+                >:last-child {
+                    width: 100%;
+                    margin: 100px 100px 100px 50px;
+                    p {
+                        @include textnormal_768;
+                        margin:0;
+                    }
+                }
+
+            }
+
         }
     }
 }
