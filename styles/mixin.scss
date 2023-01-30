@@ -134,3 +134,12 @@ text-align: center;
     color: #FFFFFF;
 }
 
+@mixin textnormal_768 {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+

@@ -686,6 +686,12 @@
   body #ceSpunClienti #booking_group .google_review :nth-child(3) {
     padding-bottom: 3px;
   }
+  body #ceSpunClienti #booking_group .google_review :nth-child(2) {
+    padding-left: 10px;
+  }
+  body #ceSpunClienti #booking_group .google_review .test_1_3 > img {
+    border-radius: 100%;
+  }
   body #contactează-ne {
     margin-top: 100px;
   }
@@ -899,5 +905,27 @@
   }
   body #ceSpunClienti .bulina_review_selected {
     display: none;
+  }
+  body #beneficiiX3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  body #beneficiiX3 .beneficii {
+    height: auto;
+    margin: 30px 40px 100px 40px;
+  }
+  body #beneficiiX3 .beneficii h1 {
+    width: auto;
+    padding: 30px 20px 0 20px;
+  }
+  body #beneficiiX3 .beneficii p {
+    width: auto;
+    padding: 30px 30px 50px 30px;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */

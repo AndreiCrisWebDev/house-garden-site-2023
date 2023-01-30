@@ -539,6 +539,12 @@
              #booking_group .google_review :nth-child(3) {
                  padding-bottom: 3px;
              }
+             #booking_group .google_review :nth-child(2) {
+                 padding-left: 10px;
+             }
+             #booking_group .google_review .test_1_3 >img {
+                border-radius: 100%;
+             }
         }
 ///////////////////////////////////////////
 ///////////  SECTION contactează-ne///////
@@ -724,6 +730,24 @@
             .bulina_review_selected {
                 display: none;
             }
+        }
+        #beneficiiX3 {
+            display: flex;
+            justify-content: space-between;
+            .beneficii {
+                height: auto;
+                margin: 30px 40px 100px 40px;
+            
+            h1 {
+                width: auto;
+                padding: 30px 20px 0 20px;
+            }
+            p{
+                width: auto;
+                padding: 30px 30px 50px 30px;
+                @include textnormal_768;
+            }
+        }
         }
     }
 }
