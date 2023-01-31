@@ -525,10 +525,13 @@
   }
   body #reviewCount {
     height: 100%;
-    background: rgb(238, 238, 238);
     margin: 0;
     padding-top: 50px;
     margin-bottom: 50px;
+  }
+  body #reviewCount > :first-child {
+    background: rgb(238, 238, 238);
+    padding-bottom: 30px;
   }
   body #reviewCount .reviewCount_container {
     display: flex;
@@ -699,7 +702,7 @@
     background: no-repeat center/cover url("/img/background_ce_spun_clienti.png");
   }
   body #contactează-ne .contact_container {
-    height: 900px;
+    height: auto;
     background: #028090;
     display: flex;
     flex-direction: column;
@@ -732,6 +735,7 @@
     letter-spacing: 0.3em;
     color: #FFFFFF;
     color: #F0F3BD;
+    word-break: break-all;
   }
   body #map_question {
     margin-top: 50px;
@@ -986,5 +990,28 @@
     line-height: 28px;
     text-align: center;
     margin: 0;
+  }
+  body #atracti .container_atractii {
+    display: flex;
+    flex-direction: row;
+  }
+  body #atracti .container_atractii div {
+    width: 100%;
+  }
+  body #atracti .container_atractii div button {
+    margin: 45px auto 0px auto;
+  }
+  body #reviewCount > :first-child {
+    background: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body #contactează-ne .contact_container {
+    flex-direction: row;
+  }
+  body #contactează-ne .contact_container div {
+    width: 204px;
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
