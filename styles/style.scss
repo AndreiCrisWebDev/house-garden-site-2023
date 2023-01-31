@@ -149,7 +149,7 @@
             h1 {
                 @include h1T; 
                 color: rgba(5, 102, 141, 1);
-                padding: 20px 30px 0 30px;    
+                padding: 0 20px;
             }
             p {
                 @include pRelax;
@@ -186,13 +186,9 @@
             padding-bottom: 100px;
 
             h2 {
-                font-family: 'Lora';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 24px;
-                letter-spacing: 0.3em;
-                color: #F0F3BD;
+                @include h2TS;
                 @include padding30margin0;
+                color: #F0F3BD;
             }
 
             >img {
@@ -208,6 +204,7 @@
                 p{
                     @include h2TS;
                     @include padding30margin0;
+                    color: #F0F3BD;
                 }
                 .camParGall {
                     background: no-repeat center/cover url('/img/camPar1-4.png'); 
@@ -562,7 +559,7 @@
                 display: flex;
                 flex-direction: column;
                 div {
-                    padding-top: 40px;
+                    padding: 40px 0;
                     margin: auto;
                     max-height: 280px;
                     img {
@@ -656,6 +653,9 @@
                         max-width: 43px;
                         height: auto;
                     }
+                }
+                #footer_text {
+                    display: none;
                 } 
              }    
             h4 {
@@ -668,6 +668,9 @@
 }
 @media screen and (min-width: 767px) {
     body {
+        .header-title h1 {
+            @include housegardenT_768px;
+        }
         header {
             height: 177px;
             .hd_container {
@@ -718,8 +721,14 @@
                 width: 600px;
                 padding-top: 65px;
             }
+            h1 {
+                @include housegardenT_768px;
+            }
             br {
                 display: none;
+            }
+            p {
+                @include textnormal_768;
             }
         }
         #ceSpunClienti { 
@@ -760,6 +769,13 @@
             div>div:last-child {
                 width: 100%;   
             }
+        }
+        #alegeCam {
+            h2 {
+                font-size: 40px;
+                padding-bottom: 20px;
+            }
+
         }
         #servicii {
             padding-bottom: 50px;
@@ -826,12 +842,49 @@
         #contactează-ne {
             .contact_container {
                 flex-direction: row;
+                margin: 50px 15px;
+                border-radius: 100px;
                 div {
                     width: 204px;
                     height: auto;
                 }
             }
 
+        }
+        #map_question {
+            display: flex;
+            >:first-child {
+                width: 100%;
+                #map_question_details {
+                    summary , p {
+                    @include textnormal_768;
+                    text-align: left;
+                    }
+                }
+            }
+            iframe {
+                width: 100%;
+            }
+        }
+        footer {
+            #container {
+                align-items: center;
+                .listLinkLogofooter {
+                    flex-direction: row;
+                }
+                #footer_text {
+                    display: block;
+                     h2, h3 {
+                    @include h2Title;
+                    font-size:  5vw;
+                    margin: 0;
+                    line-height: normal;
+                    }
+                }
+                img {
+                    margin-top: 10px;
+                }
+            }
         }
     }
 }

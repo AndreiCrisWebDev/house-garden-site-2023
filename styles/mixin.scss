@@ -12,10 +12,10 @@
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
 }
 
@@ -100,9 +100,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
-
-
-text-align: center;
+    text-align: center;
 }
 
 @mixin padding30margin0 {
@@ -142,5 +140,15 @@ text-align: center;
     line-height: 28px;
     text-align: center;
 }
+
+@mixin housegardenT_768px {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 71px;
+    text-align: center;
+}
+
 
 

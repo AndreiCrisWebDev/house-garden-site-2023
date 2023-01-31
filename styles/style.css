@@ -71,10 +71,10 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
     margin: 0;
     padding-top: 100px;
@@ -193,10 +193,10 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
     color: rgb(5, 102, 141);
     margin: 0;
@@ -211,7 +211,7 @@
     text-align: center;
     color: #FFFFFF;
     color: rgb(5, 102, 141);
-    padding: 20px 30px 0 30px;
+    padding: 0 20px;
   }
   body #RelaxeazăTe p {
     font-family: "Hind Madurai";
@@ -262,11 +262,14 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    letter-spacing: 0.3em;
-    color: #F0F3BD;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
     padding: 30px 0 0 0;
     margin: 0;
+    color: #F0F3BD;
   }
   body #alegeCam > img {
     margin-top: 20px;
@@ -289,13 +292,14 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
     padding: 30px 0 0 0;
     margin: 0;
+    color: #F0F3BD;
   }
   body #alegeCam .camGallery .camParGall {
     background: no-repeat center/cover url("/img/camPar1-4.png");
@@ -383,10 +387,10 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
     color: rgb(5, 102, 141);
     margin: 50px 0 15px 0;
@@ -639,10 +643,10 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
     white-space: nowrap;
   }
@@ -708,7 +712,7 @@
     flex-direction: column;
   }
   body #contactează-ne .contact_container div {
-    padding-top: 40px;
+    padding: 40px 0;
     margin: auto;
     max-height: 280px;
   }
@@ -729,10 +733,10 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
     color: #F0F3BD;
     word-break: break-all;
@@ -754,10 +758,10 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 20px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
     color: rgb(5, 102, 141);
   }
@@ -838,6 +842,9 @@
     max-width: 43px;
     height: auto;
   }
+  body footer #container #footer_text {
+    display: none;
+  }
   body footer h4 {
     font-family: "Hind Madurai";
     font-style: normal;
@@ -850,6 +857,14 @@
   }
 }
 @media screen and (min-width: 767px) {
+  body .header-title h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 71px;
+    text-align: center;
+  }
   body header {
     height: 177px;
   }
@@ -901,8 +916,24 @@
     width: 600px;
     padding-top: 65px;
   }
+  body #prezentareGenerala_1 h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 71px;
+    text-align: center;
+  }
   body #prezentareGenerala_1 br {
     display: none;
+  }
+  body #prezentareGenerala_1 p {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
   }
   body #ceSpunClienti .google_review:nth-child(2) {
     display: block;
@@ -941,6 +972,10 @@
   }
   body #RelaxeazăTe div > div:last-child {
     width: 100%;
+  }
+  body #alegeCam h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
   }
   body #servicii {
     padding-bottom: 50px;
@@ -1009,9 +1044,53 @@
   }
   body #contactează-ne .contact_container {
     flex-direction: row;
+    margin: 50px 15px;
+    border-radius: 100px;
   }
   body #contactează-ne .contact_container div {
     width: 204px;
     height: auto;
+  }
+  body #map_question {
+    display: flex;
+  }
+  body #map_question > :first-child {
+    width: 100%;
+  }
+  body #map_question > :first-child #map_question_details summary, body #map_question > :first-child #map_question_details p {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-align: left;
+  }
+  body #map_question iframe {
+    width: 100%;
+  }
+  body footer #container {
+    align-items: center;
+  }
+  body footer #container .listLinkLogofooter {
+    flex-direction: row;
+  }
+  body footer #container #footer_text {
+    display: block;
+  }
+  body footer #container #footer_text h2, body footer #container #footer_text h3 {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7vw;
+    line-height: 82px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 5vw;
+    margin: 0;
+    line-height: normal;
+  }
+  body footer #container img {
+    margin-top: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
