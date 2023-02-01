@@ -29,9 +29,6 @@
     justify-content: center;
     align-items: center;
   }
-  body header .hd_container h2, body header .hd_container h3 {
-    display: none;
-  }
   body header .hd_container figure {
     margin: 0;
     width: 221px;
@@ -41,14 +38,17 @@
     width: 100%;
     height: auto;
   }
-  body header .listLinkLogo {
+  body header .hd_container > div {
+    display: none;
+  }
+  body header .hd_container .listLinkLogo {
     display: flex;
     flex-direction: column;
   }
-  body header .listLinkLogo a {
+  body header .hd_container .listLinkLogo a {
     margin: 10px;
   }
-  body header .listLinkLogo img {
+  body header .hd_container .listLinkLogo img {
     min-width: 30px;
     max-width: 43px;
     height: auto;
@@ -738,6 +738,7 @@
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
+    font-size: 15px;
     color: #F0F3BD;
     word-break: break-all;
   }
@@ -869,39 +870,33 @@
     height: 177px;
   }
   body header .hd_container {
-    height: 177px;
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-areas: "logoImg  HouseGarden HouseGarden " "logoImg  Turda linkLogo  ";
+    justify-content: space-around;
   }
   body header .hd_container figure {
-    grid-area: logoImg;
     margin: 0;
   }
   body header .hd_container figure img {
     max-height: 150px;
   }
-  body header .hd_container h2 {
-    white-space: nowrap;
-    grid-area: HouseGarden;
+  body header .hd_container > div {
+    display: block;
   }
-  body header .hd_container h3 {
-    grid-area: Turda;
+  body header .hd_container > div h2 {
+    white-space: nowrap;
+    font-size: 5vw;
+  }
+  body header .hd_container > div h3 {
+    font-size: 4vw;
   }
   body header .hd_container .listLinkLogo {
-    position: relative;
-    grid-area: linkLogo;
     padding: 0;
     display: flex;
     flex-direction: row;
-    margin: auto;
   }
   body header .hd_container .listLinkLogo a {
     margin: 0 20px 0 0;
   }
   body header .hd_container h2, body header .hd_container h3 {
-    display: grid;
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -1092,5 +1087,103 @@
   }
   body footer #container img {
     margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .hd_container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #beneficiiX3 {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #beneficiiX3 .beneficii {
+    width: 60%;
+  }
+  body #RelaxeazăTe > div {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #RelaxeazăTe iframe {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  body #alegeCam .camGallery {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  body #servicii #big_servicii_containe, body #servicii #servicii-hd {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #atracti {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #atracti .img_atracti_container {
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+  }
+  body #atracti .container_atractii {
+    margin-bottom: 100px;
+  }
+  body #atracti .container_atractii div:last-child {
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+  body #reviewCount {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #contactează-ne .contact_container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #map_question {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body footer #container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body footer #footer_text h2 {
+    font-size: 55px !important;
+  }
+  body footer #footer_text h3 {
+    font-size: 55px !important;
+  }
+}
+@media screen and (min-width: 1368px) {
+  body header .hd_container h2 {
+    font-size: 65px !important;
+  }
+  body header .hd_container h3 {
+    font-size: 55px !important;
+  }
+  body header .hd_container .listLinkLogo a {
+    margin: 0 15px 0 15px !important;
+  }
+  body .google_review:nth-child(3) {
+    display: block !important;
+  }
+  body #booking_group, body #google_group {
+    width: 1368px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }/*# sourceMappingURL=style.css.map */

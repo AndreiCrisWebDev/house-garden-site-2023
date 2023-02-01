@@ -26,9 +26,7 @@
                 display:flex;
                 justify-content: center;
                 align-items: center;
-                h2,h3 {
-                    display: none;
-                }
+                
                 figure { 
                     margin: 0;
                     width: 221px;
@@ -38,8 +36,10 @@
                         height: auto;
                     }
                 }
-            }
-            .listLinkLogo {
+                >div {
+                    display: none;
+                }
+                .listLinkLogo {
                 display:flex;
                 flex-direction: column;
                 a { 
@@ -52,6 +52,8 @@
                     width: 100%;
                 }
             }       
+            }
+            
         }       
 ///////////////////////////////////////////////////////
 ///////////  SECTION prezentareGenerala_1 /////////////
@@ -571,6 +573,7 @@
                     }
                     p {
                         @include h2TS;
+                        font-size: 15px;
                         color: #F0F3BD;
                         word-break: break-all;
                     }
@@ -666,6 +669,8 @@
         }
     }        
 }
+///////////////////////////////////
+///////////  min-width: 767px /////// 
 @media screen and (min-width: 767px) {
     body {
         .header-title h1 {
@@ -674,42 +679,34 @@
         header {
             height: 177px;
             .hd_container {
-                height: 177px;
-                display: grid;
-                grid-gap: 5px;
-                grid-template-columns: 33% 33% 33%;
-                grid-template-areas: 
-                'logoImg  HouseGarden HouseGarden '
-                'logoImg  Turda linkLogo  ';
+                justify-content: space-around;
                 figure {
-                    grid-area: logoImg;
                     margin: 0;
                     img {
                         max-height: 150px;
                     }
-                }   
-                h2 {
-                    white-space: nowrap;
-                    grid-area: HouseGarden; 
-                }
-                h3 {
-                    grid-area: Turda;
-                }
+                } 
+                >div {
+                    display: block;
+                    h2 {
+                        white-space: nowrap;
+                        font-size: 5vw;
+                    }
+                    h3 {
+                        font-size: 4vw;
+                    }
+                }  
+                
                 .listLinkLogo {
-                    position: relative;
-                    grid-area: linkLogo;
                     padding: 0;
                     display: flex;
                     flex-direction: row;
-                    margin: auto;
-                    
                     a {
                         margin: 0 20px 0 0; 
                     }
                 }
                 // multiple selection
                 h2, h3 {
-                    display: grid;
                     @include h2Title;
                     margin: 0;
                     line-height: normal;
@@ -855,6 +852,9 @@
             display: flex;
             >:first-child {
                 width: 100%;
+                // display: flex;
+                // flex-direction: column;
+                // justify-content: center;
                 #map_question_details {
                     summary , p {
                     @include textnormal_768;
@@ -886,5 +886,105 @@
                 }
             }
         }
+    }
+}
+///////////////////////////////////
+///////////  min-width: 1024px /////// 
+@media screen and (min-width: 1024px) {
+    body {
+        .hd_container {
+            @include maxW1024pxMarginA;
+        }
+        #beneficiiX3 {
+            @include maxW1024pxMarginA;
+            .beneficii {
+                width: 60%;
+            }       
+        }
+        #RelaxeazăTe {
+            >div {
+                @include maxW1024pxMarginA;
+            }
+            iframe {
+                @include maxW1024pxMarginA;
+                display: block;
+            }
+        }
+        #alegeCam {
+            .camGallery {
+                @include maxW1024pxMarginA;
+                margin-bottom: 100px;
+            }
+        }
+        #servicii {
+            #big_servicii_containe,#servicii-hd {
+                @include maxW1024pxMarginA;
+            }
+        }
+        #atracti {
+            @include maxW1024pxMarginA;
+            .img_atracti_container {
+                border-top-left-radius: 10%;
+                border-bottom-left-radius: 10%;
+            }
+            .container_atractii {
+                margin-bottom: 100px;
+                div:last-child {
+                    border-top-right-radius: 10%;
+                    border-bottom-right-radius: 10%;
+                }
+            }    
+        }
+        #reviewCount {
+            @include maxW1024pxMarginA;    
+        }   
+        #contactează-ne .contact_container {
+            @include maxW1024pxMarginA;
+        }
+        #map_question {
+            @include maxW1024pxMarginA
+        }
+        footer {
+            #container {
+                @include maxW1024pxMarginA;;
+            }
+            #footer_text {
+                h2 {
+                    font-size: 55px !important;
+                }
+                h3 {
+                   font-size: 55px !important; 
+                }
+           } 
+        }
+    }
+}
+///////////////////////////////////
+///////////  min-width: 1368px /////// 
+@media screen and (min-width: 1368px) {
+    body {
+        header .hd_container {
+            h2 {
+                font-size: 65px !important;
+            }
+            h3 {
+                font-size: 55px !important;
+            }
+            .listLinkLogo a {
+                margin: 0 15px 0 15px !important;
+            }
+            
+            
+        } 
+        .google_review:nth-child(3) {
+                display: block !important;
+        }
+        #booking_group,#google_group {
+            width: 1368px;
+            margin-right: auto;
+            margin-left: auto;
+            
+        }    
+
     }
 }
