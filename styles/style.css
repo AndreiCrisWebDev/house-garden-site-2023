@@ -1,13 +1,36 @@
 @charset "UTF-8";
 @media screen and (min-width: 0px) {
-  body .header-title {
+  body #main_page {
+    display: block;
+    margin: 20px auto;
+    background-color: #05668D;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    color: #F0F3BD;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    width: 173px;
+    height: 43px;
+    color: #fff;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  body #main_page:hover {
+    background: #F0F3BD;
+    color: #05668D;
+  }
+  .header-title {
     height: 300px;
     background: no-repeat center/cover url("/img/backgServicii.png");
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  body .header-title h1 {
+  .header-title h1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -17,44 +40,44 @@
     color: #FFFFFF;
     color: #F0F3BD;
   }
-  body header {
+  header {
     background-image: url("/img/backgroundImg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
   }
-  body header .hd_container {
+  header .hd_container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  body header .hd_container figure {
+  header .hd_container figure {
     margin: 0;
     width: 221px;
     padding: 15px;
   }
-  body header .hd_container figure img {
+  header .hd_container figure img {
     width: 100%;
     height: auto;
   }
-  body header .hd_container > div {
+  header .hd_container > div {
     display: none;
   }
-  body header .hd_container .listLinkLogo {
+  header .hd_container .listLinkLogo {
     display: flex;
     flex-direction: column;
   }
-  body header .hd_container .listLinkLogo a {
+  header .hd_container .listLinkLogo a {
     margin: 10px;
   }
-  body header .hd_container .listLinkLogo img {
+  header .hd_container .listLinkLogo img {
     min-width: 30px;
     max-width: 43px;
     height: auto;
     width: 100%;
   }
-  body #prezentareGenerala_1 {
+  #prezentareGenerala_1 {
     width: 100%;
     height: auto;
     background-image: url("/img/backgroundImg.png");
@@ -67,7 +90,7 @@
     display: flex;
     flex-direction: column;
   }
-  body #prezentareGenerala_1 h2 {
+  #prezentareGenerala_1 h2 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -76,10 +99,11 @@
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
+    font-size: 15px;
     margin: 0;
     padding-top: 100px;
   }
-  body #prezentareGenerala_1 h1 {
+  #prezentareGenerala_1 h1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -90,10 +114,10 @@
     max-width: 700px;
     margin: 24px 30px 0 30px;
   }
-  body #prezentareGenerala_1 > img {
+  #prezentareGenerala_1 > img {
     margin: 24px 0;
   }
-  body #prezentareGenerala_1 p {
+  #prezentareGenerala_1 p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -105,13 +129,13 @@
     margin: 0 30px;
     padding-bottom: 25px;
   }
-  body #prezentareGenerala_1 #prezGenBtn {
+  #prezentareGenerala_1 #prezGenBtn {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 15px 0 50px 0;
   }
-  body #prezentareGenerala_1 #prezGenBtn button {
+  #prezentareGenerala_1 #prezGenBtn button {
     background-color: #05668D;
     border-radius: 5px;
     height: 40px;
@@ -128,21 +152,21 @@
     align-items: center;
     justify-content: center;
   }
-  body #prezentareGenerala_1 #prezGenBtn button img {
+  #prezentareGenerala_1 #prezGenBtn button img {
     padding-right: 10px;
   }
-  body #prezentareGenerala_1 #prezGenBtn button:hover {
+  #prezentareGenerala_1 #prezGenBtn button:hover {
     background: rgba(0, 0, 0, 0.1);
     color: #fff;
     border: 2px solid #05668D;
   }
-  body #prezentareGenerala_1 #prezGenBtn #locationButton {
+  #prezentareGenerala_1 #prezGenBtn #locationButton {
     width: 125px;
   }
-  body #beneficiiX3 {
+  #beneficiiX3 {
     margin-bottom: 50px;
   }
-  body #beneficiiX3 .beneficii {
+  #beneficiiX3 .beneficii {
     height: 350px;
     background: rgb(2, 128, 144);
     margin: 30px 0;
@@ -152,13 +176,13 @@
     align-items: center;
     justify-content: center;
   }
-  body #beneficiiX3 .beneficii img {
+  #beneficiiX3 .beneficii img {
     max-width: 66px;
     max-height: 66px;
     padding: 30px 0 0 0;
     margin: 0;
   }
-  body #beneficiiX3 .beneficii h1 {
+  #beneficiiX3 .beneficii h1 {
     width: 300px;
     font-family: "Montserrat";
     font-style: normal;
@@ -170,7 +194,7 @@
     padding: 30px 0 0 0;
     margin: 0;
   }
-  body #beneficiiX3 .beneficii p {
+  #beneficiiX3 .beneficii p {
     padding: 30px 0 0 0;
     width: 300px;
     font-family: "Hind Madurai";
@@ -183,13 +207,13 @@
     padding: 30px 0 0 0;
     margin: 0;
   }
-  body #RelaxeazăTe {
+  #RelaxeazăTe {
     height: auto;
     color: rgb(5, 102, 141);
     margin-bottom: 50px;
     background: #EEEEEE;
   }
-  body #RelaxeazăTe h2 {
+  #RelaxeazăTe h2 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -202,7 +226,7 @@
     margin: 0;
     padding-top: 20px;
   }
-  body #RelaxeazăTe h1 {
+  #RelaxeazăTe h1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -213,7 +237,7 @@
     color: rgb(5, 102, 141);
     padding: 0 20px;
   }
-  body #RelaxeazăTe p {
+  #RelaxeazăTe p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -224,7 +248,7 @@
     max-width: 700px;
     padding: 20px 30px 0 30px;
   }
-  body #RelaxeazăTe button {
+  #RelaxeazăTe button {
     background-color: #05668D;
     border-radius: 5px;
     height: 40px;
@@ -239,17 +263,17 @@
     display: block;
     margin: 0 auto 20px auto;
   }
-  body #RelaxeazăTe button:hover {
+  #RelaxeazăTe button:hover {
     background-color: #fff;
     color: #05668D;
     border: 2px solid #05668D;
   }
-  body #RelaxeazăTe iframe {
+  #RelaxeazăTe iframe {
     width: 100%;
     margin-top: 55px;
     aspect-ratio: 16/9;
   }
-  body #alegeCam {
+  #alegeCam {
     height: auto;
     width: 100%;
     background: rgb(2, 128, 144);
@@ -258,7 +282,7 @@
     align-items: center;
     padding-bottom: 100px;
   }
-  body #alegeCam h2 {
+  #alegeCam h2 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -271,13 +295,13 @@
     margin: 0;
     color: #F0F3BD;
   }
-  body #alegeCam > img {
+  #alegeCam > img {
     margin-top: 20px;
   }
-  body #alegeCam .camGallery {
+  #alegeCam .camGallery {
     width: 100%;
   }
-  body #alegeCam .camGallery h1 {
+  #alegeCam .camGallery h1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -288,7 +312,7 @@
     padding: 30px 0 0 0;
     margin: 0;
   }
-  body #alegeCam .camGallery p {
+  #alegeCam .camGallery p {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -301,89 +325,89 @@
     margin: 0;
     color: #F0F3BD;
   }
-  body #alegeCam .camGallery .camParGall {
+  #alegeCam .camGallery .camParGall {
     background: no-repeat center/cover url("/img/camPar1-4.png");
     height: 510px;
     margin: 30px 20px 0 20px;
   }
-  body #alegeCam .camGallery .camParGall figure {
+  #alegeCam .camGallery .camParGall figure {
     display: flex;
     justify-content: space-between;
     padding-top: 250px;
     margin: 0px 10px;
   }
-  body #alegeCam .camGallery .gall3img {
+  #alegeCam .camGallery .gall3img {
     margin: 0 20px;
     display: flex;
     justify-content: space-between;
   }
-  body #alegeCam .camGallery .gall3img figure {
+  #alegeCam .camGallery .gall3img figure {
     background: no-repeat center/cover url("/img/camPar2-4.png");
     height: auto;
     aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
-  body #alegeCam .camGallery .gall3img figure:nth-child(2) {
+  #alegeCam .camGallery .gall3img figure:nth-child(2) {
     background: no-repeat center/cover url("/img/camPar3-4.png");
   }
-  body #alegeCam .camGallery .gall3img figure:nth-child(3) {
+  #alegeCam .camGallery .gall3img figure:nth-child(3) {
     background: no-repeat center/cover url("/img/camPar4-4.png");
   }
-  body #alegeCam .camGallery .gall3img figure:first-child {
+  #alegeCam .camGallery .gall3img figure:first-child {
     margin-left: 0px;
   }
-  body #alegeCam .camGallery .gall3img figure:last-child {
+  #alegeCam .camGallery .gall3img figure:last-child {
     margin-right: 0px;
   }
-  body #alegeCam .camGallery1 {
+  #alegeCam .camGallery1 {
     margin-top: 50px;
   }
-  body #alegeCam .camGallery1 .camParGall {
+  #alegeCam .camGallery1 .camParGall {
     background: no-repeat center/cover url("/img/camAp1-5.png");
   }
-  body #alegeCam .camGallery1 .gall3img figure {
+  #alegeCam .camGallery1 .gall3img figure {
     background: no-repeat center/cover url("/img/camAp2-5.png");
   }
-  body #alegeCam .camGallery1 .gall3img figure:nth-child(2) {
+  #alegeCam .camGallery1 .gall3img figure:nth-child(2) {
     background: no-repeat center/cover url("/img/camAp3-5.png");
   }
-  body #alegeCam .camGallery1 .gall3img figure:nth-child(3) {
+  #alegeCam .camGallery1 .gall3img figure:nth-child(3) {
     background: no-repeat center/cover url("/img/camAp4-5.png");
   }
-  body #alegeCam .camGallery1 .gall3img figure:nth-child(4) {
+  #alegeCam .camGallery1 .gall3img figure:nth-child(4) {
     background: no-repeat center/cover url("/img/camAp5-5.png");
   }
-  body #alegeCam .camGallery2 {
+  #alegeCam .camGallery2 {
     margin-top: 50px;
   }
-  body #alegeCam .camGallery2 .camParGall {
+  #alegeCam .camGallery2 .camParGall {
     background: no-repeat center/cover url("/img/Ext1-5.jpg");
   }
-  body #alegeCam .camGallery2 .gall3img figure {
+  #alegeCam .camGallery2 .gall3img figure {
     background: no-repeat center/cover url("/img/Ext2-5.png");
   }
-  body #alegeCam .camGallery2 .gall3img figure:nth-child(2) {
+  #alegeCam .camGallery2 .gall3img figure:nth-child(2) {
     background: no-repeat center/cover url("/img/Ext3-5.png");
   }
-  body #alegeCam .camGallery2 .gall3img figure:nth-child(3) {
+  #alegeCam .camGallery2 .gall3img figure:nth-child(3) {
     background: no-repeat center/cover url("/img/Ex4-5.png");
   }
-  body #alegeCam .camGallery2 .gall3img figure:nth-child(4) {
+  #alegeCam .camGallery2 .gall3img figure:nth-child(4) {
     background: no-repeat center/cover url("/img/Ex5-5.png");
   }
-  body #alegeCam .camGallery2 .gall3img figure:nth-child(5) {
+  #alegeCam .camGallery2 .gall3img figure:nth-child(5) {
     background: no-repeat center/cover url("/img/Ex6-5.png");
   }
-  body #servicii {
+  #servicii {
     background: rgb(238, 238, 238);
     margin-bottom: 50px;
   }
-  body #servicii #servicii-hd {
+  #servicii #servicii-hd {
     width: 100%;
     margin: auto;
   }
-  body #servicii #servicii-hd h5 {
+  #servicii #servicii-hd h5 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -395,11 +419,11 @@
     color: rgb(5, 102, 141);
     margin: 50px 0 15px 0;
   }
-  body #servicii #servicii-hd img {
+  #servicii #servicii-hd img {
     display: block;
     margin: auto;
   }
-  body #servicii #servicii-hd h1 {
+  #servicii #servicii-hd h1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -410,7 +434,7 @@
     color: rgb(5, 102, 141);
     margin: 30px 30px;
   }
-  body #servicii #servicii-hd p {
+  #servicii #servicii-hd p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -421,15 +445,15 @@
     color: rgb(5, 102, 141);
     margin: 0 30px 50px 30px;
   }
-  body #servicii .servicii-container {
+  #servicii .servicii-container {
     height: auto;
     margin: 0 30px 50px 30px;
   }
-  body #servicii .servicii-container img {
+  #servicii .servicii-container img {
     display: block;
     margin: auto;
   }
-  body #servicii .servicii-container h1 {
+  #servicii .servicii-container h1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -440,7 +464,7 @@
     margin: 25px auto;
     color: rgb(5, 102, 141);
   }
-  body #servicii .servicii-container p {
+  #servicii .servicii-container p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -450,26 +474,26 @@
     color: #fff;
     color: rgb(5, 102, 141);
   }
-  body #servicii .servicii-container:last-child {
+  #servicii .servicii-container:last-child {
     height: 300px;
     padding-bottom: 50px;
     margin-bottom: 0px;
   }
-  body #atracti .container_atractii {
+  #atracti .container_atractii {
     margin: 0 auto 50px auto;
   }
-  body #atracti .container_atractii .img_atracti_container {
+  #atracti .container_atractii .img_atracti_container {
     background: no-repeat center/cover url("/img/atracti_acasa.png");
     height: 500px;
     max-width: 1024px;
   }
-  body #atracti .container_atractii .prieteni {
+  #atracti .container_atractii .prieteni {
     background: no-repeat center/cover url("/img/atracti_prieteni.png");
   }
-  body #atracti .container_atractii .salina {
+  #atracti .container_atractii .salina {
     background: no-repeat center/cover url("/img/atracti_salina.png");
   }
-  body #atracti .container_atractii div {
+  #atracti .container_atractii div {
     height: auto;
     background: #EEEEEE;
     display: flex;
@@ -477,7 +501,7 @@
     align-items: center;
     padding-bottom: 50px;
   }
-  body #atracti .container_atractii div h1 {
+  #atracti .container_atractii div h1 {
     padding-top: 40px;
     margin: 0 auto;
     font-family: "Montserrat";
@@ -489,10 +513,10 @@
     color: #F0F3BD;
     color: rgb(5, 102, 141);
   }
-  body #atracti .container_atractii div img {
+  #atracti .container_atractii div img {
     margin: 20px 0;
   }
-  body #atracti .container_atractii div p {
+  #atracti .container_atractii div p {
     margin: 0 30px;
     font-family: "Hind Madurai";
     font-style: normal;
@@ -502,7 +526,7 @@
     text-align: center;
     color: rgb(5, 102, 141);
   }
-  body #atracti .container_atractii div button {
+  #atracti .container_atractii div button {
     background-color: #05668D;
     border-radius: 5px;
     height: 40px;
@@ -520,29 +544,29 @@
     background: #EEEEEE;
     margin: 50px;
   }
-  body #atracti .container_atractii div button:hover {
+  #atracti .container_atractii div button:hover {
     background: rgb(5, 102, 141);
     color: #EEEEEE;
   }
-  body #atracti .container_atractii:last-child {
+  #atracti .container_atractii:last-child {
     margin: 0;
   }
-  body #reviewCount {
+  #reviewCount {
     height: 100%;
     margin: 0;
     padding-top: 50px;
     margin-bottom: 50px;
   }
-  body #reviewCount > :first-child {
+  #reviewCount > :first-child {
     background: rgb(238, 238, 238);
     padding-bottom: 30px;
   }
-  body #reviewCount .reviewCount_container {
+  #reviewCount .reviewCount_container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  body #reviewCount h1 {
+  #reviewCount h1 {
     font-family: "Monotype Corsiva";
     font-style: italic;
     font-weight: 400;
@@ -551,7 +575,7 @@
     color: #05668D;
     margin: 20px 0 0 0;
   }
-  body #reviewCount p {
+  #reviewCount p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -561,10 +585,10 @@
     color: #05668D;
     margin: 0;
   }
-  body #reviewCount .camGallery {
+  #reviewCount .camGallery {
     margin: 100px 0;
   }
-  body #reviewCount .camGallery h1 {
+  #reviewCount .camGallery h1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -574,50 +598,50 @@
     color: #FFFFFF;
     color: rgb(5, 102, 141);
   }
-  body #reviewCount .camGallery .camParGall {
+  #reviewCount .camGallery .camParGall {
     background: no-repeat center/cover url("/img/gall_1_5.png");
     height: 510px;
     margin: 30px 10px 0 10px;
   }
-  body #reviewCount .camGallery .camParGall figure {
+  #reviewCount .camGallery .camParGall figure {
     display: flex;
     justify-content: space-between;
     padding-top: 250px;
     margin: 0px 10px;
   }
-  body #reviewCount .camGallery .gall3img {
+  #reviewCount .camGallery .gall3img {
     margin: 0 5px;
     display: flex;
     justify-content: space-between;
   }
-  body #reviewCount .camGallery .gall3img figure {
+  #reviewCount .camGallery .gall3img figure {
     background: no-repeat center/cover url("/img/gall_2_5.png");
     height: auto;
     aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
-  body #reviewCount .camGallery .gall3img figure:nth-child(2) {
+  #reviewCount .camGallery .gall3img figure:nth-child(2) {
     background: no-repeat center/cover url("/img/gall_3_5.png");
   }
-  body #reviewCount .camGallery .gall3img figure:nth-child(3) {
+  #reviewCount .camGallery .gall3img figure:nth-child(3) {
     background: no-repeat center/cover url("/img/gall_4_5.png");
   }
-  body #reviewCount .camGallery .gall3img figure:nth-child(4) {
+  #reviewCount .camGallery .gall3img figure:nth-child(4) {
     background: no-repeat center/cover url("/img/gall_5_5.png");
   }
-  body #reviewCount .camGallery .gall3img figure:nth-child(5) {
+  #reviewCount .camGallery .gall3img figure:nth-child(5) {
     background: no-repeat center/cover url("/img/gall_6_5.png");
   }
-  body #ceSpunClienti .header-title {
+  #ceSpunClienti .header-title {
     margin-top: 50px;
   }
-  body #ceSpunClienti #booking_group, body #ceSpunClienti #google_group {
+  #ceSpunClienti #booking_group, #ceSpunClienti #google_group {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  body #ceSpunClienti .google_review {
+  #ceSpunClienti .google_review {
     max-width: 350px;
     min-height: 210px;
     height: auto;
@@ -626,20 +650,20 @@
     border-radius: 4px;
     padding: 10px;
   }
-  body #ceSpunClienti .google_review .test_1_3 {
+  #ceSpunClienti .google_review .test_1_3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  body #ceSpunClienti .google_review .test_1_3 > img {
+  #ceSpunClienti .google_review .test_1_3 > img {
     max-width: 40px;
     margin: 15px 10px auto 10px;
   }
-  body #ceSpunClienti .google_review .test_1_3 .nume_client_data {
+  #ceSpunClienti .google_review .test_1_3 .nume_client_data {
     margin-right: 100px;
   }
-  body #ceSpunClienti .google_review .test_1_3 .nume_client_data h1 {
+  #ceSpunClienti .google_review .test_1_3 .nume_client_data h1 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -650,7 +674,7 @@
     color: #FFFFFF;
     white-space: nowrap;
   }
-  body #ceSpunClienti .google_review .test_1_3 .nume_client_data h2 {
+  #ceSpunClienti .google_review .test_1_3 .nume_client_data h2 {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -659,10 +683,10 @@
     color: #fff;
     margin-top: 0;
   }
-  body #ceSpunClienti .google_review .google_review img:nth-child(3) {
+  #ceSpunClienti .google_review .google_review img:nth-child(3) {
     margin: 0 0 auto auto;
   }
-  body #ceSpunClienti .google_review p {
+  #ceSpunClienti .google_review p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -670,57 +694,57 @@
     text-align: left;
     color: #fff;
   }
-  body #ceSpunClienti .google_review:nth-child(n+2) {
+  #ceSpunClienti .google_review:nth-child(n+2) {
     display: none;
   }
-  body #ceSpunClienti .bulina_review_selected {
+  #ceSpunClienti .bulina_review_selected {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
   }
-  body #ceSpunClienti .bulina_review_selected .bulina {
+  #ceSpunClienti .bulina_review_selected .bulina {
     width: 10px;
     height: 10px;
     border-radius: 100%;
     margin: 5px;
     background-color: rgb(5, 102, 141);
   }
-  body #ceSpunClienti .bulina_review_selected .bulina:hover {
+  #ceSpunClienti .bulina_review_selected .bulina:hover {
     width: 15px;
     height: 15px;
   }
-  body #ceSpunClienti #booking_group .google_review :nth-child(3) {
+  #ceSpunClienti #booking_group .google_review :nth-child(3) {
     padding-bottom: 3px;
   }
-  body #ceSpunClienti #booking_group .google_review :nth-child(2) {
+  #ceSpunClienti #booking_group .google_review :nth-child(2) {
     padding-left: 10px;
   }
-  body #ceSpunClienti #booking_group .google_review .test_1_3 > img {
+  #ceSpunClienti #booking_group .google_review .test_1_3 > img {
     border-radius: 100%;
   }
-  body #contactează-ne {
+  #contactează-ne {
     margin-top: 100px;
   }
-  body #contactează-ne .header-title {
+  #contactează-ne .header-title {
     background: no-repeat center/cover url("/img/background_ce_spun_clienti.png");
   }
-  body #contactează-ne .contact_container {
+  #contactează-ne .contact_container {
     height: auto;
     background: #028090;
     display: flex;
     flex-direction: column;
   }
-  body #contactează-ne .contact_container div {
+  #contactează-ne .contact_container div {
     padding: 40px 0;
     margin: auto;
     max-height: 280px;
   }
-  body #contactează-ne .contact_container div img {
+  #contactează-ne .contact_container div img {
     margin: auto;
     display: block;
   }
-  body #contactează-ne .contact_container div h2 {
+  #contactează-ne .contact_container div h2 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -729,7 +753,7 @@
     text-align: center;
     color: #F0F3BD;
   }
-  body #contactează-ne .contact_container div p {
+  #contactează-ne .contact_container div p {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -742,10 +766,10 @@
     color: #F0F3BD;
     word-break: break-all;
   }
-  body #map_question {
+  #map_question {
     margin-top: 50px;
   }
-  body #map_question h1 {
+  #map_question h1 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -755,7 +779,7 @@
     color: #FFFFFF;
     color: rgb(5, 102, 141);
   }
-  body #map_question h2 {
+  #map_question h2 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -766,15 +790,15 @@
     color: #FFFFFF;
     color: rgb(5, 102, 141);
   }
-  body #map_question #map_question_details {
+  #map_question #map_question_details {
     margin-top: 50px;
   }
-  body #map_question #map_question_details details {
+  #map_question #map_question_details details {
     margin: 0 30px;
     height: auto;
     border-bottom: 3px solid #05668D;
   }
-  body #map_question #map_question_details details summary {
+  #map_question #map_question_details details summary {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -786,7 +810,7 @@
     text-align: left;
     padding: 5px 0;
   }
-  body #map_question #map_question_details details p {
+  #map_question #map_question_details details p {
     width: auto;
     margin: auto;
     font-family: "Hind Madurai";
@@ -799,15 +823,15 @@
     text-align: left;
     color: #05668D;
   }
-  body #map_question #map_question_details details[open] {
+  #map_question #map_question_details details[open] {
     margin-top: 15px;
     height: auto;
   }
-  body #map_question #map_question_details details[open] p {
+  #map_question #map_question_details details[open] p {
     line-height: normal;
     padding: 10px 0 10px 25px;
   }
-  body #map_question iframe {
+  #map_question iframe {
     width: 90%;
     height: auto;
     margin: auto;
@@ -815,7 +839,7 @@
     border: 0;
     aspect-ratio: 1/1;
   }
-  body footer {
+  footer {
     margin-top: 50px;
     height: auto;
     width: 100%;
@@ -825,28 +849,28 @@
     background-size: cover;
     box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
   }
-  body footer #container {
+  footer #container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
-  body footer #container .listLinkLogofooter {
+  footer #container .listLinkLogofooter {
     display: flex;
     flex-direction: column;
   }
-  body footer #container .listLinkLogofooter a {
+  footer #container .listLinkLogofooter a {
     margin: 10px;
     width: 43px;
     height: 43px;
   }
-  body footer #container .listLinkLogofooter img {
+  footer #container .listLinkLogofooter img {
     max-width: 43px;
     height: auto;
   }
-  body footer #container #footer_text {
+  footer #container #footer_text {
     display: none;
   }
-  body footer h4 {
+  footer h4 {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;

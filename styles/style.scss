@@ -5,6 +5,21 @@
     body {
 ///////////////////////////////////////////////////////
 ///////////   MODIFICARI GENERALE /////////////////////
+        #main_page { 
+            display: block;
+            margin: 20px auto;
+            @include buttonStd;
+            width: 173px;
+            height: 43px;
+            color: #fff;
+            border: 2px solid #fff;
+            background:rgb(0, 0, 0, 0.1)
+            }
+        #main_page:hover {
+            background: #F0F3BD;
+            color:  #05668D;
+        }
+        }
         .header-title {
             height: 300px;
             background: no-repeat center/cover url('/img/backgServicii.png');
@@ -69,6 +84,7 @@
             flex-direction: column;
             h2 {
                 @include h2TS;
+                font-size: 15px;
                 margin: 0;
                 padding-top: 100px;
             }
@@ -667,8 +683,11 @@
                 color: #fff;
             }
         }
-    }        
-}
+    } 
+///////////////////////////////////
+/////////// House Garden Turda - Obiective Turistice< ///////       
+
+ 
 ///////////////////////////////////
 ///////////  min-width: 767px /////// 
 @media screen and (min-width: 767px) {
