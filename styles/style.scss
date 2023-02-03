@@ -5,21 +5,7 @@
     body {
 ///////////////////////////////////////////////////////
 ///////////   MODIFICARI GENERALE /////////////////////
-        #main_page { 
-            display: block;
-            margin: 20px auto;
-            @include buttonStd;
-            width: 173px;
-            height: 43px;
-            color: #fff;
-            border: 2px solid #fff;
-            background:rgb(0, 0, 0, 0.1)
-            }
-        #main_page:hover {
-            background: #F0F3BD;
-            color:  #05668D;
-        }
-        }
+        
         .header-title {
             height: 300px;
             background: no-repeat center/cover url('/img/backgServicii.png');
@@ -31,6 +17,7 @@
                 color: #F0F3BD;
             }
         }
+        
 //////////////////////////////////////////
 ///////////   HEDEAR /////////////////////
         header { 
@@ -189,7 +176,6 @@
                 width: 100%;
                 margin-top: 55px;
                 aspect-ratio: 16 / 9;
-
             }
         }
 ///////////////////////////////////////////
@@ -411,7 +397,7 @@
             }
             .container_atractii:last-child {
                 margin: 0;
-                }
+            }
         } 
 ///////////////////////////////////////////
 ///////////  SECTION reviewCount /////////////
@@ -683,11 +669,141 @@
                 color: #fff;
             }
         }
-    } 
-///////////////////////////////////
-/////////// House Garden Turda - Obiective Turistice< ///////       
+        ///////////////////////////////////
+/////////// House Garden Turda - Obiective Turistice< /////// 
+/// 
+/// /////HEADER            
+        #main_page { 
+            display: block;
+            margin: 20px auto;
+            @include buttonStd;
+            width: 173px;
+            height: 43px;
+            color: #fff;
+            border: 2px solid #fff;
+            background:rgb(0, 0, 0, 0.1)
+        }
+        #main_page:hover {
+            background: #F0F3BD;
+            color:  #05668D;
+        }
+/// ///// title_bar  
+        #title_bar {
+            height: 300px;
+            background: no-repeat center/cover url('/img/turda_cemtru.jpg');
+            box-shadow: inset 0 2000px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            h3 {
+                @include h2TS;
+                font-size: 18px;
+            }
+            h1 {
+                 @include h1T;
+            }
+            
+        }
+/// ///// prezentare_generala_obiective
+        #obiective_turistice {
+            height: 100%;
+            #prezentare_generala_obiective {
+                >:first-child {
+                    h4 {
+                        @include h2TS;
+                        color:rgba(5, 102, 141, 1);
+                        margin: 50px 0 15px 0;
+                    }
+                    img {
+                        display: block;
+                        margin: auto;
+                    }
+                    h2 {
+                        @include textCategori;
+                        color:rgba(5, 102, 141, 1);
+                        margin: 30px 30px;
+                    }
+                }
+                >:last-child {
+                    p {
+                    @include textNormal;
+                    color:rgba(5, 102, 141, 1);
+                    margin: 0 30px 50px 30px;
+                    }
+                }    
+            }
+            .container_atractii {
+                .salina_turda {
+                    background: no-repeat center/cover url('/img/salina_turda.jpeg');
+                    height: 500px;
+                    max-width: 1024px;
+                } 
+                .Cheile_Turzii {
+                    background: no-repeat center/cover url('/img/Cheile_Turzii.jpg');
+                    height: 500px;
+                    max-width: 1024px;
+                } 
+                .cheile_turenilor {
+                    background: no-repeat center/cover url('/img/cheile_turenilor.jpg');
+                    height: 500px;
+                    max-width: 1024px;
+                } 
+                .strand_durgau {
+                    background: no-repeat center/cover url('/img/strand_durgau.jpg');
+                    height: 500px;
+                    max-width: 1024px;
+                } 
+                div {
+                        height: auto;
+                        background: #EEEEEE;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-bottom: 100px;
+                        h1 {
+                            padding-top: 40px;
+                            margin: 0 auto;
+                            @include textCategori;
+                            color: rgba(5, 102, 141, 1);
+                        }
+                        img {
+                            margin: 20px 0;
+                        }
+                        p {
+                            margin: 0 30px;
+                            @include grup_text;
+                            color: rgba(5, 102, 141, 1);
+                        }
+                        iframe {
+                            width: 100%;
+                            margin-top: 55px;
+                            aspect-ratio: 16 / 9;
+                        }
+                        button { 
+                            @include buttonStd;
+                            width: 173px;
+                            height: 43px;
+                            color: rgba(5, 102, 141, 1);
+                            border: 2px solid #05668D;
+                            background: #EEEEEE;
+                            margin: 50px;
+                        }
+                        button:hover {
+                            background: rgba(5, 102, 141, 1);
+                            color: #EEEEEE;
+                        }
+                }
+                
+            }
+            .container_atractii:last-child {
+                margin: 0;
+            }
 
- 
+        }
+
+    }   
+} 
 ///////////////////////////////////
 ///////////  min-width: 767px /////// 
 @media screen and (min-width: 767px) {
