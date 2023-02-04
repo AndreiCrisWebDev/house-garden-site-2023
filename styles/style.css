@@ -912,6 +912,9 @@
   body #obiective_turistice {
     height: 100%;
   }
+  body #obiective_turistice #prezentare_generala_obiective {
+    margin-bottom: 100px;
+  }
   body #obiective_turistice #prezentare_generala_obiective > :first-child h4 {
     font-family: "Lora";
     font-style: normal;
@@ -943,12 +946,16 @@
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 32px;
     text-align: center;
-    color: #fff;
     color: rgb(5, 102, 141);
     margin: 0 30px 50px 30px;
+  }
+  body #obiective_turistice .container_atractii {
+    height: auto;
+    background: #EEEEEE;
+    margin-bottom: 150px;
   }
   body #obiective_turistice .container_atractii .salina_turda {
     background: no-repeat center/cover url("/img/salina_turda.jpeg");
@@ -970,17 +977,22 @@
     height: 500px;
     max-width: 1024px;
   }
+  body #obiective_turistice .container_atractii iframe {
+    display: block;
+    width: 100%;
+    margin: 55px auto;
+    aspect-ratio: 16/9;
+  }
   body #obiective_turistice .container_atractii div {
     height: auto;
     background: #EEEEEE;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 100px;
   }
   body #obiective_turistice .container_atractii div h1 {
     padding-top: 40px;
-    margin: 0 auto;
+    margin: 0 30px;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -1002,11 +1014,6 @@
     line-height: 32px;
     text-align: center;
     color: rgb(5, 102, 141);
-  }
-  body #obiective_turistice .container_atractii div iframe {
-    width: 100%;
-    margin-top: 55px;
-    aspect-ratio: 16/9;
   }
   body #obiective_turistice .container_atractii div button {
     background-color: #05668D;
@@ -1265,6 +1272,9 @@
   body footer #container img {
     margin-top: 10px;
   }
+  body #obiective_turistice div > h1, body > p {
+    margin: 0 100px !important;
+  }
 }
 @media screen and (min-width: 1024px) {
   body .hd_container {
@@ -1343,6 +1353,14 @@
   }
   body footer #footer_text h3 {
     font-size: 55px !important;
+  }
+  body #obiective_turistice {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #obiective_turistice .container_atractii {
+    margin-bottom: 250px !important;
   }
 }
 @media screen and (min-width: 1368px) {

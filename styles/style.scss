@@ -669,9 +669,8 @@
                 color: #fff;
             }
         }
-        ///////////////////////////////////
+///////////////////////////////////
 /////////// House Garden Turda - Obiective Turistice< /////// 
-/// 
 /// /////HEADER            
         #main_page { 
             display: block;
@@ -709,6 +708,7 @@
         #obiective_turistice {
             height: 100%;
             #prezentare_generala_obiective {
+                margin-bottom: 100px;
                 >:first-child {
                     h4 {
                         @include h2TS;
@@ -727,13 +727,16 @@
                 }
                 >:last-child {
                     p {
-                    @include textNormal;
+                    @include grup_text;
                     color:rgba(5, 102, 141, 1);
                     margin: 0 30px 50px 30px;
                     }
                 }    
             }
             .container_atractii {
+                height: auto;
+                background: #EEEEEE;
+                margin-bottom: 150px;
                 .salina_turda {
                     background: no-repeat center/cover url('/img/salina_turda.jpeg');
                     height: 500px;
@@ -754,54 +757,54 @@
                     height: 500px;
                     max-width: 1024px;
                 } 
+                iframe {
+                    display: block;
+                    width: 100%;
+                    margin: 55px auto;
+                    aspect-ratio: 16 / 9;
+                }
                 div {
-                        height: auto;
+                    height: auto;
+                    background: #EEEEEE;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    h1 {
+                        padding-top: 40px;
+                        margin: 0 30px;
+                        @include textCategori;
+                        color: rgba(5, 102, 141, 1);
+                    }
+                    img {
+                        margin: 20px 0;
+                    }
+                    p {
+                        margin: 0 30px;
+                        @include grup_text;
+                        color: rgba(5, 102, 141, 1);
+                    }
+                
+                    button { 
+                        @include buttonStd;
+                        width: 173px;
+                        height: 43px;
+                        color: rgba(5, 102, 141, 1);
+                        border: 2px solid #05668D;
                         background: #EEEEEE;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin-bottom: 100px;
-                        h1 {
-                            padding-top: 40px;
-                            margin: 0 auto;
-                            @include textCategori;
-                            color: rgba(5, 102, 141, 1);
-                        }
-                        img {
-                            margin: 20px 0;
-                        }
-                        p {
-                            margin: 0 30px;
-                            @include grup_text;
-                            color: rgba(5, 102, 141, 1);
-                        }
-                        iframe {
-                            width: 100%;
-                            margin-top: 55px;
-                            aspect-ratio: 16 / 9;
-                        }
-                        button { 
-                            @include buttonStd;
-                            width: 173px;
-                            height: 43px;
-                            color: rgba(5, 102, 141, 1);
-                            border: 2px solid #05668D;
-                            background: #EEEEEE;
-                            margin: 50px;
-                        }
-                        button:hover {
-                            background: rgba(5, 102, 141, 1);
-                            color: #EEEEEE;
-                        }
+                        margin: 50px;
+                    }
+                    button:hover {
+                        background: rgba(5, 102, 141, 1);
+                        color: #EEEEEE;
+                    }
                 }
                 
             }
             .container_atractii:last-child {
                 margin: 0;
             }
-
         }
-
     }   
 } 
 ///////////////////////////////////
@@ -907,7 +910,6 @@
                 font-size: 40px;
                 padding-bottom: 20px;
             }
-
         }
         #servicii {
             padding-bottom: 50px;
@@ -961,7 +963,6 @@
                     }
                 }
             }
-
         }
         #reviewCount {
             >:first-child {
@@ -1021,6 +1022,11 @@
                 }
             }
         }
+////////////////////////////////////////////////////
+// House Garden Turda - Obiective Turistice< ///////
+        #obiective_turistice div >h1,>p {
+                    margin: 0 100px !important;
+                }
     }
 }
 ///////////////////////////////////
@@ -1091,6 +1097,14 @@
                    font-size: 55px !important; 
                 }
            } 
+        }
+////////////////////////////////////////////////////
+// House Garden Turda - Obiective Turistice< ///////
+        #obiective_turistice {
+            @include maxW1024pxMarginA;
+            .container_atractii {
+                margin-bottom: 250px !important; 
+            }  
         }
     }
 }
