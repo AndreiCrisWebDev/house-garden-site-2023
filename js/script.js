@@ -5,9 +5,6 @@ document.querySelector("#whatzapButton").addEventListener("click", () => {
 document.querySelector("#locationButton").addEventListener("click", () => {
   window.location.href = "https://goo.gl/maps/c8aM4j3GDJuexaTh6";
 });
-document.querySelector("#contButton").addEventListener("click", () => {
-  scroll(0, 20000, "smooth");
-});
 document.querySelector("#rezerva_acuma").addEventListener("click", () => {
   window.location.href = "https://wa.me/+40748527089";
 });
@@ -21,3 +18,14 @@ document.querySelector("#btn_obiective").addEventListener("click", () => {
 function homePage() {
   window.location.assign("index.html");
 }
+
+// SCROLL FUNCTION
+
+const contactBtn = document.querySelector("#contButton");
+const contacteaza = document.querySelector("#contactează-ne");
+contactBtn.addEventListener("click", () => {
+  contacteaza.scrollIntoView({
+    behavior: "smooth",
+    easing: "linear",
+  });
+});
