@@ -547,7 +547,7 @@ html {
     flex-direction: column;
     align-items: center;
   }
-  body #reviewCount h1 {
+  body #reviewCount h3 {
     font-family: "Monotype Corsiva";
     font-style: italic;
     font-weight: 400;
