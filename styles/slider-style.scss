@@ -1,0 +1,133 @@
+ @import "./mixin.scss";
+ #alegeCam {
+            height: auto;
+            width: 100%;
+            background: rgba(2, 128, 144, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 100px;
+
+            h2 {
+                @include h2TS;
+                @include padding30margin0;
+                color: #F0F3BD;
+            }
+
+            >img {
+                margin-top: 20px;
+            }
+
+            .camGallery {
+                width: 90%;
+                overflow: hidden;
+                h1{
+                    @include textCategori;
+                    @include padding30margin0;
+                }
+                p{
+                    @include h2TS;
+                    @include padding30margin0;
+                    color: #F0F3BD;
+                }
+                .camParGall {
+                    display: flex;
+                    height: 510px;
+                    max-width: 1024px ;
+                    aspect-ratio: 16/9;
+                    margin: 30px 20px 0 20px;
+                    figure {
+                        background: no-repeat center/cover url('/img/camPar1-4.jpg'); 
+                        aspect-ratio: 16/9;
+                        margin: 0;
+                        max-width: 1024px ;
+                        height: 510px;
+                        
+                    }
+                    .slide_controles {
+                        position: absolute;
+                        top: 39%;
+                        /* left: 0; */
+                        transform: translateY(-50%);
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+
+
+
+
+
+                .gall3img {
+                        margin: 0 20px;
+                        display: flex;
+                        justify-content: space-between;
+                    figure {
+                        background: no-repeat center/cover url('/img/camPar2-4.jpg');    
+                        height: auto;
+                        aspect-ratio: 16/9;
+                        width: 100%;
+                        margin: 10px 5px 10px 5px;
+                    }
+                    figure:nth-child(2) {
+                        background: no-repeat center/cover url('/img/camPar3-4.jpg');
+                    }
+                    figure:nth-child(3) {
+                        background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                    }
+                    figure:first-child {
+                        margin-left: 0px;
+                    }
+                    figure:last-child {
+                        margin-right: 0px;
+                    }
+
+                }
+            } 
+            .camGallery1 {
+                margin-top: 50px;
+                .camParGall {
+                    background:no-repeat center/cover url('/img/camAp1-5.png') ;
+                }
+                .gall3img {
+                    figure {
+                        background:no-repeat center/cover url('/img/camAp2-5.png');
+                    }
+                    figure:nth-child(2) {
+                        background:no-repeat center/cover url('/img/camAp3-5.png');
+                    }
+                    figure:nth-child(3) {
+                        background:no-repeat center/cover url('/img/camAp4-5.png');
+                    }
+                    figure:nth-child(4) {
+                        background:no-repeat center/cover url('/img/camAp5-5.png');
+                    }  
+                }
+            }
+            .camGallery2 {
+                margin-top: 50px;
+                .camParGall {
+                    background:no-repeat center/cover url('/img/Ext1-5.jpg') ;
+                }
+                .gall3img {
+                    figure {
+                        background:no-repeat center/cover url('/img/Ext2-5.png');
+                    }
+                    figure:nth-child(2) {
+                        background:no-repeat center/cover url('/img/Ext3-5.png');
+                    }
+                    figure:nth-child(3) {
+                        background:no-repeat center/cover url('/img/Ex4-5.png');
+                    }
+                    figure:nth-child(4) {
+                        background:no-repeat center/cover url('/img/Ex5-5.png');
+                    }  
+                    figure:nth-child(5) {
+                        background:no-repeat center/cover url('/img/Ex6-5.png');
+                    } 
+                    }
+                }
+        }
+ ///////////////////////////////////////////

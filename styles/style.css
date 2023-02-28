@@ -307,7 +307,7 @@ html {
     color: #F0F3BD;
   }
   body #alegeCam .camGallery .camParGall {
-    background: no-repeat center/cover url("/img/camPar1-4.png");
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
     height: 510px;
     margin: 30px 20px 0 20px;
   }
@@ -323,17 +323,17 @@ html {
     justify-content: space-between;
   }
   body #alegeCam .camGallery .gall3img figure {
-    background: no-repeat center/cover url("/img/camPar2-4.png");
+    background: no-repeat center/cover url("/img/camPar2-4.jpg");
     height: auto;
     aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
   body #alegeCam .camGallery .gall3img figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/camPar3-4.png");
+    background: no-repeat center/cover url("/img/camPar3-4.jpg");
   }
   body #alegeCam .camGallery .gall3img figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/camPar4-4.png");
+    background: no-repeat center/cover url("/img/camPar4-4.jpg");
   }
   body #alegeCam .camGallery .gall3img figure:first-child {
     margin-left: 0px;
