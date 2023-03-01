@@ -30,29 +30,65 @@
                     @include padding30margin0;
                     color: #F0F3BD;
                 }
+
+
+
                 .camParGall {
-                    display: flex;
-                    height: 510px;
-                    max-width: 1024px ;
+                    margin: 50px auto 10px auto;
+                    width: 60%;
                     aspect-ratio: 16/9;
-                    margin: 30px 20px 0 20px;
-                    figure {
-                        background: no-repeat center/cover url('/img/camPar1-4.jpg'); 
-                        aspect-ratio: 16/9;
-                        margin: 0;
-                        max-width: 1024px ;
-                        height: 510px;
+                    position: relative;
+                    overflow: hidden;
+                    .slides{
+                        display: flex;
+                        height: 100%;
                         
-                    }
+                        figure {
+                            background: no-repeat center/cover url('/img/camPar1-4.jpg'); 
+                            margin: 0;
+                            min-width: 100%;
+                            position: relative;
+                        }
+                        figure:nth-child(2){
+                           background: no-repeat center/cover url('/img/camPar1-4.jpg');
+                        }
+                        figure:nth-child(3){
+                           background: no-repeat center/cover url('/img/camPar2-4.jpg');
+                        }
+                        figure:nth-child(4){
+                           background: no-repeat center/cover url('/img/camPar3-4.jpg');
+                        }
+                        figure:nth-child(5){
+                           background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        }
+                        #last-clone {
+                            background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        }
+                        #first-clone {
+                            background: no-repeat center/cover url('/img/camPar1-4.jpg');
+                        }
+                    }   
                     .slide_controles {
                         position: absolute;
-                        top: 39%;
-                        /* left: 0; */
+                        top: 50%;
+                        left: 0;
                         transform: translateY(-50%);
                         width: 100%;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
+
+                        #next-btn, #prev-btn {
+                            cursor: pointer;
+                            background: transparent;
+                            font-size: 30px;
+                            border: none;
+                            padding: 10px;
+                            color: white;
+                        }
+                        #next-btn:focus,#prev-btn:focus {
+                        outline: none;
+                        }
                     }
                 }
 
@@ -61,28 +97,31 @@
 
 
                 .gall3img {
-                        margin: 0 20px;
+                        margin: 0 auto;
+                        width: 60%;
                         display: flex;
                         justify-content: space-between;
                     figure {
-                        background: no-repeat center/cover url('/img/camPar2-4.jpg');    
+                        background: no-repeat center/cover url('/img/camPar1-4.jpg');    
                         height: auto;
                         aspect-ratio: 16/9;
                         width: 100%;
                         margin: 10px 5px 10px 5px;
                     }
                     figure:nth-child(2) {
-                        background: no-repeat center/cover url('/img/camPar3-4.jpg');
+                        background: no-repeat center/cover url('/img/camPar2-4.jpg');
                     }
                     figure:nth-child(3) {
+                        background: no-repeat center/c2over url('/img/camPar3-4.jpg');
+                    }
+                    figure:nth-child(4) {
                         background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        margin-right: 0px;
                     }
                     figure:first-child {
                         margin-left: 0px;
                     }
-                    figure:last-child {
-                        margin-right: 0px;
-                    }
+                    
 
                 }
             } 

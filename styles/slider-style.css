@@ -52,52 +52,86 @@
   color: #F0F3BD;
 }
 #alegeCam .camGallery .camParGall {
-  display: flex;
-  height: 510px;
-  max-width: 1024px;
+  margin: 50px auto 10px auto;
+  width: 60%;
   aspect-ratio: 16/9;
-  margin: 30px 20px 0 20px;
+  position: relative;
+  overflow: hidden;
 }
-#alegeCam .camGallery .camParGall figure {
+#alegeCam .camGallery .camParGall .slides {
+  display: flex;
+  height: 100%;
+}
+#alegeCam .camGallery .camParGall .slides figure {
   background: no-repeat center/cover url("/img/camPar1-4.jpg");
-  aspect-ratio: 16/9;
   margin: 0;
-  max-width: 1024px;
-  height: 510px;
+  min-width: 100%;
+  position: relative;
+}
+#alegeCam .camGallery .camParGall .slides figure:nth-child(2) {
+  background: no-repeat center/cover url("/img/camPar1-4.jpg");
+}
+#alegeCam .camGallery .camParGall .slides figure:nth-child(3) {
+  background: no-repeat center/cover url("/img/camPar2-4.jpg");
+}
+#alegeCam .camGallery .camParGall .slides figure:nth-child(4) {
+  background: no-repeat center/cover url("/img/camPar3-4.jpg");
+}
+#alegeCam .camGallery .camParGall .slides figure:nth-child(5) {
+  background: no-repeat center/cover url("/img/camPar4-4.jpg");
+}
+#alegeCam .camGallery .camParGall .slides #last-clone {
+  background: no-repeat center/cover url("/img/camPar4-4.jpg");
+}
+#alegeCam .camGallery .camParGall .slides #first-clone {
+  background: no-repeat center/cover url("/img/camPar1-4.jpg");
 }
 #alegeCam .camGallery .camParGall .slide_controles {
   position: absolute;
-  top: 39%;
-  /* left: 0; */
+  top: 50%;
+  left: 0;
   transform: translateY(-50%);
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+#alegeCam .camGallery .camParGall .slide_controles #next-btn, #alegeCam .camGallery .camParGall .slide_controles #prev-btn {
+  cursor: pointer;
+  background: transparent;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  color: white;
+}
+#alegeCam .camGallery .camParGall .slide_controles #next-btn:focus, #alegeCam .camGallery .camParGall .slide_controles #prev-btn:focus {
+  outline: none;
+}
 #alegeCam .camGallery .gall3img {
-  margin: 0 20px;
+  margin: 0 auto;
+  width: 60%;
   display: flex;
   justify-content: space-between;
 }
 #alegeCam .camGallery .gall3img figure {
-  background: no-repeat center/cover url("/img/camPar2-4.jpg");
+  background: no-repeat center/cover url("/img/camPar1-4.jpg");
   height: auto;
   aspect-ratio: 16/9;
   width: 100%;
   margin: 10px 5px 10px 5px;
 }
 #alegeCam .camGallery .gall3img figure:nth-child(2) {
-  background: no-repeat center/cover url("/img/camPar3-4.jpg");
+  background: no-repeat center/cover url("/img/camPar2-4.jpg");
 }
 #alegeCam .camGallery .gall3img figure:nth-child(3) {
+  background: no-repeat center/c2over url("/img/camPar3-4.jpg");
+}
+#alegeCam .camGallery .gall3img figure:nth-child(4) {
   background: no-repeat center/cover url("/img/camPar4-4.jpg");
+  margin-right: 0px;
 }
 #alegeCam .camGallery .gall3img figure:first-child {
   margin-left: 0px;
-}
-#alegeCam .camGallery .gall3img figure:last-child {
-  margin-right: 0px;
 }
 #alegeCam .camGallery1 {
   margin-top: 50px;
