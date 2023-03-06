@@ -68,3 +68,32 @@ nextBtn.addEventListener("click", moveToNextSlide);
 prevBtn.addEventListener("click", moveToPreviousSlide);
 
 startSlide();
+
+/// facem un overlay peste gall3ing
+/// layout
+
+/// odata ce facem un click pe figure
+const gallery = document.querySelectorAll(".gall3img figure");
+const overlay = document.querySelector(".overlay");
+const overlayImg = document.querySelector(".imgOverlay");
+
+const background = getComputedStyle(...gallery);
+// console.log(background.background);
+// gallery.addEventListener("click", toggleOverlay);
+overlay.addEventListener("click", rmvHide);
+
+[...gallery].forEach((but) => {
+  but.addEventListener("click", function () {
+    const wClick = getComputedStyle(but);
+    overlay.classList.add("hide");
+    overlayImg.style.background = wClick.background;
+  });
+});
+
+function rmvHide() {
+  overlay.classList.remove("hide");
+}
+/// vrem sa adugam un div cu overlay
+
+/// vrem sa aaugam in overlay un figure cu imaginea pe care am dat click
+/// vrem sa putem da click pe overlay ca sa facem exit
