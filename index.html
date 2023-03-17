@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
+    <!-- icon link stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <title>House Garden Turda</title>
 </head>
@@ -88,37 +92,66 @@
     </section>
     <!-- sectiunea cu Alege-ți camera  -->
     <section id="alegeCam">
+<!-- overlay pt imagine full screen -->
+        <div class="overlay">
+            <figure class="imgOverlay"></figure>
+        </div>
+<!-- hedear  -->
         <h2>Alege-ți camera</h2>
         <img src="img/separatorIMg.png">
+<!-- galerry camera parter -->
         <div class="camGallery">
             <h1>Cameră la parter cu baie proprie</h1>
             <p>145 RON pe noapte</p>
             <div class="camParGall">
-                 <figure>
-                    <img src="img/nextSelectorSt.png">
-                    <img src="img/nextSelectorDR.png">
-                </figure>
+                <div class=slides>
+                    <figure class="slide"></figure>
+                    <figure class="slide"></figure>
+                    <figure class="slide"></figure>
+                    <figure class="slide"></figure>
+                </div>
+                <div class="slide_controles">
+                    <button id="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button id="next-btn">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
             </div>
             <div class="gall3img">
+                <figure></figure>
                 <figure></figure>
                 <figure></figure>
                 <figure></figure>
             </div>
         </div>
+<!-- galerry Apartament-->
         <div class="camGallery camGallery1">
             <h1>Apartament cu 2 paturi și baie prorie</h1>
             <p>220 RON pe noapte</p>
             <div class="camParGall">
-                <figure>
-                    <img src="img/nextSelectorSt.png">
-                    <img src="img/nextSelectorDR.png">
-                </figure>
+                <div class=slides>
+                    <figure class="slide"></figure>
+                    <figure class="slide"></figure>
+                    <figure class="slide"></figure>
+                    <figure class="slide"></figure>
+                </div>
+                <div class="slide_controles">
+                    <button id="prev-btn">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </button>
+                    <button id="next-btn">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </button>
+                </div>
             </div>
             <div class="gall3img">
                 <figure></figure>
                 <figure></figure>
                 <figure></figure>
                 <figure></figure>
+            </div>
             </div>
         </div>
         <div class="camGallery camGallery2">
@@ -510,6 +543,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/clientCount.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
 

@@ -19,6 +19,31 @@ html {
                 color: #F0F3BD;
             }
         }
+        ///////////////////////////////////////////
+        ///////////// overlay styling//////////
+        .overlay {
+            display: none;
+            background-color: #000000cb;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            figure {
+                background: no-repeat center/cover url('/img/camPar1-4.jpg');  ;
+                top: 10%;
+                left: 6%;
+                margin: auto;
+                width: 85%;
+                height: auto;
+                aspect-ratio: 16/9;
+                z-index: 1;
+                position: absolute;
+            }
+        }
+        .hide {
+            display: block;
+        }
         
 //////////////////////////////////////////
 ///////////   HEDEAR /////////////////////
@@ -182,7 +207,7 @@ html {
         }
 ///////////////////////////////////////////
 ///////////  SECTION alegeCam /////////////
-        #alegeCam {
+         #alegeCam {
             height: auto;
             width: 100%;
             background: rgba(2, 128, 144, 1);
@@ -190,19 +215,17 @@ html {
             flex-direction: column;
             align-items: center;
             padding-bottom: 100px;
-
             h2 {
                 @include h2TS;
                 @include padding30margin0;
                 color: #F0F3BD;
             }
-
             >img {
                 margin-top: 20px;
             }
-
             .camGallery {
-                width: 100%;
+                width: 90%;
+                overflow: hidden;
                 h1{
                     @include textCategori;
                     @include padding30margin0;
@@ -213,59 +236,129 @@ html {
                     color: #F0F3BD;
                 }
                 .camParGall {
-                    background: no-repeat center/cover url('/img/camPar1-4.jpg'); 
-                    height: 510px;
-                    margin: 30px 20px 0 20px;
-                    figure {
+                    margin: 50px auto 10px auto;
+                    width: 90%;
+                    aspect-ratio: 16/9;
+                    position: relative;
+                    overflow: hidden;
+                    .slides{
+                        display: flex;
+                        height: 100%;   
+                        figure {
+                            background: no-repeat center/cover url('/img/camPar1-4.jpg'); 
+                            margin: 0;
+                            min-width: 100%;
+                            position: relative;
+                        }
+                        figure:nth-child(2){
+                           background: no-repeat center/cover url('/img/camPar1-4.jpg');
+                        }
+                        figure:nth-child(3){
+                           background: no-repeat center/cover url('/img/camPar2-4.jpg');
+                        }
+                        figure:nth-child(4){
+                           background: no-repeat center/cover url('/img/camPar3-4.jpg');
+                        }
+                        figure:nth-child(5){
+                           background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        }
+                        #last-clone {
+                            background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        }
+                        #first-clone {
+                            background: no-repeat center/cover url('/img/camPar1-4.jpg');
+                        }
+                    }   
+                    .slide_controles {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        width: 100%;
                         display: flex;
                         justify-content: space-between;
-                        padding-top: 250px;
-                        margin: 0px 10px;
+                        align-items: center;
+                        #next-btn, #prev-btn {
+                            cursor: pointer;
+                            background: transparent;
+                            font-size: 30px;
+                            border: none;
+                            padding: 10px;
+                            color: white;
+                        }
+                        #next-btn:focus,#prev-btn:focus {
+                        outline: none;
+                        }
                     }
                 }
+///////////////// galerie 4 imagini
                 .gall3img {
-                        margin: 0 20px;
+                        margin: 0 auto;
+                        width: 90%;
                         display: flex;
                         justify-content: space-between;
                     figure {
-                        background: no-repeat center/cover url('/img/camPar2-4.jpg');    
+                        background: no-repeat center/cover url('/img/camPar1-4.jpg');    
                         height: auto;
                         aspect-ratio: 16/9;
                         width: 100%;
                         margin: 10px 5px 10px 5px;
                     }
                     figure:nth-child(2) {
-                        background: no-repeat center/cover url('/img/camPar3-4.jpg');
+                        background: no-repeat center/cover url('/img/camPar2-4.jpg');
                     }
                     figure:nth-child(3) {
+                        background: no-repeat center/cover url('/img/camPar3-4.jpg');
+                    }
+                    figure:nth-child(4) {
                         background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        margin-right: 0px;
                     }
                     figure:first-child {
                         margin-left: 0px;
                     }
-                    figure:last-child {
-                        margin-right: 0px;
-                    }
-
-                }
+            
             } 
+            }
+///////////////// apartament cu 2 camere            
             .camGallery1 {
-                margin-top: 50px;
                 .camParGall {
-                    background:no-repeat center/cover url('/img/camAp1-5.png') ;
+                    .slides {
+                        figure {
+                            background: no-repeat center/cover url('/img/camAp1-5.jpg');
+                        }
+                        figure:nth-child(2){
+                           background: no-repeat center/cover url('/img/camAp2-5.jpg');
+                        }
+                        figure:nth-child(3){
+                           background: no-repeat center/cover url('/img/camAp3-5.jpg');
+                        }
+                        figure:nth-child(4){
+                           background: no-repeat center/cover url('/img/camAp4-5.jpg');
+                        }
+                        figure:nth-child(5){
+                           background: no-repeat center/cover url('/img/camAp5-5.jpg');
+                        }
+                        #last-clone {
+                            background: no-repeat center/cover url('/img/camAp5-5.jpg');
+                        }
+                        #first-clone {
+                            background: no-repeat center/cover url('/img/camAp1-5.jpg');
+                        }
+                    }
                 }
                 .gall3img {
                     figure {
-                        background:no-repeat center/cover url('/img/camAp2-5.png');
+                        background:no-repeat center/cover url('/img/camAp2-5.jpg');
                     }
                     figure:nth-child(2) {
-                        background:no-repeat center/cover url('/img/camAp3-5.png');
+                        background:no-repeat center/cover url('/img/camAp3-5.jpg');
                     }
                     figure:nth-child(3) {
-                        background:no-repeat center/cover url('/img/camAp4-5.png');
+                        background:no-repeat center/cover url('/img/camAp4-5.jpg');
                     }
                     figure:nth-child(4) {
-                        background:no-repeat center/cover url('/img/camAp5-5.png');
+                        background:no-repeat center/cover url('/img/camAp5-5.jpg');
                     }  
                 }
             }

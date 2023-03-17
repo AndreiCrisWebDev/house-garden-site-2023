@@ -21,6 +21,29 @@ html {
     color: #FFFFFF;
     color: #F0F3BD;
   }
+  body .overlay {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7960784314);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+  }
+  body .overlay figure {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+    top: 10%;
+    left: 6%;
+    margin: auto;
+    width: 85%;
+    height: auto;
+    aspect-ratio: 16/9;
+    z-index: 1;
+    position: absolute;
+  }
+  body .hide {
+    display: block;
+  }
   body header {
     background-image: url("/img/backgroundImg.png");
     background-repeat: no-repeat;
@@ -280,7 +303,8 @@ html {
     margin-top: 20px;
   }
   body #alegeCam .camGallery {
-    width: 100%;
+    width: 90%;
+    overflow: hidden;
   }
   body #alegeCam .camGallery h1 {
     font-family: "Montserrat";
@@ -307,57 +331,119 @@ html {
     color: #F0F3BD;
   }
   body #alegeCam .camGallery .camParGall {
-    background: no-repeat center/cover url("/img/camPar1-4.jpg");
-    height: 510px;
-    margin: 30px 20px 0 20px;
+    margin: 50px auto 10px auto;
+    width: 90%;
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
   }
-  body #alegeCam .camGallery .camParGall figure {
+  body #alegeCam .camGallery .camParGall .slides {
+    display: flex;
+    height: 100%;
+  }
+  body #alegeCam .camGallery .camParGall .slides figure {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+    margin: 0;
+    min-width: 100%;
+    position: relative;
+  }
+  body #alegeCam .camGallery .camParGall .slides figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/camPar2-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/camPar3-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides figure:nth-child(5) {
+    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides #last-clone {
+    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides #first-clone {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slide_controles {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 250px;
-    margin: 0px 10px;
+    align-items: center;
+  }
+  body #alegeCam .camGallery .camParGall .slide_controles #next-btn, body #alegeCam .camGallery .camParGall .slide_controles #prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+  }
+  body #alegeCam .camGallery .camParGall .slide_controles #next-btn:focus, body #alegeCam .camGallery .camParGall .slide_controles #prev-btn:focus {
+    outline: none;
   }
   body #alegeCam .camGallery .gall3img {
-    margin: 0 20px;
+    margin: 0 auto;
+    width: 90%;
     display: flex;
     justify-content: space-between;
   }
   body #alegeCam .camGallery .gall3img figure {
-    background: no-repeat center/cover url("/img/camPar2-4.jpg");
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
     height: auto;
     aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
   body #alegeCam .camGallery .gall3img figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/camPar3-4.jpg");
+    background: no-repeat center/cover url("/img/camPar2-4.jpg");
   }
   body #alegeCam .camGallery .gall3img figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/camPar3-4.jpg");
+  }
+  body #alegeCam .camGallery .gall3img figure:nth-child(4) {
     background: no-repeat center/cover url("/img/camPar4-4.jpg");
+    margin-right: 0px;
   }
   body #alegeCam .camGallery .gall3img figure:first-child {
     margin-left: 0px;
   }
-  body #alegeCam .camGallery .gall3img figure:last-child {
-    margin-right: 0px;
+  body #alegeCam .camGallery1 .camParGall .slides figure {
+    background: no-repeat center/cover url("/img/camAp1-5.jpg");
   }
-  body #alegeCam .camGallery1 {
-    margin-top: 50px;
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/camAp2-5.jpg");
   }
-  body #alegeCam .camGallery1 .camParGall {
-    background: no-repeat center/cover url("/img/camAp1-5.png");
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/camAp3-5.jpg");
+  }
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/camAp4-5.jpg");
+  }
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(5) {
+    background: no-repeat center/cover url("/img/camAp5-5.jpg");
+  }
+  body #alegeCam .camGallery1 .camParGall .slides #last-clone {
+    background: no-repeat center/cover url("/img/camAp5-5.jpg");
+  }
+  body #alegeCam .camGallery1 .camParGall .slides #first-clone {
+    background: no-repeat center/cover url("/img/camAp1-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure {
-    background: no-repeat center/cover url("/img/camAp2-5.png");
+    background: no-repeat center/cover url("/img/camAp2-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/camAp3-5.png");
+    background: no-repeat center/cover url("/img/camAp3-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/camAp4-5.png");
+    background: no-repeat center/cover url("/img/camAp4-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/camAp5-5.png");
+    background: no-repeat center/cover url("/img/camAp5-5.jpg");
   }
   body #alegeCam .camGallery2 {
     margin-top: 50px;
