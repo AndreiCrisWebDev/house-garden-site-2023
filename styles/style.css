@@ -412,43 +412,61 @@ html {
   body #alegeCam .camGallery .gall3img figure:first-child {
     margin-left: 0px;
   }
-  body #alegeCam .camGallery1 .camParGall .slides figure {
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(2) {
     background: no-repeat center/cover url("/img/camAp1-5.jpg");
   }
-  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(2) {
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(3) {
     background: no-repeat center/cover url("/img/camAp2-5.jpg");
   }
-  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/camAp3-5.jpg");
-  }
   body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/camAp4-5.jpg");
+    background: no-repeat center/cover url("/img/camAp3-5.jpg");
   }
   body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(5) {
     background: no-repeat center/cover url("/img/camAp5-5.jpg");
   }
   body #alegeCam .camGallery1 .camParGall .slides #last-clone {
-    background: no-repeat center/cover url("/img/camAp5-5.jpg");
+    background: no-repeat center/cover url("/img/camAp4-5.jpg");
   }
   body #alegeCam .camGallery1 .camParGall .slides #first-clone {
     background: no-repeat center/cover url("/img/camAp1-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure {
-    background: no-repeat center/cover url("/img/camAp2-5.jpg");
+    background: no-repeat center/cover url("/img/camAp1-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/camAp3-5.jpg");
+    background: no-repeat center/cover url("/img/camAp2-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/camAp4-5.jpg");
+    background: no-repeat center/cover url("/img/camAp3-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/camAp5-5.jpg");
+    background: no-repeat center/cover url("/img/camAp4-5.jpg");
   }
   body #alegeCam .camGallery2 {
     margin-top: 50px;
   }
-  body #alegeCam .camGallery2 .camParGall {
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/Ext1-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/Ext2-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/Ext3-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(5) {
+    background: no-repeat center/cover url("/img/Ext4-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(6) {
+    background: no-repeat center/cover url("/img/Ext5-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(7) {
+    background: no-repeat center/cover url("/img/Ext6-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides #last-clone {
+    background: no-repeat center/cover url("/img/Ext6-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides #first-clone {
     background: no-repeat center/cover url("/img/Ext1-5.jpg");
   }
   body #alegeCam .camGallery2 .gall3img figure {
@@ -458,13 +476,13 @@ html {
     background: no-repeat center/cover url("/img/Ext3-5.jpg");
   }
   body #alegeCam .camGallery2 .gall3img figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/Ex4-5.jpg");
+    background: no-repeat center/cover url("/img/Ext4-5.jpg");
   }
   body #alegeCam .camGallery2 .gall3img figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/Ex5-5.jpg");
+    background: no-repeat center/cover url("/img/Ext5-5.jpg");
   }
   body #alegeCam .camGallery2 .gall3img figure:nth-child(5) {
-    background: no-repeat center/cover url("/img/Ex6-5.jpg");
+    background: no-repeat center/cover url("/img/Ext6-5.jpg");
   }
   body #servicii {
     background: rgb(238, 238, 238);
