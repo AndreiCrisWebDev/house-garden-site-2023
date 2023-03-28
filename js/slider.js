@@ -70,9 +70,7 @@ prevBtn.addEventListener("click", moveToPreviousSlide);
 startSlide();
 
 /// facem un overlay peste gall3ing
-/// layout
 
-/// odata ce facem un click pe figure
 const gallery = document.querySelectorAll(".gall3img figure");
 const overlay = document.querySelector(".overlay");
 const overlayImg = document.querySelector(".imgOverlay");
@@ -93,7 +91,3 @@ overlay.addEventListener("click", rmvHide);
 function rmvHide() {
   overlay.classList.remove("hide");
 }
-/// vrem sa adugam un div cu overlay
-
-/// vrem sa aaugam in overlay un figure cu imaginea pe care am dat click
-/// vrem sa putem da click pe overlay ca sa facem exit
