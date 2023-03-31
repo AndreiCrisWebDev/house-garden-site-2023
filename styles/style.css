@@ -684,39 +684,86 @@ html {
     color: rgb(5, 102, 141);
   }
   body #reviewCount .camGallery .camParGall {
-    background: no-repeat center/cover url("/img/gall_1_5.png");
-    height: 510px;
-    margin: 30px 10px 0 10px;
+    margin: 50px auto 10px auto;
+    width: 90%;
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
   }
-  body #reviewCount .camGallery .camParGall figure {
+  body #reviewCount .camGallery .camParGall .slides {
+    display: flex;
+    height: 100%;
+  }
+  body #reviewCount .camGallery .camParGall .slides figure {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+    margin: 0;
+    min-width: 100%;
+    position: relative;
+  }
+  body #reviewCount .camGallery .camParGall .slides figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/camPar2-4.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/camPar3-4.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides figure:nth-child(5) {
+    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides #last-clone {
+    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides #first-clone {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slide_controles {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 250px;
-    margin: 0px 10px;
+    align-items: center;
+  }
+  body #reviewCount .camGallery .camParGall .slide_controles #next-btn, body #reviewCount .camGallery .camParGall .slide_controles #prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+  }
+  body #reviewCount .camGallery .camParGall .slide_controles #next-btn:focus, body #reviewCount .camGallery .camParGall .slide_controles #prev-btn:focus {
+    outline: none;
   }
   body #reviewCount .camGallery .gall3img {
-    margin: 0 5px;
+    margin: 0 auto;
+    width: 90%;
     display: flex;
     justify-content: space-between;
   }
   body #reviewCount .camGallery .gall3img figure {
-    background: no-repeat center/cover url("/img/gall_2_5.png");
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
     height: auto;
     aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/gall_3_5.png");
+    background: no-repeat center/cover url("/img/camPar2-4.jpg");
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/gall_4_5.png");
+    background: no-repeat center/cover url("/img/camPar3-4.jpg");
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/gall_5_5.png");
+    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+    margin-right: 0px;
   }
-  body #reviewCount .camGallery .gall3img figure:nth-child(5) {
-    background: no-repeat center/cover url("/img/gall_6_5.png");
+  body #reviewCount .camGallery .gall3img figure:first-child {
+    margin-left: 0px;
   }
   body #ceSpunClienti .header-title {
     margin-top: 50px;
@@ -1149,7 +1196,7 @@ html {
     margin: 0;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 0px) and (min-width: 767px) {
   body .header-title h1 {
     font-family: "Montserrat";
     font-style: normal;
@@ -1384,7 +1431,7 @@ html {
     margin: 0 100px !important;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 0px) and (min-width: 1024px) {
   body .hd_container {
     max-width: 1024px;
     margin-left: auto;
@@ -1471,7 +1518,7 @@ html {
     margin-bottom: 250px !important;
   }
 }
-@media screen and (min-width: 1368px) {
+@media screen and (min-width: 0px) and (min-width: 1368px) {
   body header .hd_container h2 {
     font-size: 65px !important;
   }

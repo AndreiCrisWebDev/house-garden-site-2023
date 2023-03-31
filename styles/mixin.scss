@@ -152,5 +152,23 @@
     margin-left: auto;
     margin-right: auto;
  }
-
+/// gallery mixin pt ca il folosesc in mai lumte locuri
+ @mixin galSlideControler {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ @mixin nextPrevBtn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+ }
 

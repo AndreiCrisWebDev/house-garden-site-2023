@@ -272,21 +272,9 @@ html {
                     }   
 
                     .slide_controles {
-                        position: absolute;
-                        top: 50%;
-                        left: 0;
-                        transform: translateY(-50%);
-                        width: 100%;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                        @include galSlideControler;
                         #next-btn, #prev-btn {
-                            cursor: pointer;
-                            background: transparent;
-                            font-size: 30px;
-                            border: none;
-                            padding: 10px;
-                            color: white;
+                            @include nextPrevBtn;
                         }
                         #next-btn:focus,#prev-btn:focus {
                         outline: none;
@@ -551,6 +539,7 @@ html {
                 color: #05668D;
                 margin: 0;
             }
+            //// galerie generala 
             .camGallery {
                 margin: 100px 0 ;
                 h1{
@@ -558,42 +547,80 @@ html {
                     color: rgba(5, 102, 141, 1);
                 }
                 .camParGall {
-                    background: no-repeat center/cover url('/img/gall_1_5.png'); 
-                    height: 510px;
-                    margin: 30px 10px 0 10px;
-                    figure {
+                    margin: 50px auto 10px auto;
+                    width: 90%;
+                    aspect-ratio: 16/9;
+                    position: relative;
+                    overflow: hidden;
+                    .slides{
                         display: flex;
-                        justify-content: space-between;
-                        padding-top: 250px;
-                        margin: 0px 10px;
+                        height: 100%;   
+                        figure {
+                            background: no-repeat center/cover url('/img/camPar1-4.jpg'); 
+                            margin: 0;
+                            min-width: 100%;
+                            position: relative;
+                        }
+                        figure:nth-child(2){
+                           background: no-repeat center/cover url('/img/camPar1-4.jpg');
+                        }
+                        figure:nth-child(3){
+                           background: no-repeat center/cover url('/img/camPar2-4.jpg');
+                        }
+                        figure:nth-child(4){
+                           background: no-repeat center/cover url('/img/camPar3-4.jpg');
+                        }
+                        figure:nth-child(5){
+                           background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        }
+                        #last-clone {
+                            background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        }
+                        #first-clone {
+                            background: no-repeat center/cover url('/img/camPar1-4.jpg');
+                        }
+                    }   
+
+                    .slide_controles {
+                        @include galSlideControler;
+                        #next-btn, #prev-btn {
+                            @include nextPrevBtn;
+                        }
+                        #next-btn:focus,#prev-btn:focus {
+                        outline: none;
+                        }
                     }
                 }
+///////////////// galerie 4 imagini
                 .gall3img {
-                        margin: 0 5px;
+                        margin: 0 auto;
+                        width: 90%;
                         display: flex;
                         justify-content: space-between;
                     figure {
-                            background: no-repeat center/cover url('/img/gall_2_5.png');                          
-                            height: auto;
-                            aspect-ratio: 16/9;
-                            width: 100%;
-                            margin: 10px 5px 10px 5px;
+                        background: no-repeat center/cover url('/img/camPar1-4.jpg');    
+                        height: auto;
+                        aspect-ratio: 16/9;
+                        width: 100%;
+                        margin: 10px 5px 10px 5px;
                     }
                     figure:nth-child(2) {
-                        background: no-repeat center/cover url('/img/gall_3_5.png')
+                        background: no-repeat center/cover url('/img/camPar2-4.jpg');
                     }
                     figure:nth-child(3) {
-                        background: no-repeat center/cover url('/img/gall_4_5.png')
+                        background: no-repeat center/cover url('/img/camPar3-4.jpg');
                     }
                     figure:nth-child(4) {
-                        background: no-repeat center/cover url('/img/gall_5_5.png')
+                        background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        margin-right: 0px;
                     }
-                    figure:nth-child(5) {
-                        background: no-repeat center/cover url('/img/gall_6_5.png')
+                    figure:first-child {
+                        margin-left: 0px;
                     }
-                }
+            
+                } 
             } 
-        }
+}
 ///////////////////////////////////////////
 ///////////  SECTION ceSpunClienti ///////
         #ceSpunClienti {
@@ -926,7 +953,7 @@ html {
                 margin: 0;
             }
         }
-    }   
+       
 } 
 ///////////////////////////////////
 ///////////  min-width: 767px /////// 
@@ -1147,7 +1174,7 @@ html {
 // House Garden Turda - Obiective Turistice< ///////
         #obiective_turistice div >h1,>p {
                     margin: 0 100px !important;
-                }
+        }
     }
 }
 ///////////////////////////////////
@@ -1257,4 +1284,5 @@ html {
         }    
 
     }
+}
 }
