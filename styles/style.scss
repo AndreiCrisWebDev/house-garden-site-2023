@@ -6,8 +6,7 @@ html {
 @media screen and (min-width: 0px) {
     body {
 ///////////////////////////////////////////////////////
-///////////   MODIFICARI GENERALE /////////////////////
-        
+///////////   MODIFICARI GENERALE ///////////////////// 
         .header-title {
             height: 300px;
             background: no-repeat center/cover url('/img/backgServicii.png');
@@ -37,7 +36,7 @@ html {
                 margin: 50px auto 0 auto;
                 width: 100%;
                 height: 100%;
-                
+                background-size: contain !important;
                 object-fit: contain;
             }
         }
@@ -52,10 +51,7 @@ html {
             @include backgroundImg;
             box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
             .hd_container {
-                display:flex;
-                justify-content: center;
-                align-items: center;
-                
+                @include flexjacenter;
                 figure { 
                     margin: 0;
                     width: 221px;
@@ -69,20 +65,19 @@ html {
                     display: none;
                 }
                 .listLinkLogo {
-                display:flex;
-                flex-direction: column;
-                a { 
-                    margin: 10px;
-                }
-                img {
-                    min-width: 30px;
-                    max-width: 43px;
-                    height: auto;
-                    width: 100%;
-                }
-            }       
-            }
-            
+                    display:flex;
+                    flex-direction: column;
+                    a { 
+                        margin: 10px;
+                    }
+                    img {
+                        min-width: 30px;
+                        max-width: 43px;
+                        height: auto;
+                        width: 100%;
+                    }
+                }       
+            }  
         }       
 ///////////////////////////////////////////////////////
 ///////////  SECTION prezentareGenerala_1 /////////////
@@ -127,6 +122,8 @@ html {
                     @include flexCenterRowCenter(row);
                     img {
                         padding-right: 10px;
+                        width: 16px;
+                        height: 16px;
                     }
                 }
                 button:hover {
@@ -153,7 +150,7 @@ html {
                     max-height: 66px;
                     @include padding30margin0;
                 }
-                h1 {
+                h2 {
                     width: 300px;
                     @include textCategori;
                     @include padding30margin0;
@@ -555,29 +552,28 @@ html {
                     .slides{
                         display: flex;
                         height: 100%;   
-                        figure {
-                            background: no-repeat center/cover url('/img/camPar1-4.jpg'); 
+                        figure { 
                             margin: 0;
                             min-width: 100%;
                             position: relative;
                         }
                         figure:nth-child(2){
-                           background: no-repeat center/cover url('/img/camPar1-4.jpg');
+                           background: no-repeat center/cover url('/img/gall_1.jpg');
                         }
                         figure:nth-child(3){
-                           background: no-repeat center/cover url('/img/camPar2-4.jpg');
+                           background: no-repeat center/cover url('/img/gall_2.jpg');
                         }
                         figure:nth-child(4){
-                           background: no-repeat center/cover url('/img/camPar3-4.jpg');
+                           background: no-repeat center/cover url('/img/gall_3.jpg');
                         }
                         figure:nth-child(5){
-                           background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                           background: no-repeat center/cover url('/img/gall_4.jpg');
                         }
                         #last-clone {
-                            background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                            background: no-repeat center/cover url('/img/gall_4.jpg');
                         }
                         #first-clone {
-                            background: no-repeat center/cover url('/img/camPar1-4.jpg');
+                            background: no-repeat center/cover url('/img/gall_1.jpg');
                         }
                     }   
 
@@ -598,20 +594,20 @@ html {
                         display: flex;
                         justify-content: space-between;
                     figure {
-                        background: no-repeat center/cover url('/img/camPar1-4.jpg');    
+                        background: no-repeat center/cover url('/img/gall_1.jpg');
                         height: auto;
                         aspect-ratio: 16/9;
                         width: 100%;
                         margin: 10px 5px 10px 5px;
                     }
                     figure:nth-child(2) {
-                        background: no-repeat center/cover url('/img/camPar2-4.jpg');
+                        background: no-repeat center/cover url('/img/gall_2.jpg');
                     }
                     figure:nth-child(3) {
-                        background: no-repeat center/cover url('/img/camPar3-4.jpg');
+                        background: no-repeat center/cover url('/img/gall_3.jpg');
                     }
                     figure:nth-child(4) {
-                        background: no-repeat center/cover url('/img/camPar4-4.jpg');
+                        background: no-repeat center/cover url('/img/gall_4.jpg');
                         margin-right: 0px;
                     }
                     figure:first-child {
@@ -954,7 +950,8 @@ html {
             }
         }
        
-} 
+    } 
+}
 ///////////////////////////////////
 ///////////  min-width: 767px /////// 
 @media screen and (min-width: 767px) {
@@ -1028,7 +1025,7 @@ html {
             .beneficii {
                 height: auto;
                 margin: 30px 40px 100px 40px;
-                h1 {
+                h2 {
                     width: auto;
                     padding: 30px 20px 0 20px;
                 }
@@ -1284,5 +1281,4 @@ html {
         }    
 
     }
-}
 }
