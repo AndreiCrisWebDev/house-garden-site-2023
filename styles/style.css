@@ -38,6 +38,7 @@ html {
     margin: 50px auto 0 auto;
     width: 100%;
     height: 100%;
+    background-size: contain !important;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -158,6 +159,8 @@ html {
   }
   body #prezentareGenerala_1 #prezGenBtn button img {
     padding-right: 10px;
+    width: 16px;
+    height: 16px;
   }
   body #prezentareGenerala_1 #prezGenBtn button:hover {
     background: rgba(0, 0, 0, 0.1);
@@ -186,7 +189,7 @@ html {
     padding: 30px 0 0 0;
     margin: 0;
   }
-  body #beneficiiX3 .beneficii h1 {
+  body #beneficiiX3 .beneficii h2 {
     width: 300px;
     font-family: "Montserrat";
     font-style: normal;
@@ -695,28 +698,27 @@ html {
     height: 100%;
   }
   body #reviewCount .camGallery .camParGall .slides figure {
-    background: no-repeat center/cover url("/img/camPar1-4.jpg");
     margin: 0;
     min-width: 100%;
     position: relative;
   }
   body #reviewCount .camGallery .camParGall .slides figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+    background: no-repeat center/cover url("/img/gall_1.jpg");
   }
   body #reviewCount .camGallery .camParGall .slides figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/camPar2-4.jpg");
+    background: no-repeat center/cover url("/img/gall_2.jpg");
   }
   body #reviewCount .camGallery .camParGall .slides figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/camPar3-4.jpg");
+    background: no-repeat center/cover url("/img/gall_3.jpg");
   }
   body #reviewCount .camGallery .camParGall .slides figure:nth-child(5) {
-    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+    background: no-repeat center/cover url("/img/gall_4.jpg");
   }
   body #reviewCount .camGallery .camParGall .slides #last-clone {
-    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+    background: no-repeat center/cover url("/img/gall_4.jpg");
   }
   body #reviewCount .camGallery .camParGall .slides #first-clone {
-    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+    background: no-repeat center/cover url("/img/gall_1.jpg");
   }
   body #reviewCount .camGallery .camParGall .slide_controles {
     position: absolute;
@@ -746,20 +748,20 @@ html {
     justify-content: space-between;
   }
   body #reviewCount .camGallery .gall3img figure {
-    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+    background: no-repeat center/cover url("/img/gall_1.jpg");
     height: auto;
     aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/camPar2-4.jpg");
+    background: no-repeat center/cover url("/img/gall_2.jpg");
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/camPar3-4.jpg");
+    background: no-repeat center/cover url("/img/gall_3.jpg");
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+    background: no-repeat center/cover url("/img/gall_4.jpg");
     margin-right: 0px;
   }
   body #reviewCount .camGallery .gall3img figure:first-child {
@@ -1196,7 +1198,7 @@ html {
     margin: 0;
   }
 }
-@media screen and (min-width: 0px) and (min-width: 767px) {
+@media screen and (min-width: 767px) {
   body .header-title h1 {
     font-family: "Montserrat";
     font-style: normal;
@@ -1283,7 +1285,7 @@ html {
     height: auto;
     margin: 30px 40px 100px 40px;
   }
-  body #beneficiiX3 .beneficii h1 {
+  body #beneficiiX3 .beneficii h2 {
     width: auto;
     padding: 30px 20px 0 20px;
   }
@@ -1431,7 +1433,7 @@ html {
     margin: 0 100px !important;
   }
 }
-@media screen and (min-width: 0px) and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   body .hd_container {
     max-width: 1024px;
     margin-left: auto;
@@ -1518,7 +1520,7 @@ html {
     margin-bottom: 250px !important;
   }
 }
-@media screen and (min-width: 0px) and (min-width: 1368px) {
+@media screen and (min-width: 1368px) {
   body header .hd_container h2 {
     font-size: 65px !important;
   }
