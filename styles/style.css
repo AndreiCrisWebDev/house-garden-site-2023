@@ -11,7 +11,7 @@ html {
     justify-content: center;
     align-items: center;
   }
-  body .header-title h1 {
+  body .header-title h2 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -100,7 +100,7 @@ html {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
@@ -214,18 +214,18 @@ html {
     padding: 30px 0 0 0;
     margin: 0;
   }
-  body #RelaxeazăTe {
+  body #relaxează_te {
     height: auto;
     color: rgb(5, 102, 141);
     margin-bottom: 50px;
     background: #EEEEEE;
   }
-  body #RelaxeazăTe h2 {
+  body #relaxează_te h3 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
@@ -233,7 +233,7 @@ html {
     margin: 0;
     padding-top: 20px;
   }
-  body #RelaxeazăTe h1 {
+  body #relaxează_te h2 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -244,7 +244,7 @@ html {
     color: rgb(5, 102, 141);
     padding: 0 20px;
   }
-  body #RelaxeazăTe p {
+  body #relaxează_te p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -255,7 +255,7 @@ html {
     max-width: 700px;
     padding: 20px 30px 0 30px;
   }
-  body #RelaxeazăTe button {
+  body #relaxează_te button {
     background-color: #05668D;
     border-radius: 5px;
     height: 40px;
@@ -270,12 +270,12 @@ html {
     display: block;
     margin: 0 auto 20px auto;
   }
-  body #RelaxeazăTe button:hover {
+  body #relaxează_te button:hover {
     background-color: #fff;
     color: #05668D;
     border: 2px solid #05668D;
   }
-  body #RelaxeazăTe iframe {
+  body #relaxează_te iframe {
     width: 100%;
     margin-top: 55px;
     aspect-ratio: 16/9;
@@ -294,7 +294,7 @@ html {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
@@ -309,7 +309,7 @@ html {
     width: 90%;
     overflow: hidden;
   }
-  body #alegeCam .camGallery h1 {
+  body #alegeCam .camGallery h3 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -325,7 +325,7 @@ html {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
@@ -488,30 +488,29 @@ html {
     background: no-repeat center/cover url("/img/Ext6-5.jpg");
   }
   body #servicii {
-    background: rgb(238, 238, 238);
+    background: alegeCamrgba(238, 238, 238, 1);
     margin-bottom: 50px;
   }
-  body #servicii #servicii-hd {
+  body #servicii #servici_header {
     width: 100%;
     margin: auto;
   }
-  body #servicii #servicii-hd h5 {
+  body #servicii #servici_header h5 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
-    color: rgb(5, 102, 141);
     margin: 50px 0 15px 0;
   }
-  body #servicii #servicii-hd img {
+  body #servicii #servici_header img {
     display: block;
     margin: auto;
   }
-  body #servicii #servicii-hd h1 {
+  body #servicii #servici_header h2 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -519,10 +518,9 @@ html {
     line-height: 39px;
     text-align: center;
     color: #F0F3BD;
-    color: rgb(5, 102, 141);
     margin: 30px 30px;
   }
-  body #servicii #servicii-hd p {
+  body #servicii #servici_header p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -530,8 +528,10 @@ html {
     line-height: 22px;
     text-align: center;
     color: #fff;
-    color: rgb(5, 102, 141);
     margin: 0 30px 50px 30px;
+  }
+  body #servicii #servici_header h5, body #servicii #servici_header h2, body #servicii #servici_header p {
+    color: rgb(5, 102, 141);
   }
   body #servicii .servicii-container {
     height: auto;
@@ -541,7 +541,7 @@ html {
     display: block;
     margin: auto;
   }
-  body #servicii .servicii-container h1 {
+  body #servicii .servicii-container h3 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -550,7 +550,6 @@ html {
     text-align: center;
     color: #F0F3BD;
     margin: 25px auto;
-    color: rgb(5, 102, 141);
   }
   body #servicii .servicii-container p {
     font-family: "Hind Madurai";
@@ -560,6 +559,8 @@ html {
     line-height: 22px;
     text-align: center;
     color: #fff;
+  }
+  body #servicii .servicii-container h3, body #servicii .servicii-container p {
     color: rgb(5, 102, 141);
   }
   body #servicii .servicii-container:last-child {
@@ -589,7 +590,7 @@ html {
     align-items: center;
     padding-bottom: 50px;
   }
-  body #atracti .container_atractii div h1 {
+  body #atracti .container_atractii div h2 {
     padding-top: 40px;
     margin: 0 auto;
     font-family: "Montserrat";
@@ -599,7 +600,6 @@ html {
     line-height: 39px;
     text-align: center;
     color: #F0F3BD;
-    color: rgb(5, 102, 141);
   }
   body #atracti .container_atractii div img {
     margin: 20px 0;
@@ -612,7 +612,6 @@ html {
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    color: rgb(5, 102, 141);
   }
   body #atracti .container_atractii div button {
     background-color: #05668D;
@@ -635,6 +634,9 @@ html {
   body #atracti .container_atractii div button:hover {
     background: rgb(5, 102, 141);
     color: #EEEEEE;
+  }
+  body #atracti .container_atractii div h2, body #atracti .container_atractii div p {
+    color: rgb(5, 102, 141);
   }
   body #atracti .container_atractii:last-child {
     margin: 0;
@@ -775,7 +777,7 @@ html {
     justify-content: space-around;
     align-items: center;
   }
-  body #ceSpunClienti .google_review {
+  body #ceSpunClienti .review {
     max-width: 350px;
     min-height: 210px;
     height: auto;
@@ -784,31 +786,31 @@ html {
     border-radius: 4px;
     padding: 10px;
   }
-  body #ceSpunClienti .google_review .test_1_3 {
+  body #ceSpunClienti .review .date_client {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
   }
-  body #ceSpunClienti .google_review .test_1_3 > img {
+  body #ceSpunClienti .review .date_client > img {
     max-width: 40px;
     margin: 15px 10px auto 10px;
   }
-  body #ceSpunClienti .google_review .test_1_3 .nume_client_data {
+  body #ceSpunClienti .review .date_client .nume_client_data {
     margin-right: 100px;
   }
-  body #ceSpunClienti .google_review .test_1_3 .nume_client_data h1 {
+  body #ceSpunClienti .review .date_client .nume_client_data h1 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
     white-space: nowrap;
   }
-  body #ceSpunClienti .google_review .test_1_3 .nume_client_data h2 {
+  body #ceSpunClienti .review .date_client .nume_client_data h2 {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -817,10 +819,10 @@ html {
     color: #fff;
     margin-top: 0;
   }
-  body #ceSpunClienti .google_review .google_review img:nth-child(3) {
+  body #ceSpunClienti .review .review img:nth-child(3) {
     margin: 0 0 auto auto;
   }
-  body #ceSpunClienti .google_review p {
+  body #ceSpunClienti .review p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -828,7 +830,7 @@ html {
     text-align: left;
     color: #fff;
   }
-  body #ceSpunClienti .google_review:nth-child(n+2) {
+  body #ceSpunClienti .review:nth-child(n+2) {
     display: none;
   }
   body #ceSpunClienti .bulina_review_selected {
@@ -848,13 +850,13 @@ html {
     width: 15px;
     height: 15px;
   }
-  body #ceSpunClienti #booking_group .google_review :nth-child(3) {
+  body #ceSpunClienti #booking_group .review :nth-child(3) {
     padding-bottom: 3px;
   }
-  body #ceSpunClienti #booking_group .google_review :nth-child(2) {
+  body #ceSpunClienti #booking_group .review :nth-child(2) {
     padding-left: 10px;
   }
-  body #ceSpunClienti #booking_group .google_review .test_1_3 > img {
+  body #ceSpunClienti #booking_group .review .date_client > img {
     border-radius: 100%;
   }
   body #contactează-ne {
@@ -892,7 +894,7 @@ html {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
@@ -911,17 +913,18 @@ html {
     line-height: 51px;
     text-align: center;
     color: #FFFFFF;
-    color: rgb(5, 102, 141);
   }
   body #map_question h2 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
+  }
+  body #map_question h1, body #map_question h2 {
     color: rgb(5, 102, 141);
   }
   body #map_question #map_question_details {
@@ -940,8 +943,6 @@ html {
     line-height: 22px;
     text-align: center;
     color: #fff;
-    color: #05668D;
-    text-align: left;
     padding: 5px 0;
   }
   body #map_question #map_question_details details p {
@@ -954,8 +955,10 @@ html {
     line-height: 22px;
     text-align: center;
     color: #fff;
-    text-align: left;
+  }
+  body #map_question #map_question_details details summary, body #map_question #map_question_details details p {
     color: #05668D;
+    text-align: left;
   }
   body #map_question #map_question_details details[open] {
     margin-top: 15px;
@@ -1051,7 +1054,7 @@ html {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
@@ -1077,7 +1080,7 @@ html {
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
@@ -1271,7 +1274,7 @@ html {
     line-height: 28px;
     text-align: center;
   }
-  body #ceSpunClienti .google_review:nth-child(2) {
+  body #ceSpunClienti .review:nth-child(2) {
     display: block;
   }
   body #ceSpunClienti .bulina_review_selected {
@@ -1299,14 +1302,14 @@ html {
     line-height: 28px;
     text-align: center;
   }
-  body #RelaxeazăTe > div {
+  body #relaxează_te > div {
     display: flex;
   }
-  body #RelaxeazăTe div > div:first-child {
+  body #relaxează_te div > div:first-child {
     width: 100%;
     background: no-repeat center/cover url("/img/backgroundImg.png");
   }
-  body #RelaxeazăTe div > div:last-child {
+  body #relaxează_te div > div:last-child {
     width: 100%;
   }
   body #alegeCam h2 {
@@ -1332,28 +1335,28 @@ html {
     line-height: 28px;
     text-align: center;
   }
-  body #servicii #servicii-hd {
+  body #servicii #servici_header {
     display: flex;
     align-items: center;
   }
-  body #servicii #servicii-hd > :first-child {
+  body #servicii #servici_header > :first-child {
     width: 100%;
     margin: 100px 50px 100px 100px;
   }
-  body #servicii #servicii-hd > :first-child h5 {
+  body #servicii #servici_header > :first-child h5 {
     margin-top: 0;
   }
-  body #servicii #servicii-hd > :first-child h1 {
+  body #servicii #servici_header > :first-child h1 {
     margin: 0;
   }
-  body #servicii #servicii-hd > :first-child img {
+  body #servicii #servici_header > :first-child img {
     display: none;
   }
-  body #servicii #servicii-hd > :last-child {
+  body #servicii #servici_header > :last-child {
     width: 100%;
     margin: 100px 100px 100px 50px;
   }
-  body #servicii #servicii-hd > :last-child p {
+  body #servicii #servici_header > :last-child p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -1447,12 +1450,12 @@ html {
   body #beneficiiX3 .beneficii {
     width: 60%;
   }
-  body #RelaxeazăTe > div {
+  body #relaxează_te > div {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
   }
-  body #RelaxeazăTe iframe {
+  body #relaxează_te iframe {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
@@ -1464,7 +1467,7 @@ html {
     margin-right: auto;
     margin-bottom: 100px;
   }
-  body #servicii #big_servicii_containe, body #servicii #servicii-hd {
+  body #servicii #big_servicii_containe, body #servicii #servici_header {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
@@ -1530,7 +1533,7 @@ html {
   body header .hd_container .listLinkLogo a {
     margin: 0 15px 0 15px !important;
   }
-  body .google_review:nth-child(3) {
+  body .review:nth-child(3) {
     display: block !important;
   }
   body #booking_group, body #google_group {

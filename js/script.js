@@ -11,10 +11,6 @@ document.querySelector("#rezerva_acuma").addEventListener("click", () => {
 document.querySelector("#btn_obiective").addEventListener("click", () => {
   window.location.href = "obiectiveTuristice.html";
 });
-// const homeBtn = document.getElementById("main_page");
-// addEventListener("click", () => {
-//   window.location.href = "index.html";
-//});
 function homePage() {
   window.location.assign("index.html");
 }

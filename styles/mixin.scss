@@ -11,18 +11,18 @@
     background-size: cover;
 }
 
-@mixin h2TS {
+@mixin h3TS {
     font-family: 'Lora';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 20px;
+    line-height: 25px;
     text-align: center;
     letter-spacing: 0.2em;
     color: #FFFFFF;
 }
 
-@mixin h1T  {
+@mixin h2T  {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;

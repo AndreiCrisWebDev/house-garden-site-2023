@@ -5,6 +5,7 @@ html {
 
 @media screen and (min-width: 0px) {
     body {
+        // background-color: black;
 ///////////////////////////////////////////////////////
 ///////////   MODIFICARI GENERALE ///////////////////// 
         .header-title {
@@ -13,8 +14,8 @@ html {
             display: flex;
             justify-content: center;
             align-items: center;
-            h1 {
-                @include h1T;
+            h2{
+                @include h2T;
                 color: #F0F3BD;
             }
         }
@@ -92,13 +93,13 @@ html {
             display: flex;
             flex-direction: column;
             h2 {
-                @include h2TS;
+                @include h3TS;
                 font-size: 15px;
                 margin: 0;
                 padding-top: 100px;
             }
             h1 {
-                @include h1T;
+                @include h2T;
                 max-width: 700px;
                 margin: 24px 30px 0 30px;
             }
@@ -127,9 +128,9 @@ html {
                     }
                 }
                 button:hover {
-                background: rgba(0,0,0,0.1);
-                color: #fff;
-                border: 2px solid #05668D;
+                    background: rgba(0,0,0,0.1);
+                    color: #fff;
+                    border: 2px solid #05668D;
                 }
                 #locationButton {
                      width: 125px;
@@ -164,19 +165,19 @@ html {
             }
         }
 ///////////////////////////////////////////////////////
-///////////  SECTION RelaxeazăTe /////////////
-        #RelaxeazăTe {
+///////////  SECTION relaxează_te /////////////
+        #relaxează_te {
             height: auto;
             color: rgba(5, 102, 141, 1);
             margin-bottom: 50px;
             background: #EEEEEE;
-            h2 {
-                @include h2TS;
+            h3 { 
+                @include h3TS;
                 color: rgba(5, 102, 141, 1);
                 @include paddingT20Margin0;
-                }
-            h1 {
-                @include h1T; 
+            }
+            h2 {
+                @include h2T; 
                 color: rgba(5, 102, 141, 1);
                 padding: 0 20px;
             }
@@ -213,7 +214,7 @@ html {
             align-items: center;
             padding-bottom: 100px;
             h2 {
-                @include h2TS;
+                @include h3TS;
                 @include padding30margin0;
                 color: #F0F3BD;
             }
@@ -224,12 +225,12 @@ html {
             .camGallery {
                 width: 90%;
                 overflow: hidden;
-                h1{
+                h3{
                     @include textCategori;
                     @include padding30margin0;
                 }
                 p{
-                    @include h2TS;
+                    @include h3TS;
                     @include padding30margin0;
                     color: #F0F3BD;
                 }
@@ -267,7 +268,6 @@ html {
                             background: no-repeat center/cover url('/img/camPar1-4.jpg');
                         }
                     }   
-
                     .slide_controles {
                         @include galSlideControler;
                         #next-btn, #prev-btn {
@@ -304,8 +304,7 @@ html {
                     figure:first-child {
                         margin-left: 0px;
                     }
-            
-            } 
+                } 
             }
 ///////////////// apartament cu 2 camere            
             .camGallery1 {
@@ -351,7 +350,6 @@ html {
                 margin-top: 50px;
                 .camParGall {
                     .slides {
-                        
                         figure:nth-child(2){
                            background:no-repeat center/cover url('/img/Ext1-5.jpg');
                         }
@@ -394,35 +392,35 @@ html {
                     figure:nth-child(5) {
                         background:no-repeat center/cover url('/img/Ext6-5.jpg');
                     } 
-                    }
                 }
+            }
         }
  ///////////////////////////////////////////
 ///////////  SECTION servicii /////////////
         #servicii {
-            background: rgba(238, 238, 238, 1);
+            background: alegeCamrgba(238, 238, 238, 1);
             margin-bottom: 50px;
-            #servicii-hd {
+            #servici_header {
                 width: 100%;
                 margin: auto;
                 h5 {
-                    @include h2TS;
-                    color:rgba(5, 102, 141, 1);
+                    @include h3TS;
                     margin: 50px 0 15px 0;
                 }
                 img {
                     display: block;
                     margin: auto;
                 }
-                h1 {
+                h2 {
                     @include textCategori;
-                    color:rgba(5, 102, 141, 1);
                     margin: 30px 30px;
                 }
                 p {
                     @include textNormal;
-                    color:rgba(5, 102, 141, 1);
                     margin: 0 30px 50px 30px;
+                }
+                h5, h2, p {
+                    color:rgba(5, 102, 141, 1);
                 }
             }
             .servicii-container {
@@ -432,13 +430,14 @@ html {
                     display: block;
                     margin:auto;
                 }
-                h1 {
+                h3 {
                     @include textCategori;
-                    margin: 25px auto;
-                    color:rgba(5, 102, 141, 1);
+                    margin: 25px auto;  
                 }
                 p {
                     @include textNormal;
+                }
+                h3, p {
                     color:rgba(5, 102, 141, 1);
                 }
             }
@@ -471,11 +470,10 @@ html {
                     flex-direction: column;
                     align-items: center;
                     padding-bottom: 50px;
-                    h1 {
+                    h2 {
                         padding-top: 40px;
                         margin: 0 auto;
-                        @include textCategori;
-                        color: rgba(5, 102, 141, 1);
+                        @include textCategori; 
                     }
                     img {
                         margin: 20px 0;
@@ -483,7 +481,6 @@ html {
                     p {
                         margin: 0 30px;
                         @include grup_text;
-                        color: rgba(5, 102, 141, 1);
                     }
                     button { 
                         @include buttonStd;
@@ -498,8 +495,10 @@ html {
                         background: rgba(5, 102, 141, 1);
                         color: #EEEEEE;
                     }
-                }
-                
+                    h2, p {
+                        color: rgba(5, 102, 141, 1);
+                    }
+                } 
             }
             .container_atractii:last-child {
                 margin: 0;
@@ -509,7 +508,6 @@ html {
 ///////////  SECTION reviewCount /////////////
         #reviewCount {
             height: 100%;
-            // background: rgba(238, 238, 238, 1);
             margin: 0;
             padding-top: 50px;
             margin-bottom: 50px;
@@ -540,7 +538,7 @@ html {
             .camGallery {
                 margin: 100px 0 ;
                 h1{
-                    @include h1T;
+                    @include h2T;
                     color: rgba(5, 102, 141, 1);
                 }
                 .camParGall {
@@ -576,7 +574,6 @@ html {
                             background: no-repeat center/cover url('/img/gall_1.jpg');
                         }
                     }   
-
                     .slide_controles {
                         @include galSlideControler;
                         #next-btn, #prev-btn {
@@ -613,10 +610,9 @@ html {
                     figure:first-child {
                         margin-left: 0px;
                     }
-            
                 } 
             } 
-}
+        }
 ///////////////////////////////////////////
 ///////////  SECTION ceSpunClienti ///////
         #ceSpunClienti {
@@ -628,7 +624,7 @@ html {
                 justify-content: space-around;
                 align-items: center;
             }
-            .google_review {
+            .review {
                 max-width: 350px;
                 min-height: 210px;
                 height: auto;
@@ -636,7 +632,7 @@ html {
                 background: rgb(2, 128, 144);
                 border-radius: 4px;
                 padding: 10px;
-                .test_1_3 {
+                .date_client {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
@@ -648,7 +644,7 @@ html {
                     .nume_client_data {
                         margin-right: 100px;
                         h1 {
-                            @include  h2TS;
+                            @include  h3TS;
                             white-space: nowrap;
                         }
                         h2 {
@@ -657,14 +653,14 @@ html {
                         }
                     }
                 }
-                .google_review img:nth-child(3) {
-                        margin:0 0 auto auto;
+                .review img:nth-child(3) {
+                    margin:0 0 auto auto;
                 }
                 p {
                     @include textNormalComent;
                 }  
             }
-            .google_review:nth-child(n + 2) {
+            .review:nth-child(n + 2) {
                 display: none;
             }
             .bulina_review_selected {
@@ -684,13 +680,13 @@ html {
                     height: 15px;
                 }
             }
-             #booking_group .google_review :nth-child(3) {
+             #booking_group .review :nth-child(3) {
                  padding-bottom: 3px;
              }
-             #booking_group .google_review :nth-child(2) {
+             #booking_group .review :nth-child(2) {
                  padding-left: 10px;
              }
-             #booking_group .google_review .test_1_3 >img {
+             #booking_group .review .date_client >img {
                 border-radius: 100%;
              }
         }
@@ -718,7 +714,7 @@ html {
                         @include textCategori;
                     }
                     p {
-                        @include h2TS;
+                        @include h3TS;
                         font-size: 15px;
                         color: #F0F3BD;
                         word-break: break-all;
@@ -731,12 +727,13 @@ html {
         #map_question {
             margin-top: 50px;
             h1 {
-                @include h1T;
-                color: rgba(5, 102, 141, 1);
+                @include h2T;
             }
             h2 {
-                @include h2TS;
-                color: rgba(5, 102, 141, 1);
+                @include h3TS;
+            }
+            h1,h2 {
+                 color: rgba(5, 102, 141, 1);
             }
             #map_question_details {
                 margin-top: 50px;
@@ -746,17 +743,16 @@ html {
                     border-bottom:3px solid #05668D;
                     summary {
                         @include textNormal;
-                        color: #05668D;
-                        text-align: left;
-                        //line-height: 42px;
                         padding: 5px 0;
                     }                       
                     p {
                         width: auto;
                         margin: auto;
                         @include textNormal;
-                        text-align: left;
+                    }
+                    summary, p {
                         color: #05668D;
+                        text-align: left;
                     }
                 } 
                 details[open] {
@@ -767,15 +763,15 @@ html {
                         padding: 10px 0 10px 25px;
                     }
                 }
-        }
-        iframe {
-            width: 90%; 
-            height: auto;
-            margin: auto;
-            display: block;
-            border: 0;
-            aspect-ratio: 1/1;
-        }
+            }
+            iframe {
+                width: 90%; 
+                height: auto;
+                margin: auto;
+                display: block;
+                border: 0;
+                aspect-ratio: 1/1;
+            }
         } 
 ///////////////////////////////////
 ///////////  SECTION footer /////// 
@@ -806,7 +802,7 @@ html {
                 #footer_text {
                     display: none;
                 } 
-             }    
+            }    
             h4 {
                 @include grup_text;
                 margin: 0;
@@ -840,11 +836,11 @@ html {
             justify-content: center;
             align-items: center; 
             h3 {
-                @include h2TS;
+                @include h3TS;
                 font-size: 18px;
             }
             h1 {
-                 @include h1T;
+                 @include h2T;
             }
             
         }
@@ -855,7 +851,7 @@ html {
                 margin-bottom: 100px;
                 >:first-child {
                     h4 {
-                        @include h2TS;
+                        @include h3TS;
                         color:rgba(5, 102, 141, 1);
                         margin: 50px 0 15px 0;
                     }
@@ -979,7 +975,6 @@ html {
                         font-size: 4vw;
                     }
                 }  
-                
                 .listLinkLogo {
                     padding: 0;
                     display: flex;
@@ -1012,7 +1007,7 @@ html {
             }
         }
         #ceSpunClienti { 
-            .google_review:nth-child(2) {
+            .review:nth-child(2) {
                 display: block;
             }
             .bulina_review_selected {
@@ -1036,7 +1031,7 @@ html {
                 }
             }
         }
-        #RelaxeazăTe { 
+        #relaxează_te { 
             /// flex container
             >div {
                 display: flex;
@@ -1069,7 +1064,7 @@ html {
                     }
                 }
             }
-            #servicii-hd {
+            #servici_header {
                 display: flex;
                 align-items: center;
                 >:first-child {
@@ -1093,9 +1088,7 @@ html {
                         margin:0;
                     }
                 }
-
             }
-
         }
         #atracti {
             .container_atractii {
@@ -1127,7 +1120,6 @@ html {
                     height: auto;
                 }
             }
-
         }
         #map_question {
             display: flex;
@@ -1168,7 +1160,7 @@ html {
             }
         }
 ////////////////////////////////////////////////////
-// House Garden Turda - Obiective Turistice< ///////
+// House Garden Turda - Obiective Turistice 767px ///////
         #obiective_turistice div >h1,>p {
                     margin: 0 100px !important;
         }
@@ -1187,7 +1179,7 @@ html {
                 width: 60%;
             }       
         }
-        #RelaxeazăTe {
+        #relaxează_te {
             >div {
                 @include maxW1024pxMarginA;
             }
@@ -1203,7 +1195,7 @@ html {
             }
         }
         #servicii {
-            #big_servicii_containe,#servicii-hd {
+            #big_servicii_containe,#servici_header {
                 @include maxW1024pxMarginA;
             }
         }
@@ -1244,7 +1236,7 @@ html {
            } 
         }
 ////////////////////////////////////////////////////
-// House Garden Turda - Obiective Turistice< ///////
+// House Garden Turda - Obiective Turistice 1024px///////
         #obiective_turistice {
             @include maxW1024pxMarginA;
             .container_atractii {
@@ -1267,18 +1259,14 @@ html {
             .listLinkLogo a {
                 margin: 0 15px 0 15px !important;
             }
-            
-            
         } 
-        .google_review:nth-child(3) {
+        .review:nth-child(3) {
                 display: block !important;
         }
         #booking_group,#google_group {
             width: 1368px;
             margin-right: auto;
-            margin-left: auto;
-            
-        }    
-
+            margin-left: auto;  
+        }   
     }
 }
