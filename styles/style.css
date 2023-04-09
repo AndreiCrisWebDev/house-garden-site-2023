@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+}
+
 @media screen and (min-width: 0px) {
   body .header-title {
     height: 300px;
@@ -7,7 +11,7 @@
     justify-content: center;
     align-items: center;
   }
-  body .header-title h1 {
+  body .header-title h2 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -17,45 +21,70 @@
     color: #FFFFFF;
     color: #F0F3BD;
   }
-  body .hd_container {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-  }
-  body .hd_container h2, body .hd_container h3 {
+  body .overlay {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
     display: none;
+    justify-content: center;
+    align-items: center;
   }
-  body .hd_container figure img {
+  body .overlay figure {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+    margin: 50px auto 0 auto;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-size: contain !important;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
-  body .listLinkLogo {
-    position: absolute;
-    padding: 15px 0 0 280px;
+  body .hide {
+    display: block;
   }
-  body .listLinkLogo a {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-  }
-  body .listLinkLogo img {
-    max-width: 43px;
-    height: auto;
-  }
-  body header, body footer {
-    width: 100%;
+  body header {
     background-image: url("/img/backgroundImg.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0;
     box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
-    max-height: 255px;
+  }
+  body header .hd_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .hd_container figure {
+    margin: 0;
+    width: 221px;
+    padding: 15px;
+  }
+  body header .hd_container figure img {
+    width: 100%;
+    height: auto;
+  }
+  body header .hd_container > div {
+    display: none;
+  }
+  body header .hd_container .listLinkLogo {
+    display: flex;
+    flex-direction: column;
+  }
+  body header .hd_container .listLinkLogo a {
+    margin: 10px;
+  }
+  body header .hd_container .listLinkLogo img {
+    min-width: 30px;
+    max-width: 43px;
+    height: auto;
+    width: 100%;
   }
   body #prezentareGenerala_1 {
     width: 100%;
-    height: 1063.78px;
+    height: auto;
     background-image: url("/img/backgroundImg.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -70,11 +99,12 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 25px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
+    font-size: 15px;
     margin: 0;
     padding-top: 100px;
   }
@@ -86,12 +116,11 @@
     line-height: 51px;
     text-align: center;
     color: #FFFFFF;
-    width: 300px;
-    margin: 0;
-    padding-top: 25px;
+    max-width: 700px;
+    margin: 24px 30px 0 30px;
   }
   body #prezentareGenerala_1 > img {
-    margin: 24px 0 24px 0;
+    margin: 24px 0;
   }
   body #prezentareGenerala_1 p {
     font-family: "Hind Madurai";
@@ -101,15 +130,15 @@
     line-height: 22px;
     text-align: center;
     color: #FFFFFF;
-    width: 300px;
-    margin: 0;
+    max-width: 700px;
+    margin: 0 30px;
     padding-bottom: 25px;
   }
   body #prezentareGenerala_1 #prezGenBtn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
+    margin: 15px 0 50px 0;
   }
   body #prezentareGenerala_1 #prezGenBtn button {
     background-color: #05668D;
@@ -130,6 +159,8 @@
   }
   body #prezentareGenerala_1 #prezGenBtn button img {
     padding-right: 10px;
+    width: 16px;
+    height: 16px;
   }
   body #prezentareGenerala_1 #prezGenBtn button:hover {
     background: rgba(0, 0, 0, 0.1);
@@ -139,10 +170,13 @@
   body #prezentareGenerala_1 #prezGenBtn #locationButton {
     width: 125px;
   }
+  body #beneficiiX3 {
+    margin-bottom: 50px;
+  }
   body #beneficiiX3 .beneficii {
     height: 350px;
     background: rgb(2, 128, 144);
-    margin-top: 30px;
+    margin: 30px 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -155,7 +189,7 @@
     padding: 30px 0 0 0;
     margin: 0;
   }
-  body #beneficiiX3 .beneficii h1 {
+  body #beneficiiX3 .beneficii h2 {
     width: 300px;
     font-family: "Montserrat";
     font-style: normal;
@@ -180,29 +214,26 @@
     padding: 30px 0 0 0;
     margin: 0;
   }
-  body #RelaxeazăTe {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    height: 837px;
+  body #relaxează_te {
+    height: auto;
     color: rgb(5, 102, 141);
+    margin-bottom: 50px;
+    background: #EEEEEE;
   }
-  body #RelaxeazăTe h2 {
+  body #relaxează_te h3 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 25px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
     color: rgb(5, 102, 141);
     margin: 0;
     padding-top: 20px;
   }
-  body #RelaxeazăTe h1 {
+  body #relaxează_te h2 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -211,10 +242,9 @@
     text-align: center;
     color: #FFFFFF;
     color: rgb(5, 102, 141);
-    margin: 0;
-    padding-top: 20px;
+    padding: 0 20px;
   }
-  body #RelaxeazăTe p {
+  body #relaxează_te p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -222,11 +252,10 @@
     line-height: 28px;
     text-align: center;
     color: rgb(5, 102, 141);
-    width: 350px;
-    margin: 0;
-    padding-top: 20px;
+    max-width: 700px;
+    padding: 20px 30px 0 30px;
   }
-  body #RelaxeazăTe button {
+  body #relaxează_te button {
     background-color: #05668D;
     border-radius: 5px;
     height: 40px;
@@ -238,40 +267,49 @@
     font-weight: 700;
     font-size: 16px;
     width: 155px;
-    margin-top: 20px;
+    display: block;
+    margin: 0 auto 20px auto;
   }
-  body #RelaxeazăTe button:hover {
+  body #relaxează_te button:hover {
     background-color: #fff;
     color: #05668D;
     border: 2px solid #05668D;
   }
-  body #RelaxeazăTe iframe {
-    height: 225px;
+  body #relaxează_te iframe {
     width: 100%;
     margin-top: 55px;
+    aspect-ratio: 16/9;
   }
   body #alegeCam {
-    height: 2500px;
+    height: auto;
     width: 100%;
     background: rgb(2, 128, 144);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
   }
   body #alegeCam h2 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    letter-spacing: 0.3em;
-    color: #F0F3BD;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
     padding: 30px 0 0 0;
     margin: 0;
+    color: #F0F3BD;
   }
   body #alegeCam > img {
     margin-top: 20px;
   }
-  body #alegeCam .camGallery h1 {
+  body #alegeCam .camGallery {
+    width: 90%;
+    overflow: hidden;
+  }
+  body #alegeCam .camGallery h3 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -286,106 +324,193 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 25px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
     padding: 30px 0 0 0;
     margin: 0;
+    color: #F0F3BD;
   }
   body #alegeCam .camGallery .camParGall {
-    background: no-repeat center/cover url("/img/camPar1-4.png");
-    height: 510px;
-    margin: 30px 10px 0 10px;
+    margin: 50px auto 10px auto;
+    width: 90%;
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
   }
-  body #alegeCam .camGallery .camParGall figure {
+  body #alegeCam .camGallery .camParGall .slides {
+    display: flex;
+    height: 100%;
+  }
+  body #alegeCam .camGallery .camParGall .slides figure {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+    margin: 0;
+    min-width: 100%;
+    position: relative;
+  }
+  body #alegeCam .camGallery .camParGall .slides figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/camPar2-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/camPar3-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides figure:nth-child(5) {
+    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides #last-clone {
+    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slides #first-clone {
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+  }
+  body #alegeCam .camGallery .camParGall .slide_controles {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 250px;
-    margin: 0px 10px;
+    align-items: center;
+  }
+  body #alegeCam .camGallery .camParGall .slide_controles #next-btn, body #alegeCam .camGallery .camParGall .slide_controles #prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+  }
+  body #alegeCam .camGallery .camParGall .slide_controles #next-btn:focus, body #alegeCam .camGallery .camParGall .slide_controles #prev-btn:focus {
+    outline: none;
   }
   body #alegeCam .camGallery .gall3img {
-    margin: 0 10px;
+    margin: 0 auto;
+    width: 90%;
     display: flex;
     justify-content: space-between;
   }
   body #alegeCam .camGallery .gall3img figure {
-    background: no-repeat center/cover url("/img/camPar2-4.png");
-    height: 50px;
+    background: no-repeat center/cover url("/img/camPar1-4.jpg");
+    height: auto;
+    aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
   body #alegeCam .camGallery .gall3img figure:nth-child(2) {
-    background: url("/img/camPar3-4.png");
+    background: no-repeat center/cover url("/img/camPar2-4.jpg");
   }
   body #alegeCam .camGallery .gall3img figure:nth-child(3) {
-    background: url("/img/camPar4-4.png");
+    background: no-repeat center/cover url("/img/camPar3-4.jpg");
   }
-  body #alegeCam .camGallery1 {
-    margin-top: 50px;
+  body #alegeCam .camGallery .gall3img figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/camPar4-4.jpg");
+    margin-right: 0px;
   }
-  body #alegeCam .camGallery1 .camParGall {
-    background: no-repeat center/cover url("/img/camAp1-5.png");
+  body #alegeCam .camGallery .gall3img figure:first-child {
+    margin-left: 0px;
+  }
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/camAp1-5.jpg");
+  }
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/camAp2-5.jpg");
+  }
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/camAp3-5.jpg");
+  }
+  body #alegeCam .camGallery1 .camParGall .slides figure:nth-child(5) {
+    background: no-repeat center/cover url("/img/camAp5-5.jpg");
+  }
+  body #alegeCam .camGallery1 .camParGall .slides #last-clone {
+    background: no-repeat center/cover url("/img/camAp4-5.jpg");
+  }
+  body #alegeCam .camGallery1 .camParGall .slides #first-clone {
+    background: no-repeat center/cover url("/img/camAp1-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure {
-    background: no-repeat center/cover url("/img/camAp2-5.png");
-    height: 38px;
+    background: no-repeat center/cover url("/img/camAp1-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/camAp3-5.png");
+    background: no-repeat center/cover url("/img/camAp2-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/camAp4-5.png");
+    background: no-repeat center/cover url("/img/camAp3-5.jpg");
   }
   body #alegeCam .camGallery1 .gall3img figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/camAp5-5.png");
+    background: no-repeat center/cover url("/img/camAp4-5.jpg");
   }
   body #alegeCam .camGallery2 {
     margin-top: 50px;
   }
-  body #alegeCam .camGallery2 .camParGall {
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/Ext1-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/Ext2-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/Ext3-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(5) {
+    background: no-repeat center/cover url("/img/Ext4-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(6) {
+    background: no-repeat center/cover url("/img/Ext5-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides figure:nth-child(7) {
+    background: no-repeat center/cover url("/img/Ext6-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides #last-clone {
+    background: no-repeat center/cover url("/img/Ext6-5.jpg");
+  }
+  body #alegeCam .camGallery2 .camParGall .slides #first-clone {
     background: no-repeat center/cover url("/img/Ext1-5.jpg");
   }
   body #alegeCam .camGallery2 .gall3img figure {
-    background: no-repeat center/cover url("/img/Ext2-5.png");
-    height: 38px;
+    background: no-repeat center/cover url("/img/Ext2-5.jpg");
   }
   body #alegeCam .camGallery2 .gall3img figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/Ext3-5.png");
+    background: no-repeat center/cover url("/img/Ext3-5.jpg");
   }
   body #alegeCam .camGallery2 .gall3img figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/Ex4-5.png");
+    background: no-repeat center/cover url("/img/Ext4-5.jpg");
   }
   body #alegeCam .camGallery2 .gall3img figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/Ex5-5.png");
+    background: no-repeat center/cover url("/img/Ext5-5.jpg");
   }
   body #alegeCam .camGallery2 .gall3img figure:nth-child(5) {
-    background: no-repeat center/cover url("/img/Ex6-5.png");
+    background: no-repeat center/cover url("/img/Ext6-5.jpg");
   }
   body #servicii {
-    background: rgb(238, 238, 238);
+    background: alegeCamrgba(238, 238, 238, 1);
+    margin-bottom: 50px;
   }
-  body #servicii #servicii-hd {
-    width: 350px;
+  body #servicii #servici_header {
+    width: 100%;
     margin: auto;
   }
-  body #servicii #servicii-hd h5 {
+  body #servicii #servici_header h5 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 25px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
-    color: rgb(5, 102, 141);
     margin: 50px 0 15px 0;
   }
-  body #servicii #servicii-hd > img {
-    margin: 0px;
+  body #servicii #servici_header img {
+    display: block;
+    margin: auto;
   }
-  body #servicii #servicii-hd h1 {
+  body #servicii #servici_header h2 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -393,10 +518,9 @@
     line-height: 39px;
     text-align: center;
     color: #F0F3BD;
-    color: rgb(5, 102, 141);
-    margin: 15px 10px 30px 10px;
+    margin: 30px 30px;
   }
-  body #servicii #servicii-hd p {
+  body #servicii #servici_header p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -404,19 +528,20 @@
     line-height: 22px;
     text-align: center;
     color: #fff;
+    margin: 0 30px 50px 30px;
+  }
+  body #servicii #servici_header h5, body #servicii #servici_header h2, body #servicii #servici_header p {
     color: rgb(5, 102, 141);
-    margin: 0 10px 50px 10px;
   }
   body #servicii .servicii-container {
-    width: 330px;
-    height: 250px;
-    margin: 0 auto 50px auto;
+    height: auto;
+    margin: 0 30px 50px 30px;
   }
   body #servicii .servicii-container img {
     display: block;
     margin: auto;
   }
-  body #servicii .servicii-container h1 {
+  body #servicii .servicii-container h3 {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
@@ -425,7 +550,6 @@
     text-align: center;
     color: #F0F3BD;
     margin: 25px auto;
-    color: rgb(5, 102, 141);
   }
   body #servicii .servicii-container p {
     font-family: "Hind Madurai";
@@ -435,6 +559,8 @@
     line-height: 22px;
     text-align: center;
     color: #fff;
+  }
+  body #servicii .servicii-container h3, body #servicii .servicii-container p {
     color: rgb(5, 102, 141);
   }
   body #servicii .servicii-container:last-child {
@@ -448,7 +574,7 @@
   body #atracti .container_atractii .img_atracti_container {
     background: no-repeat center/cover url("/img/atracti_acasa.png");
     height: 500px;
-    max-width: 390px;
+    max-width: 1024px;
   }
   body #atracti .container_atractii .prieteni {
     background: no-repeat center/cover url("/img/atracti_prieteni.png");
@@ -457,13 +583,14 @@
     background: no-repeat center/cover url("/img/atracti_salina.png");
   }
   body #atracti .container_atractii div {
-    height: 513px;
+    height: auto;
     background: #EEEEEE;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
   }
-  body #atracti .container_atractii div h1 {
+  body #atracti .container_atractii div h2 {
     padding-top: 40px;
     margin: 0 auto;
     font-family: "Montserrat";
@@ -473,20 +600,18 @@
     line-height: 39px;
     text-align: center;
     color: #F0F3BD;
-    color: rgb(5, 102, 141);
   }
   body #atracti .container_atractii div img {
     margin: 20px 0;
   }
   body #atracti .container_atractii div p {
-    width: 310px;
+    margin: 0 30px;
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
-    color: rgb(5, 102, 141);
   }
   body #atracti .container_atractii div button {
     background-color: #05668D;
@@ -504,26 +629,34 @@
     color: rgb(5, 102, 141);
     border: 2px solid #05668D;
     background: #EEEEEE;
+    margin: 50px;
   }
   body #atracti .container_atractii div button:hover {
     background: rgb(5, 102, 141);
     color: #EEEEEE;
   }
+  body #atracti .container_atractii div h2, body #atracti .container_atractii div p {
+    color: rgb(5, 102, 141);
+  }
   body #atracti .container_atractii:last-child {
     margin: 0;
   }
   body #reviewCount {
-    height: 1250px;
-    background: rgb(238, 238, 238);
+    height: 100%;
     margin: 0;
     padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  body #reviewCount > :first-child {
+    background: rgb(238, 238, 238);
+    padding-bottom: 30px;
   }
   body #reviewCount .reviewCount_container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  body #reviewCount h1 {
+  body #reviewCount h3 {
     font-family: "Monotype Corsiva";
     font-style: italic;
     font-weight: 400;
@@ -556,97 +689,140 @@
     color: rgb(5, 102, 141);
   }
   body #reviewCount .camGallery .camParGall {
-    background: no-repeat center/cover url("/img/gall_1_5.png");
-    height: 510px;
-    margin: 30px 10px 0 10px;
+    margin: 50px auto 10px auto;
+    width: 90%;
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
   }
-  body #reviewCount .camGallery .camParGall figure {
+  body #reviewCount .camGallery .camParGall .slides {
+    display: flex;
+    height: 100%;
+  }
+  body #reviewCount .camGallery .camParGall .slides figure {
+    margin: 0;
+    min-width: 100%;
+    position: relative;
+  }
+  body #reviewCount .camGallery .camParGall .slides figure:nth-child(2) {
+    background: no-repeat center/cover url("/img/gall_1.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides figure:nth-child(3) {
+    background: no-repeat center/cover url("/img/gall_2.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides figure:nth-child(4) {
+    background: no-repeat center/cover url("/img/gall_3.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides figure:nth-child(5) {
+    background: no-repeat center/cover url("/img/gall_4.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides #last-clone {
+    background: no-repeat center/cover url("/img/gall_4.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slides #first-clone {
+    background: no-repeat center/cover url("/img/gall_1.jpg");
+  }
+  body #reviewCount .camGallery .camParGall .slide_controles {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 250px;
-    margin: 0px 10px;
+    align-items: center;
+  }
+  body #reviewCount .camGallery .camParGall .slide_controles #next-btn, body #reviewCount .camGallery .camParGall .slide_controles #prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+  }
+  body #reviewCount .camGallery .camParGall .slide_controles #next-btn:focus, body #reviewCount .camGallery .camParGall .slide_controles #prev-btn:focus {
+    outline: none;
   }
   body #reviewCount .camGallery .gall3img {
-    margin: 0 10px;
+    margin: 0 auto;
+    width: 90%;
     display: flex;
     justify-content: space-between;
   }
   body #reviewCount .camGallery .gall3img figure {
-    background: no-repeat center/cover url("/img/gall_2_5.png");
-    height: 35px;
+    background: no-repeat center/cover url("/img/gall_1.jpg");
+    height: auto;
+    aspect-ratio: 16/9;
     width: 100%;
     margin: 10px 5px 10px 5px;
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(2) {
-    background: no-repeat center/cover url("/img/gall_3_5.png");
+    background: no-repeat center/cover url("/img/gall_2.jpg");
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(3) {
-    background: no-repeat center/cover url("/img/gall_4_5.png");
+    background: no-repeat center/cover url("/img/gall_3.jpg");
   }
   body #reviewCount .camGallery .gall3img figure:nth-child(4) {
-    background: no-repeat center/cover url("/img/gall_5_5.png");
+    background: no-repeat center/cover url("/img/gall_4.jpg");
+    margin-right: 0px;
   }
-  body #reviewCount .camGallery .gall3img figure:nth-child(5) {
-    background: no-repeat center/cover url("/img/gall_6_5.png");
+  body #reviewCount .camGallery .gall3img figure:first-child {
+    margin-left: 0px;
   }
   body #ceSpunClienti .header-title {
     margin-top: 50px;
   }
-  body #ceSpunClienti .booking_review {
+  body #ceSpunClienti #booking_group, body #ceSpunClienti #google_group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body #ceSpunClienti .review {
     max-width: 350px;
-    height: 200px;
+    min-height: 210px;
+    height: auto;
     margin: 70px auto 0 auto;
     background: rgb(2, 128, 144);
     border-radius: 4px;
+    padding: 10px;
   }
-  body #ceSpunClienti .test img:nth-child(1) {
-    grid-area: logoInitial;
-    width: auto;
-    margin: auto;
+  body #ceSpunClienti .review .date_client {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
-  body #ceSpunClienti .test h1 {
-    grid-area: cliName;
+  body #ceSpunClienti .review .date_client > img {
+    max-width: 40px;
+    margin: 15px 10px auto 10px;
+  }
+  body #ceSpunClienti .review .date_client .nume_client_data {
+    margin-right: 100px;
+  }
+  body #ceSpunClienti .review .date_client .nume_client_data h1 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 25px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
-    text-align: left;
-    width: auto;
-    margin: auto auto 0 0;
+    white-space: nowrap;
   }
-  body #ceSpunClienti .test h2 {
-    grid-area: date;
-    margin: 0;
+  body #ceSpunClienti .review .date_client .nume_client_data h2 {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     text-align: left;
     color: #fff;
-    text-align: left;
+    margin-top: 0;
   }
-  body #ceSpunClienti .test img:nth-child(4) {
-    grid-area: logoBooking;
-    width: auto;
+  body #ceSpunClienti .review .review img:nth-child(3) {
     margin: 0 0 auto auto;
   }
-  body #ceSpunClienti .test img:nth-child(5) {
-    grid-area: nota;
-    width: auto;
-    margin: auto 0 auto auto;
-  }
-  body #ceSpunClienti .test img:nth-child(6) {
-    grid-area: verifide;
-    width: auto;
-    margin: auto auto auto 0;
-  }
-  body #ceSpunClienti .test p {
-    grid-area: coments;
-    margin: 0;
+  body #ceSpunClienti .review p {
     font-family: "Hind Madurai";
     font-style: normal;
     font-weight: 400;
@@ -654,11 +830,8 @@
     text-align: left;
     color: #fff;
   }
-  body #ceSpunClienti .test {
-    display: grid;
-    grid-gap: 5px;
-    padding: 10px;
-    grid-template-areas: "logoInitial cliName cliName cliName logoBooking" "logoInitial date date date logoBooking" "nota verifide verifide verifide verifide" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments" "coments coments coments coments coments";
+  body #ceSpunClienti .review:nth-child(n+2) {
+    display: none;
   }
   body #ceSpunClienti .bulina_review_selected {
     width: 100%;
@@ -677,6 +850,15 @@
     width: 15px;
     height: 15px;
   }
+  body #ceSpunClienti #booking_group .review :nth-child(3) {
+    padding-bottom: 3px;
+  }
+  body #ceSpunClienti #booking_group .review :nth-child(2) {
+    padding-left: 10px;
+  }
+  body #ceSpunClienti #booking_group .review .date_client > img {
+    border-radius: 100%;
+  }
   body #contactează-ne {
     margin-top: 100px;
   }
@@ -684,13 +866,13 @@
     background: no-repeat center/cover url("/img/background_ce_spun_clienti.png");
   }
   body #contactează-ne .contact_container {
-    height: 900px;
+    height: auto;
     background: #028090;
     display: flex;
     flex-direction: column;
   }
   body #contactează-ne .contact_container div {
-    padding-top: 40px;
+    padding: 40px 0;
     margin: auto;
     max-height: 280px;
   }
@@ -711,12 +893,14 @@
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 25px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
+    font-size: 15px;
     color: #F0F3BD;
+    word-break: break-all;
   }
   body #map_question {
     margin-top: 50px;
@@ -729,26 +913,26 @@
     line-height: 51px;
     text-align: center;
     color: #FFFFFF;
-    color: rgb(5, 102, 141);
   }
   body #map_question h2 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 25px;
     text-align: center;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
     color: #FFFFFF;
+  }
+  body #map_question h1, body #map_question h2 {
     color: rgb(5, 102, 141);
   }
   body #map_question #map_question_details {
     margin-top: 50px;
   }
   body #map_question #map_question_details details {
-    width: 350px;
-    margin: auto;
-    height: 42px;
+    margin: 0 30px;
+    height: auto;
     border-bottom: 3px solid #05668D;
   }
   body #map_question #map_question_details details summary {
@@ -759,12 +943,10 @@
     line-height: 22px;
     text-align: center;
     color: #fff;
-    color: #05668D;
-    text-align: left;
-    line-height: 42px;
+    padding: 5px 0;
   }
   body #map_question #map_question_details details p {
-    width: 300px;
+    width: auto;
     margin: auto;
     font-family: "Hind Madurai";
     font-style: normal;
@@ -773,41 +955,57 @@
     line-height: 22px;
     text-align: center;
     color: #fff;
-    text-align: left;
+  }
+  body #map_question #map_question_details details summary, body #map_question #map_question_details details p {
     color: #05668D;
+    text-align: left;
   }
   body #map_question #map_question_details details[open] {
     margin-top: 15px;
-    height: 110px;
+    height: auto;
   }
   body #map_question #map_question_details details[open] p {
     line-height: normal;
+    padding: 10px 0 10px 25px;
   }
   body #map_question iframe {
-    width: 370px;
-    height: 522px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: block;
+    border: 0;
+    aspect-ratio: 1/1;
   }
   body footer {
     margin-top: 50px;
-    height: 255px;
+    height: auto;
+    width: 100%;
+    background-image: url("/img/backgroundImg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
   }
-  body footer .listLinkLogofooter {
-    margin: 25px auto auto 15px;
-    padding: 0;
+  body footer #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-  body footer .listLinkLogofooter a {
+  body footer #container .listLinkLogofooter {
+    display: flex;
+    flex-direction: column;
+  }
+  body footer #container .listLinkLogofooter a {
+    margin: 10px;
     width: 43px;
     height: 43px;
   }
-  body footer .listLinkLogofooter a img {
-    margin: 0;
-    padding: 0;
+  body footer #container .listLinkLogofooter img {
+    max-width: 43px;
+    height: auto;
   }
-  body footer img {
-    display: block;
-    width: 247px;
-    margin: auto 40px auto auto;
-    padding-top: 25px;
+  body footer #container #footer_text {
+    display: none;
   }
   body footer h4 {
     font-family: "Hind Madurai";
@@ -819,13 +1017,230 @@
     margin: 0;
     color: #fff;
   }
+  body #main_page {
+    display: block;
+    margin: 20px auto;
+    background-color: #05668D;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    color: #F0F3BD;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    width: 173px;
+    height: 43px;
+    color: #fff;
+    border: 2px solid #fff;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  body #main_page:hover {
+    background: #F0F3BD;
+    color: #05668D;
+  }
+  body #title_bar {
+    height: 300px;
+    background: no-repeat center/cover url("/img/turda_cemtru.jpg");
+    box-shadow: inset 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body #title_bar h3 {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    font-size: 18px;
+  }
+  body #title_bar h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  body #obiective_turistice {
+    height: 100%;
+  }
+  body #obiective_turistice #prezentare_generala_obiective {
+    margin-bottom: 100px;
+  }
+  body #obiective_turistice #prezentare_generala_obiective > :first-child h4 {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    color: rgb(5, 102, 141);
+    margin: 50px 0 15px 0;
+  }
+  body #obiective_turistice #prezentare_generala_obiective > :first-child img {
+    display: block;
+    margin: auto;
+  }
+  body #obiective_turistice #prezentare_generala_obiective > :first-child h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #F0F3BD;
+    color: rgb(5, 102, 141);
+    margin: 30px 30px;
+  }
+  body #obiective_turistice #prezentare_generala_obiective > :last-child p {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: rgb(5, 102, 141);
+    margin: 0 30px 50px 30px;
+  }
+  body #obiective_turistice .container_atractii {
+    height: auto;
+    background: #EEEEEE;
+    margin-bottom: 150px;
+  }
+  body #obiective_turistice .container_atractii .salina_turda {
+    background: no-repeat center/cover url("/img/salina_turda.jpeg");
+    height: 500px;
+    max-width: 1024px;
+  }
+  body #obiective_turistice .container_atractii .Cheile_Turzii {
+    background: no-repeat center/cover url("/img/Cheile_Turzii.jpg");
+    height: 500px;
+    max-width: 1024px;
+  }
+  body #obiective_turistice .container_atractii .cheile_turenilor {
+    background: no-repeat center/cover url("/img/cheile_turenilor.jpg");
+    height: 500px;
+    max-width: 1024px;
+  }
+  body #obiective_turistice .container_atractii .strand_durgau {
+    background: no-repeat center/cover url("/img/strand_durgau.jpg");
+    height: 500px;
+    max-width: 1024px;
+  }
+  body #obiective_turistice .container_atractii iframe {
+    display: block;
+    width: 100%;
+    margin: 55px auto;
+    aspect-ratio: 16/9;
+  }
+  body #obiective_turistice .container_atractii div {
+    height: auto;
+    background: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body #obiective_turistice .container_atractii div h1 {
+    padding-top: 40px;
+    margin: 0 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #F0F3BD;
+    color: rgb(5, 102, 141);
+  }
+  body #obiective_turistice .container_atractii div img {
+    margin: 20px 0;
+  }
+  body #obiective_turistice .container_atractii div p {
+    margin: 0 30px;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: rgb(5, 102, 141);
+  }
+  body #obiective_turistice .container_atractii div button {
+    background-color: #05668D;
+    border-radius: 5px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: none;
+    color: #F0F3BD;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    width: 173px;
+    height: 43px;
+    color: rgb(5, 102, 141);
+    border: 2px solid #05668D;
+    background: #EEEEEE;
+    margin: 50px;
+  }
+  body #obiective_turistice .container_atractii div button:hover {
+    background: rgb(5, 102, 141);
+    color: #EEEEEE;
+  }
+  body #obiective_turistice .container_atractii:last-child {
+    margin: 0;
+  }
 }
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 767px) {
+  body .header-title h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 71px;
+    text-align: center;
+  }
   body header {
     height: 177px;
   }
-  body header .hd_container #head_right_container h2, body header .hd_container #head_right_container h3 {
+  body header .hd_container {
+    justify-content: space-around;
+  }
+  body header .hd_container figure {
+    margin: 0;
+  }
+  body header .hd_container figure img {
+    max-height: 150px;
+  }
+  body header .hd_container > div {
     display: block;
+  }
+  body header .hd_container > div h2 {
+    white-space: nowrap;
+    font-size: 5vw;
+  }
+  body header .hd_container > div h3 {
+    font-size: 4vw;
+  }
+  body header .hd_container .listLinkLogo {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  body header .hd_container .listLinkLogo a {
+    margin: 0 20px 0 0;
+  }
+  body header .hd_container h2, body header .hd_container h3 {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -834,26 +1249,296 @@
     text-align: center;
     color: #FFFFFF;
     margin: 0;
-    height: 50px;
-    line-height: 50px;
-    white-space: nowrap;
+    line-height: normal;
   }
-  body header .hd_container #head_right_container h3 {
-    float: left;
-  }
-  body header .hd_container .listLinkLogo {
-    margin: auto 20px 25px auto;
-    padding: 0;
-  }
-  body header .hd_container .listLinkLogo a {
-    display: inline;
-    margin-right: 20px;
-  }
-  #prezentareGenerala_1 h2 {
+  body #prezentareGenerala_1 h2 {
     width: 600px;
     padding-top: 65px;
   }
-  #prezentareGenerala_1 br {
+  body #prezentareGenerala_1 h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 71px;
+    text-align: center;
+  }
+  body #prezentareGenerala_1 br {
     display: none;
+  }
+  body #prezentareGenerala_1 p {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  body #ceSpunClienti .review:nth-child(2) {
+    display: block;
+  }
+  body #ceSpunClienti .bulina_review_selected {
+    display: none;
+  }
+  body #beneficiiX3 {
+    display: flex;
+    justify-content: space-between;
+  }
+  body #beneficiiX3 .beneficii {
+    height: auto;
+    margin: 30px 40px 100px 40px;
+  }
+  body #beneficiiX3 .beneficii h2 {
+    width: auto;
+    padding: 30px 20px 0 20px;
+  }
+  body #beneficiiX3 .beneficii p {
+    width: auto;
+    padding: 30px 30px 50px 30px;
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  body #relaxează_te > div {
+    display: flex;
+  }
+  body #relaxează_te div > div:first-child {
+    width: 100%;
+    background: no-repeat center/cover url("/img/backgroundImg.png");
+  }
+  body #relaxează_te div > div:last-child {
+    width: 100%;
+  }
+  body #alegeCam h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+  body #servicii {
+    padding-bottom: 50px;
+  }
+  body #servicii #big_servicii_containe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body #servicii #big_servicii_containe .servicii-container {
+    width: 350px;
+  }
+  body #servicii #big_servicii_containe .servicii-container p {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  body #servicii #servici_header {
+    display: flex;
+    align-items: center;
+  }
+  body #servicii #servici_header > :first-child {
+    width: 100%;
+    margin: 100px 50px 100px 100px;
+  }
+  body #servicii #servici_header > :first-child h5 {
+    margin-top: 0;
+  }
+  body #servicii #servici_header > :first-child h1 {
+    margin: 0;
+  }
+  body #servicii #servici_header > :first-child img {
+    display: none;
+  }
+  body #servicii #servici_header > :last-child {
+    width: 100%;
+    margin: 100px 100px 100px 50px;
+  }
+  body #servicii #servici_header > :last-child p {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0;
+  }
+  body #atracti .container_atractii {
+    display: flex;
+    flex-direction: row;
+  }
+  body #atracti .container_atractii div {
+    width: 100%;
+  }
+  body #atracti .container_atractii div button {
+    margin: 45px auto 0px auto;
+  }
+  body #reviewCount > :first-child {
+    background: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body #contactează-ne .contact_container {
+    flex-direction: row;
+    margin: 50px 15px;
+    border-radius: 100px;
+  }
+  body #contactează-ne .contact_container div {
+    width: 204px;
+    height: auto;
+  }
+  body #map_question {
+    display: flex;
+  }
+  body #map_question > :first-child {
+    width: 100%;
+  }
+  body #map_question > :first-child #map_question_details summary, body #map_question > :first-child #map_question_details p {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-align: left;
+  }
+  body #map_question iframe {
+    width: 100%;
+  }
+  body footer #container {
+    align-items: center;
+  }
+  body footer #container .listLinkLogofooter {
+    flex-direction: row;
+  }
+  body footer #container #footer_text {
+    display: block;
+  }
+  body footer #container #footer_text h2, body footer #container #footer_text h3 {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7vw;
+    line-height: 82px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 5vw;
+    margin: 0;
+    line-height: normal;
+  }
+  body footer #container img {
+    margin-top: 10px;
+  }
+  body #obiective_turistice div > h1, body > p {
+    margin: 0 100px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .hd_container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #beneficiiX3 {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #beneficiiX3 .beneficii {
+    width: 60%;
+  }
+  body #relaxează_te > div {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #relaxează_te iframe {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  body #alegeCam .camGallery {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+  }
+  body #servicii #big_servicii_containe, body #servicii #servici_header {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #atracti {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #atracti .img_atracti_container {
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+  }
+  body #atracti .container_atractii {
+    margin-bottom: 100px;
+  }
+  body #atracti .container_atractii div:last-child {
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+  body #reviewCount {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #contactează-ne .contact_container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #map_question {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body footer #container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body footer #footer_text h2 {
+    font-size: 55px !important;
+  }
+  body footer #footer_text h3 {
+    font-size: 55px !important;
+  }
+  body #obiective_turistice {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body #obiective_turistice .container_atractii {
+    margin-bottom: 250px !important;
+  }
+}
+@media screen and (min-width: 1368px) {
+  body header .hd_container h2 {
+    font-size: 65px !important;
+  }
+  body header .hd_container h3 {
+    font-size: 55px !important;
+  }
+  body header .hd_container .listLinkLogo a {
+    margin: 0 15px 0 15px !important;
+  }
+  body .review:nth-child(3) {
+    display: block !important;
+  }
+  body #booking_group, body #google_group {
+    width: 1368px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }/*# sourceMappingURL=style.css.map */
