@@ -889,7 +889,7 @@ html {
     text-align: center;
     color: #F0F3BD;
   }
-  body #contactează-ne .contact_container div p {
+  body #contactează-ne .contact_container div a, body #contactează-ne .contact_container div p {
     font-family: "Lora";
     font-style: normal;
     font-weight: 700;
@@ -901,6 +901,7 @@ html {
     font-size: 15px;
     color: #F0F3BD;
     word-break: break-all;
+    text-decoration: none;
   }
   body #map_question {
     margin-top: 50px;
