@@ -46,7 +46,7 @@ html {
     display: block;
   }
   body header {
-    background-image: url("/img/backgroundimg.png");
+    background-image: url("/img/backgroundimg.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -85,7 +85,7 @@ html {
   body #prezentareGenerala_1 {
     width: 100%;
     height: auto;
-    background-image: url("/img/backgroundimg.png");
+    background-image: url("/img/backgroundimg.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -980,7 +980,7 @@ html {
     margin-top: 50px;
     height: auto;
     width: 100%;
-    background-image: url("/img/backgroundimg.png");
+    background-image: url("/img/backgroundimg.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1307,7 +1307,7 @@ html {
   }
   body #relaxează_te div > div:first-child {
     width: 100%;
-    background: no-repeat center/cover url("/img/backgroundimg.png");
+    background: no-repeat center/cover url("/img/backgroundimg.webp");
   }
   body #relaxează_te div > div:last-child {
     width: 100%;
