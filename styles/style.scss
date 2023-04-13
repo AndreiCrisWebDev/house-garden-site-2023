@@ -48,7 +48,7 @@ html {
 //////////////////////////////////////////
 ///////////   HEDEAR /////////////////////
         header { 
-            background-image: url("/img/backgroundImg.png");
+            background-image: url("/img/backgroundimg.png");
             @include backgroundImg;
             box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
             .hd_container {
@@ -85,7 +85,7 @@ html {
         #prezentareGenerala_1 {
             width: 100%;
             height: auto;
-            background-image: url("/img/backgroundImg.png");
+            background-image: url("/img/backgroundimg.png");
             @include backgroundImg;
             margin: 0;
             box-shadow: inset 0 2000px rgba(13, 13, 13, 0.5);
@@ -779,7 +779,7 @@ html {
             margin-top: 50px;
             height: auto;
             width: 100%;
-            background-image: url("/img/backgroundImg.png");
+            background-image: url("/img/backgroundimg.png");
             @include backgroundImg;
             box-shadow: inset 0 2000px rgba(5, 102, 141, 0.8);
             #container {
@@ -1039,7 +1039,7 @@ html {
             ///img div 
             div>div:first-child {
                 width: 100%;
-                background: no-repeat center/cover url('/img/backgroundImg.png'); 
+                background: no-repeat center/cover url('/img/backgroundimg.png'); 
             }
             div>div:last-child {
                 width: 100%;   
