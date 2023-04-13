@@ -713,11 +713,13 @@ html {
                     h2 {
                         @include textCategori;
                     }
-                    p {
+                    // trebuie schimbat toate cu a tag uri  pt o performanta mai buna odata cu schimbarea pozeleor
+                    a,p {
                         @include h3TS;
                         font-size: 15px;
                         color: #F0F3BD;
                         word-break: break-all;
+                        text-decoration: none;
                     }
                 }
             }
