@@ -572,7 +572,7 @@ html {
     margin: 0 auto 50px auto;
   }
   body #atracti .container_atractii .img_atracti_container {
-    background: no-repeat center/cover url("/img/atracti_acasa.png");
+    background: no-repeat center/cover url("/img/atracti_acasa.jpg");
     height: 500px;
     max-width: 1024px;
   }
