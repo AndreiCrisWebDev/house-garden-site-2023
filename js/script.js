@@ -15,6 +15,17 @@ function homePage() {
   window.location.assign("index.html");
 }
 
+/// refresh function
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+window.addEventListener("resize", function () {
+  delay(1000).then(function () {
+    location.reload();
+  });
+});
+
 // SCROLL FUNCTION
 
 const contactBtn = document.querySelector("#contButton");
